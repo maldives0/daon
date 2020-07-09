@@ -1,0 +1,241 @@
+@import url('common.css');
+
+.side{
+    width:2%;
+    height:57%;
+    padding:auto;
+         position:fixed;
+      z-index:100;
+    right:5%; bottom:20%;
+white-space: pre-line;
+    background:rgba(0,0,0,0.1);
+}
+    
+ .side li{
+     display:block;
+          width:10px; height:10px;
+   padding:30% 0;
+   position:relative;
+   margin:1px auto;
+     white-space:pre-line;
+}
+
+ .side li a{
+   
+    text-align: center;
+     margin:0 auto;
+    padding:5%;
+         color:#fff;
+        text-transform: uppercase;
+    font-size:1.5em;
+          font-family: 'Inconsolata', monospace;
+
+}
+/*main---------------------------------*/
+main{
+  
+ 
+}
+
+
+main div{
+     position:relative;
+    width:100%; height:100%;
+      } 
+main div > img{width:100%;
+    height:100%;
+}
+ 
+ 
+ 
+
+.rooms .a_l{
+     position:absolute;
+    left:10%; bottom:30%;
+    transform:rotate(180deg);
+   }
+.rooms .a_r{
+     position:absolute;
+    right:10%; bottom:30%;
+   
+}
+.service{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+   position:relative;
+}
+.service article{
+    
+}
+.service article .s{ }
+.service article .s li{ 
+   height:100%;
+   position:relative;
+}
+
+.service article .s li img{width:100%;}
+.service article .s li a{
+width:100%; height:100%;}
+.service article .s li a h2{
+    margin:0; padding:0;
+    background:rgba(0,0,0,0.5);
+    width:100%; height:100%;
+    position: absolute;
+    top:0; left:0;
+     display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    
+    white-space:pre-line;
+    text-align:center;
+    color:#fff;
+     font-size:25px;
+    line-height:1.5;
+}
+.service article .s li a h2 strong{
+    font-size:50px;
+    font-weight: 100;
+}
+.service article .s li:nth-of-type(1):hover h2{
+    background:none;
+     transition:.5s;
+    opacity:0;
+}
+.service article .s li:nth-of-type(2):hover h2{ background:none;
+    opacity:0;
+ transition:.5s;}
+.service article .s li:nth-of-type(3):hover h2{ background:none;
+    opacity:0;
+ transition:.5s;}
+
+.facilities{
+    margin:0;
+           background-size:100%;
+   
+}
+.facilities .vdo{
+     margin:0; padding:0;
+    position:relative;
+    overflow:hidden;
+    width:100%; height:1000px;
+     flex-direction: column;
+}
+.facilities .vdo video{
+    width:100%; height:100%;
+    position:absolute;
+    z-index:0;
+    left:0; bottom:0;
+    transform:scale(1.2);
+}
+.facilities .vdo .title{
+    width:100%;
+   height:20%;
+     background:rgba(0,0,0,0.2);
+         margin:5% 0;
+        white-space: pre-line;
+    
+}
+.facilities .vdo .title h1{
+    color:#fff;
+    font-size:25px;
+        text-align:center;
+      
+    
+}
+.facilities .vdo .title h1 strong{
+       font-size:80px;
+     font-weight: 100;
+    }
+.facilities .vdo article{
+   margin:0 auto;
+    width:80%;
+
+}
+
+.facilities .vdo article figure{
+    position: relative;
+  
+margin:0;
+ width:300px;
+height:340px;
+    overflow:hidden;
+}
+.facilities .vdo article figure p{
+    opacity:1;
+}
+.facilities .vdo article figure p:before{
+        content:'';
+    width:300px; height:330px;
+    position:absolute;
+    left:0; bottom:3%;
+    background:rgba(0,0,0,0.5);
+    
+}
+.facilities .vdo article figure p:after{
+    content:'';
+    display:block;
+    position:absolute;
+    left:10px; bottom:6%;
+    border:2px solid #fff;
+    width:280px; height:310px;
+      
+}
+
+.facilities .vdo article figure:hover p:before,
+.facilities .vdo article figure:hover p:after,
+.facilities .vdo article figure:hover figcaption
+{
+    transition:.5s;
+ opacity:0;
+}
+.facilities .vdo article figure p img{width:150%;
+height:200%;}
+.facilities .vdo article figure figcaption{
+    width:100%; 
+    height:100%;
+    position:absolute;
+    left:0%; bottom:0%;
+    text-align:center;   
+    white-space:pre-line;
+    color:#fff;
+    
+    
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+   
+}
+
+/*footer--------------------------------*/
+footer{
+       position:relative;
+    height:150%;
+}
+ 
+footer figure{margin-top:5%;}
+footer figure p{text-align:center;
+}
+footer figure p img{width:100%;
+    transform:scale(0.9);
+}
+footer figure figcaption{
+    text-align:center;
+    white-space: pre-line;
+    font-size:10px;
+    font-family: 'Noto Serif KR', serif;
+    line-height:2;
+    position:absolute;
+    left:40%; bottom:0%;
+}
+footer figure figcaption p{
+    text-align:center;
+   }
+footer figure figcaption p img{
+    width:90px; height:10px;
+}
+ 
+
+
