@@ -1,0 +1,39 @@
+@import url('common.css');
+
+
+/*main---------------------------------*/
+main{
+ 
+
+}
+
+
+
+
+
+/*footer--------------------------------*/
+footer{
+       position:relative;
+}
+ 
+footer figure{margin-top:20%;}
+footer figure p{text-align:center;}
+footer figure p img{width:100%;}
+footer figure figcaption{
+    text-align:center;
+    white-space: pre-line;
+    font-size:10px;
+    font-family: 'Noto Serif KR', serif;
+    line-height:2;
+    position:absolute;
+    left:40%; bottom:10%;
+}
+footer figure figcaption p{
+    text-align:center;
+   }
+footer figure figcaption p img{
+    width:90px; height:10px;
+}
+ 
+
+
