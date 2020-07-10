@@ -1088,6 +1088,7 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
+/*
 a {
   color: #337ab7;
   text-decoration: none;
@@ -1102,6 +1103,7 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
+*/
 figure {
   margin: 0;
 }
@@ -1916,7 +1918,7 @@ pre code {
 }
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
+/*    float: left;*/
   }
   .col-md-12 {
     width: 100%;
