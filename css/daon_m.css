@@ -90,17 +90,17 @@ main div > img{width:100%;
 }
  
  
- 
-
-.rooms .a_l{
-     position:absolute;
-    left:10%; bottom:30%;
+.rooms{position:relative;}
+.rooms > div{width:80%;
+position:absolute;
+left:10%; bottom:-50%;}
+.rooms > div .a_l{
+    float:left;
     transform:rotate(180deg);
    }
-.rooms .a_r{
-     position:absolute;
-    right:10%; bottom:30%;
+.rooms > div .a_r{
    
+   float:right;
 }
 .service{
     width:100%;
