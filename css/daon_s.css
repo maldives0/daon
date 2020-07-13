@@ -4,24 +4,34 @@
 /*main---------------------------------*/
 main {}
 
-.traffic {
-    padding:10%;
-    margin:auto;
-    position: relative;
-    width:70%;
+.traffic{
+    padding:0;
+    margin:0 auto;
+       width:80%;
 height:100%;
-}
-
-.traffic img {
-    transform:scale(1.6);
-    position: absolute;
-    left: 20%;
-    bottom: -10%;
-}
-.traffic .map{
+ 
    
 }
-.traffic span {
+
+.traffic > img{
+    position:absolute;
+    left:10%; bottom:-5%;
+    z-index:2;
+   
+}
+.traffic .con{
+    width:100%;
+   display:flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.traffic .con .map{
+    
+   margin:10%;
+}
+.traffic .con span {
    
     display: block;
     border: 1px solid #e6fafe;
@@ -70,9 +80,10 @@ footer figure figcaption {
     font-size: 10px;
     font-family: 'Noto Serif KR', serif;
     line-height: 2;
-    position: absolute;
-    left: 40%;
-    bottom: 10%;
+    position:absolute;
+    left:50%; bottom:0%;
+    transform:translate(-50%);
+    padding:2% 0;
 }
 
 footer figure figcaption p {
