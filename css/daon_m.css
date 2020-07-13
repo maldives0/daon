@@ -17,6 +17,20 @@
  .header .menu-trigger > span:nth-of-type(3){
     bottom:0;
 }
+.header .menu-trigger.active{
+    
+}
+.header .menu-trigger.active > span{
+   transform:translateY(-50%) rotate(45deg);
+    bottom:0;
+   
+}
+.header .menu-trigger.active > span:nth-of-type(2){
+   opacity:0;
+}
+ .header .menu-trigger.active > span:nth-of-type(3){
+     transform:translateY(50%) rotate(-45deg);
+}
 
 .side{
     width:2%;
