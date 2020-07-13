@@ -17,32 +17,7 @@
  .header .menu-trigger > span:nth-of-type(3){
     bottom:0;
 }
-.t_list{
-    width:30%; height:100vh;
-    background:rgba(255,255,255,0.8);
-    position:absolute;
-    right:0; top:0;
-    display:none;
-}
-.t_list li{
-   width:100%; 
-   margin:2% 0;
-   
-}
-.t_list li a{
-    color:#000;
-    display:block;
-    padding:5%;
-    text-align:center;
-    vertical-align:center;
-      width:100%; 
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size:2em;
-    
-}
-.t_list li .active{
-    background:#99e4f3;
-}
+
 .side{
     width:2%;
     height:57%;
@@ -83,7 +58,7 @@ main{
 
 main div{
      position:relative;
-    width:100%; height:100%;
+    width:100%; 
       } 
 main div > img{width:100%;
     height:100%;
@@ -174,9 +149,9 @@ width:100%; height:100%;}
 }
 .facilities .vdo .title{
     width:100%;
-   height:20%;
+   padding:3% 0;
      background:rgba(0,0,0,0.2);
-         margin:5% 0;
+        
         white-space: pre-line;
     
 }
@@ -271,10 +246,13 @@ footer figure figcaption{
     font-family: 'Noto Serif KR', serif;
     line-height:2;
     position:absolute;
-    left:40%; bottom:0%;
+    left:50%; bottom:0%;
+    transform:translate(-50%);
+   padding:2% 0;
 }
 footer figure figcaption p{
     text-align:center;
+     
    }
 footer figure figcaption p img{
     width:90px; height:10px;
