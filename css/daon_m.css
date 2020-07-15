@@ -129,6 +129,7 @@ width:100%; height:100%;}
 .service article .s li a h2 strong{
     font-size:50px;
     font-weight: 100;
+   font-family: 'Titillium Web', sans-serif;
 }
 .service article .s li:nth-of-type(1):hover h2{
     background:none;
@@ -173,12 +174,13 @@ width:100%; height:100%;}
     color:#fff;
     font-size:25px;
         text-align:center;
-      
+      font-family: 'Titillium Web', sans-serif;
     
 }
 .facilities .vdo .title h1 strong{
        font-size:80px;
-     font-weight: 100;
+     font-weight:none;
+    font-family: 'Noto Sans KR', sans-serif;
     }
 .facilities .vdo article{
    margin:0 auto;
@@ -196,6 +198,7 @@ height:340px;
 }
 .facilities .vdo article figure p{
     opacity:1;
+    
 }
 .facilities .vdo article figure p:before{
         content:'';
@@ -232,7 +235,7 @@ height:200%;}
     text-align:center;   
     white-space:pre-line;
     color:#fff;
-    
+     font-family: 'Titillium Web', sans-serif;
     
     display:flex;
     flex-direction: column;
@@ -241,36 +244,5 @@ height:200%;}
    
 }
 
-/*footer--------------------------------*/
-footer{
-       position:relative;
-    height:150%;
-}
- 
-footer figure{margin-top:5%;}
-footer figure p{text-align:center;
-}
-footer figure p img{width:100%;
-    transform:scale(0.9);
-}
-footer figure figcaption{
-    text-align:center;
-    white-space: pre-line;
-    font-size:10px;
-    font-family: 'Noto Serif KR', serif;
-    line-height:2;
-    position:absolute;
-    left:50%; bottom:0%;
-    transform:translate(-50%);
-   padding:2% 0;
-}
-footer figure figcaption p{
-    text-align:center;
-     
-   }
-footer figure figcaption p img{
-    width:90px; height:10px;
-}
- 
 
 

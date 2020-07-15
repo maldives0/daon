@@ -1,38 +1,42 @@
 @import url('common.css');
 
 
-/*main---------------------------------*/
+/*-----------------------------traffic---------------------------------*/
 main {}
 
-.traffic{
-    padding:0;
-    margin:0 auto;
-       width:80%;
-height:100%;
- 
-   
+.traffic {
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+
+
 }
 
-.traffic > img{
-    position:absolute;
-    left:10%; bottom:-5%;
-    z-index:2;
-   
+.traffic > img {
+    position: absolute;
+    left: 10%;
+    bottom: -5%;
+    z-index: 2;
+
 }
-.traffic .con{
-    width:100%;
-   display:flex;
+
+.traffic .con {
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    
-   
+
+
 }
-.traffic .con .map{
-    
-   margin:10%;
+
+.traffic .con .map {
+
+    margin: 10%;
 }
+
 .traffic .con span {
-   
+
     display: block;
     border: 1px solid #e6fafe;
     border-radius: 100%;
@@ -44,53 +48,270 @@ height:100%;
 
 .traffic span p {
     display: block;
-width:100%; height:100%;
-    text-align: center;
-    white-space: pre-line;
-    padding:10%;
-    line-height: 1.2;
-    font-size: 25px;
-    background: #e6fafe;
-    font-family: 'Noto Serif KR', serif;
-}
-
-.traffic span p strong {}
-
-
-/*footer--------------------------------*/
-footer {
-    position: relative;
-}
-
-footer figure {
-    margin-top: 20%;
-}
-
-footer figure p {
-    text-align: center;
-}
-
-footer figure p img {
     width: 100%;
-}
-
-footer figure figcaption {
+    height: 100%;
     text-align: center;
     white-space: pre-line;
-    font-size: 10px;
-    font-family: 'Noto Serif KR', serif;
-    line-height: 2;
+    padding: 10%;
+    line-height: 1.7;
+    font-size: 20px;
+    background: #e6fafe;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.5;
+}
+
+/*--------------------------travel------------------------------------*/
+.travel {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/sub/beach.jpg') no-repeat;
+
+}
+
+.travel article {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+ overflow:hidden;
+}
+
+.travel article figure {
+    position: relative;
+    border: 5px solid #fff;
+    border-radius: 100%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+
+}
+
+.travel article figure a {}
+
+.travel article figure a img {
+    width: 350px;
+    height: 350px;
+}
+
+.travel article figure figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.travel article figure:hover figcaption {
+    display: none;
+}
+
+.travel .arrow {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 2;
+    transform: translateY(-50%);
+    width: 100%;
+    
+}
+.travel .arrow > a{
+    width:100%;
+    height:100%;
+}
+.travel .arrow > a img {
+    background: rgba(255, 255, 255, 0.3);
+     opacity:0.6;
+}
+
+.travel .arrow > a img:nth-of-type(1) {
+    transform: rotate(180deg);
+}
+
+.travel .arrow > a:hover img{
+    opacity:1;
+    
+}
+
+/*---------------------rooms--------------------------------------*/
+.rooms {
+   
+}
+.rooms article{
+   
+    width:100%;
+    height:100vh;
+}
+.rooms article .love{
+    
+    height: 100vh;
+    background: url(../img/sub/love.jpeg) ;
+}
+
+.rooms article .only{
+    
+    height: 100vh;
+    background: url(../img/sub/only.jpg) ;
+}
+
+.rooms article > figure{
+     display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+   width:50%;
+    margin:0 auto;
+   
+}
+.rooms article > figure > div {
+      position:relative;
+    
+}
+.rooms article > figure > div > p {
+ 
+    display:block;
+    width: 500px;
+    height: 300px;
+  
+}
+    .rooms article > figure > div .s_btn > img{
+    width:20px; height:20px;
+         display:block;
+        margin-bottom:3px;
+}
+.rooms article > figure > div .s_btn{
+   
+}
+.rooms article .love > div .s_btn{
     position:absolute;
-    left:50%; bottom:0%;
-    transform:translate(-50%);
-    padding:2% 0;
+     bottom:4%; right:-5%;
+    
+}
+.rooms article .only > div .s_btn{
+    position:absolute;
+    top:0; left:-5%;
+   
+}
+.rooms article .love > div .s_btn img:nth-of-type(1){
+    
+       transform:rotate(180deg);
 }
 
-footer figure figcaption p {
-    text-align: center;
+
+.rooms article .only > div .s_btn img:nth-of-type(1){
+      transform:rotate(180deg);
+   
+    
 }
 
-footer figure figcaption p img {
-    width: 90px;
-    height: 10px;
+.rooms article > figure > div > p img {
+    width: 100%;
+    height:100%;
+}
+
+.rooms article > figure > figcaption{
+     white-space:pre-line;
+   font-size:60px;
+    line-height:1.5;
+    font-family: 'Dancing Script', cursive;
+    width:600px;
+    padding:2%;
+    color:rgba(0,0,0,0.2);
+}
+.rooms article > figure > figcaption strong{
+     color:#434343;
+ font-family: 'Dancing Script', cursive;
+font-size:.4em;
+    font-weight:bold;
+    text-transform:uppercase;
+       
+}
+.rooms article .love figcaption{
+           text-align:right;
+    margin-bottom:0%;
+}
+
+/*------------------------------r_info------------------------------*/
+.r_info{
+    
+   }
+.r_info .room{
+    width:100%;
+    height:100vh;
+       position:relative;
+}
+.r_info .room li{
+   }
+.r_info .room li img{
+     width:100%;
+    height:100vh;
+   }
+.r_info .s_a{
+   
+}
+.r_info .s_a a{
+   
+}
+.r_info .s_a a img{
+   
+}
+.r_info .indi{
+   display:flex;
+        position:absolute;
+     left:50%; bottom:10%;
+    transform:translateX(-50%);
+}
+.r_info .indi li{
+   
+   margin-right:10px;
+    width:20px; height:20px;
+     border:1px solid #fff;
+    border-radius:100%;
+}
+.r_info .indi li:hover{
+    background: #fff;
+}
+.r_t{
+    margin-left:5%;
+    
+    font-family: 'Titillium Web', sans-serif;}
+.r_t h1{font-size:60px;
+font-family: 'Dancing Script', cursive;
+text-transform:uppercase;
+}
+.r_t > h4{
+    margin:2% 0 5% 0; 
+    font-size:20px;
+font-family: 'Titillium Web', sans-serif;}
+.r_t .info_btn{
+    display:block;
+}
+.r_t .info_btn a{
+    border:1px solid gray;
+    padding:1% 2%;
+      font-size:15px;
+    color:#000;
+font-family: 'Titillium Web', sans-serif;
+}
+.r_t ul{
+    margin:10%;
+    width:50%; 
+    
+}
+.r_t ul > h4{
+    padding-bottom:10px !important;
+    border-bottom:1px solid gray;
+}
+.r_t > ul li{
+    line-height:1.5;
+    list-style:square;
+    margin:0 2%;
 }
