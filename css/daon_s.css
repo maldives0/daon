@@ -69,7 +69,7 @@ main {}
 }
 
 .travel article {
-    width: 100%;
+    width: 70%;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -114,25 +114,24 @@ main {}
     display: none;
 }
 
-.travel .arrow {
+.travel .arrow{
     position: absolute;
     top: 50%;
     left: 10%;
     z-index: 2;
     transform: translateY(-50%);
-    width: 100%;
-    
+    width: 80%;
+     
 }
 .travel .arrow > a{
-    width:100%;
-    height:100%;
+    
 }
-.travel .arrow > a img {
+.travel .arrow > a > img {
     background: rgba(255, 255, 255, 0.3);
-     opacity:0.6;
+      opacity:0.3;
 }
 
-.travel .arrow > a img:nth-of-type(1) {
+.travel .arrow > a:nth-of-type(1) {
     transform: rotate(180deg);
 }
 
