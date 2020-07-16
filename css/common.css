@@ -5,6 +5,8 @@
 /*한글본문*/
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 /*font-family: 'Titillium Web', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+/*font-family: 'Sunflower', sans-serif;*/
 
 /*영어제목*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
@@ -73,7 +75,7 @@ p {
 header,
 main,
 footer {
-    width: 100%;
+    width: 100%; 
 }
 
 /*                ----------------------------------------------------    */
@@ -317,15 +319,20 @@ footer {
 }
 
 footer .foot {
-    margin-top: 15%;
+    margin:15% auto;
+   width:100%;
 }
 
-footer .foot p {
-    text-align: center;
+footer .foot > p{
+    text-align:center;
+    
+    display:block;
+   
+        
 }
 
-footer .foot p img {
-    width: 100%;
+footer .foot > p img{
+    width:80%;
 }
 
 footer .foot > figcaption {
