@@ -1,5 +1,31 @@
 @import url('common.css');
 
+.about {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/sub/a-1.jpg) right bottom no-repeat;
+    background-size: 80%;
+    position: relative;
+}
+
+.about p {
+    position: absolute;
+    bottom: -2%;
+    left: 0;
+    background: #fff;
+    border-radius: 50%;
+
+    width: 700px;
+    height: 500px;
+
+
+    white-space: pre-line;
+    font-family: 'Sunflower', sans-serif;
+    line-height: 2;
+    font-size: 2em;
+
+
+}
 
 /*-----------------------------traffic---------------------------------*/
 main {}
@@ -56,7 +82,7 @@ main {}
     line-height: 1.7;
     font-size: 20px;
     background: #e6fafe;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Sunflower', sans-serif;
     line-height: 1.5;
 }
 
@@ -74,7 +100,7 @@ main {}
     margin: 0 auto;
     position: relative;
     z-index: 3;
- overflow:hidden;
+    overflow: hidden;
 }
 
 .travel article figure {
@@ -102,7 +128,7 @@ main {}
     position: absolute;
     top: 0;
     left: 0;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Sunflower', sans-serif;
     font-size: 20px;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -114,203 +140,261 @@ main {}
     display: none;
 }
 
-.travel .arrow{
+.travel .arrow {
     position: absolute;
     top: 50%;
     left: 10%;
     z-index: 2;
     transform: translateY(-50%);
     width: 80%;
-     
+
 }
-.travel .arrow > a{
-    
-}
+
+.travel .arrow > a {}
+
 .travel .arrow > a > img {
     background: rgba(255, 255, 255, 0.3);
-      opacity:0.3;
+    opacity: 0.3;
 }
 
 .travel .arrow > a:nth-of-type(1) {
     transform: rotate(180deg);
 }
 
-.travel .arrow > a:hover img{
-    opacity:1;
-    
+.travel .arrow > a:hover img {
+    opacity: 1;
+
 }
 
 /*---------------------rooms--------------------------------------*/
-.rooms {
-   
-}
-.rooms article{
-   
-    width:100%;
-    height:100vh;
-}
-.rooms article .love{
-    
+.rooms {}
+
+.rooms article {
+
+    width: 100%;
     height: 100vh;
-    background: url(../img/sub/love.jpeg) ;
 }
 
-.rooms article .only{
-    
+.rooms article .love {
+
     height: 100vh;
-    background: url(../img/sub/only.jpg) ;
+    background: url(../img/sub/love.jpeg);
 }
 
-.rooms article > figure{
-     display: flex;
-    flex-direction:column;
+.rooms article .only {
+
+    height: 100vh;
+    background: url(../img/sub/only.jpg);
+}
+
+.rooms article > figure {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-   width:50%;
-    margin:0 auto;
-   
+    width: 50%;
+    margin: 0 auto;
+
 }
+
 .rooms article > figure > div {
-      position:relative;
-    
+    position: relative;
+
 }
+
 .rooms article > figure > div > p {
- 
-    display:block;
+
+    display: block;
     width: 500px;
     height: 300px;
-  
-}
-    .rooms article > figure > div .s_btn > img{
-    width:20px; height:20px;
-         display:block;
-        margin-bottom:3px;
-}
-.rooms article > figure > div .s_btn{
-   
-}
-.rooms article .love > div .s_btn{
-    position:absolute;
-     bottom:4%; right:-5%;
-    
-}
-.rooms article .only > div .s_btn{
-    position:absolute;
-    top:0; left:-5%;
-   
-}
-.rooms article .love > div .s_btn img:nth-of-type(1){
-    
-       transform:rotate(180deg);
+
 }
 
 
-.rooms article .only > div .s_btn img:nth-of-type(1){
-      transform:rotate(180deg);
-   
-    
+
+.rooms article > figure > div .s_btn > a img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-bottom: 3px;
 }
+
+
+.rooms article .love > div .s_btn > a:nth-of-type(1) img{
+     transform:rotate(180deg);
+}
+.rooms article .only > div .s_btn > a:nth-of-type(1) img{
+     transform:rotate(180deg);
+}
+.rooms article .love > div .s_btn {
+    position: absolute;
+    bottom: 4%;
+    right: -5%;
+
+}
+
+.rooms article .only > div .s_btn {
+    position: absolute;
+    top: 0;
+    left: -5%;
+
+}
+
+
+
+
+
 
 .rooms article > figure > div > p img {
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
-.rooms article > figure > figcaption{
-     white-space:pre-line;
-   font-size:60px;
-    line-height:1.5;
+.rooms article > figure > figcaption {
+    white-space: pre-line;
+    font-size: 60px;
+    line-height: 1.5;
     font-family: 'Dancing Script', cursive;
-    width:600px;
-    padding:2%;
-    color:rgba(0,0,0,0.2);
+    width: 600px;
+    padding: 2%;
+    color: rgba(0, 0, 0, 0.2);
 }
-.rooms article > figure > figcaption strong{
-     color:#434343;
- font-family: 'Dancing Script', cursive;
-font-size:.4em;
-    font-weight:bold;
-    text-transform:uppercase;
-       
+
+.rooms article > figure > figcaption strong {
+    color: #434343;
+    font-family: 'Dancing Script', cursive;
+    font-size: .4em;
+    font-weight: bold;
+    text-transform: uppercase;
+
 }
-.rooms article .love figcaption{
-           text-align:right;
-    margin-bottom:0%;
+
+.rooms article .love figcaption {
+    text-align: right;
+    margin-bottom: 0%;
 }
 
 /*------------------------------r_info------------------------------*/
-.r_info{
-    
-   }
-.r_info .room{
-    width:100%;
-    height:100vh;
-       position:relative;
+.r_info {}
+
+.r_info .room {
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
-.r_info .room li{
-   }
-.r_info .room li img{
-     width:100%;
-    height:100vh;
-   }
-.r_info .s_a{
-   
+
+.r_info .room li {}
+
+.r_info .room li img {
+    width: 100%;
+    height: 100vh;
 }
-.r_info .s_a a{
-   
+
+.r_info .s_a {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 80%;
 }
-.r_info .s_a a img{
-   
+
+.r_info .s_a a:nth-of-type(1) {
+    transform: rotate(180deg);
+
 }
-.r_info .indi{
-   display:flex;
-        position:absolute;
-     left:50%; bottom:10%;
-    transform:translateX(-50%);
+
+.r_info .s_a a img {
+    opacity: 0.3;
+
 }
-.r_info .indi li{
-   
-   margin-right:10px;
-    width:20px; height:20px;
-     border:1px solid #fff;
-    border-radius:100%;
+
+.r_info .s_a a:hover img {
+    opacity: 1;
 }
-.r_info .indi li:hover{
+
+.r_info .indi {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+
+}
+
+.r_info .indi li {
+
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+.r_info .indi li:hover {
     background: #fff;
 }
-.r_t{
-    margin-left:5%;
-    
-    font-family: 'Titillium Web', sans-serif;}
-.r_t h1{font-size:60px;
-font-family: 'Dancing Script', cursive;
-text-transform:uppercase;
+
+.r_t {
+    height: 80vw;
+    position: relative;
+    margin: 5%;
+
+    font-family: 'Titillium Web', sans-serif;
 }
-.r_t > h4{
-    margin:2% 0 5% 0; 
-    font-size:20px;
-font-family: 'Titillium Web', sans-serif;}
-.r_t .info_btn{
-    display:block;
+
+.r_t > p {
+    margin-top: 5%;
+    width: 40%;
+    height: 50%;
+    box-shadow: inset 20px 0px 100px 100px #fff;
+    background: url(../img/sub/rose.jpg) no-repeat;
+    background-size: 100%;
 }
-.r_t .info_btn a{
-    border:1px solid gray;
-    padding:1% 2%;
-      font-size:15px;
-    color:#000;
-font-family: 'Titillium Web', sans-serif;
+
+
+.r_t > h1 {
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
 }
-.r_t ul{
-    margin:10%;
-    width:50%; 
-    
+
+.r_t > h4 {
+    margin: 6% 0;
+    font-size: 20px;
+    font-weight: 50;
+    font-family: 'Sunflower', sans-serif;
 }
-.r_t ul > h4{
-    padding-bottom:10px !important;
-    border-bottom:1px solid gray;
+
+.r_t .info_btn {
+    display: block;
 }
-.r_t > ul li{
-    line-height:1.5;
-    list-style:square;
-    margin:0 2%;
+
+.r_t .info_btn a {
+    border: 1px solid gray;
+    padding: 1% 2%;
+    font-size: 20px;
+    color: #000;
+    font-family: 'Inconsolata', monospace;
+}
+
+.r_t ul {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin: 5%;
+    width: 50%;
+    background: #fff;
+
+}
+
+.r_t ul > h4 {
+    font-size: 1.5em;
+    padding-bottom: 10px !important;
+    border-bottom: 1px solid gray;
+}
+
+.r_t > ul li {
+    line-height: 1.2;
+    list-style: square;
+    margin: 2% 2%;
 }
