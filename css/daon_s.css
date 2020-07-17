@@ -27,6 +27,16 @@
 
 }
 
+/*------------------------------view----------------------------*/
+
+.view{
+    height:100vh;
+  
+}
+.view ul{position:relative; }
+.view ul li{}
+.view ul li img{width:100%; height:100%;}
+
 /*-----------------------------traffic---------------------------------*/
 main {}
 
@@ -140,31 +150,7 @@ main {}
     display: none;
 }
 
-.travel .arrow {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    z-index: 2;
-    transform: translateY(-50%);
-    width: 80%;
 
-}
-
-.travel .arrow > a {}
-
-.travel .arrow > a > img {
-    background: rgba(255, 255, 255, 0.3);
-    opacity: 0.3;
-}
-
-.travel .arrow > a:nth-of-type(1) {
-    transform: rotate(180deg);
-}
-
-.travel .arrow > a:hover img {
-    opacity: 1;
-
-}
 
 /*---------------------rooms--------------------------------------*/
 .rooms {}
@@ -290,27 +276,7 @@ main {}
     height: 100vh;
 }
 
-.r_info .s_a {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    width: 80%;
-}
 
-.r_info .s_a a:nth-of-type(1) {
-    transform: rotate(180deg);
-
-}
-
-.r_info .s_a a img {
-    opacity: 0.3;
-
-}
-
-.r_info .s_a a:hover img {
-    opacity: 1;
-}
 
 .r_info .indi {
     display: flex;
@@ -334,67 +300,97 @@ main {}
     background: #fff;
 }
 
-.r_t {
-    height: 80vw;
-    position: relative;
-    margin: 5%;
 
-    font-family: 'Titillium Web', sans-serif;
+/*-------------------------service-------------------------------*/
+.s_info{
+    
+    height:100vh;
+    
+   
 }
-
-.r_t > p {
-    margin-top: 5%;
-    width: 40%;
-    height: 50%;
-    box-shadow: inset 20px 0px 100px 100px #fff;
-    background: url(../img/sub/rose.jpg) no-repeat;
-    background-size: 100%;
+.s_info div{
+    width:100%;
+   height:100%;
+        
 }
 
 
-.r_t > h1 {
-    font-size: 100px;
+
+.s_info .s_n{
+     margin-left:10%; padding:0;
+    background:#fff;
+    width:30%; height:100%;
+    position: absolute;
+    bottom:0; left:0;
+    z-index:1;
+    
+    flex-direction: column;
+       white-space:pre-line;
+  
+    color:#000;
+     font-size:25px;
+      
+}
+
+
+.s_info ul{
+    position:relative;
+  
+  
+
+}
+.s_info .s_n ul li{
+   
+    display:inline-block;
+    width:100%; height:100%;
+/*
+    display:flex;
+    justify-content: center;
+    align-items: center;
+*/
+}
+.s_info .s_n > h1{
+   position:absolute;
+    left:-20%;
+     font-size: 70px;
     font-family: 'Dancing Script', cursive;
     text-transform: uppercase;
 }
 
-.r_t > h4 {
-    margin: 6% 0;
-    font-size: 20px;
+.s_info .s_n ul li> h4{
+   
+     color:#000;
+     font-size: 20px;
     font-weight: 50;
     font-family: 'Sunflower', sans-serif;
+   
+}
+.s_info .s_n ul li> h4 strong{
+  text-align:center;
+    font-size:2em;
+    font-weight: 500;
+   font-family: 'Titillium Web', sans-serif;
 }
 
-.r_t .info_btn {
-    display: block;
+
+
+
+
+.s_info .s_i{
+    position:relative;
+     width:100%;
+    height:100%;
+    overflow:hidden;
+    display:flex;
+    justify-content:flex-end;
 }
 
-.r_t .info_btn a {
-    border: 1px solid gray;
-    padding: 1% 2%;
-    font-size: 20px;
-    color: #000;
-    font-family: 'Inconsolata', monospace;
+.s_info .s_i li p{
+  
+  width:100vw; height:100%;
 }
 
-.r_t ul {
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    margin: 5%;
-    width: 50%;
-    background: #fff;
-
-}
-
-.r_t ul > h4 {
-    font-size: 1.5em;
-    padding-bottom: 10px !important;
-    border-bottom: 1px solid gray;
-}
-
-.r_t > ul li {
-    line-height: 1.2;
-    list-style: square;
-    margin: 2% 2%;
+.s_info .s_i li p img{
+ 
+   width:100%; height:100%;
 }
