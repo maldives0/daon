@@ -313,9 +313,90 @@ main > div > img {
 .scroll img {
     width: 25%;
 }
+
+.a_btn{
+    width:80%;
+    position:absolute;
+    top:50%; left:10%;
+    transform:translateY(-50%);
+}
+.a_btn a:nth-of-type(1){
+    transform:rotate(180deg);
+}
+.a_btn a{
+    opacity:0.5;
+}
+.a_btn a:hover{
+    opacity:1;
+}
+.info {
+    height: 80vw;
+    position: relative;
+    margin: 5%;
+
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.info > p {
+    margin-top: 5%;
+    width: 40%;
+    height: 50%;
+    box-shadow: inset 20px 0px 100px 100px #fff;
+    background: url(../img/sub/rose.jpg) no-repeat;
+    background-size: 100%;
+}
+
+
+.info > h1 {
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+}
+
+.info > h4 {
+    margin: 6% 0;
+    font-size: 20px;
+    font-weight: 50;
+    font-family: 'Sunflower', sans-serif;
+}
+
+.info .info_btn {
+    display: block;
+}
+
+.info .info_btn a {
+    border: 1px solid gray;
+    padding: 1% 2%;
+    font-size: 20px;
+    color: #000;
+    font-family: 'Inconsolata', monospace;
+}
+
+.info ul {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin: 5%;
+    width: 50%;
+    background: #fff;
+
+}
+
+.info ul > h4 {
+    font-size: 1.5em;
+    padding-bottom: 10px !important;
+    border-bottom: 1px solid gray;
+}
+
+.info > ul li {
+    line-height: 1.2;
+    list-style: square;
+    margin: 2% 2%;
+}
 /*footer--------------------------------*/
 footer {
     position: relative;
+    height:10vh;
 }
 
 footer .foot {
