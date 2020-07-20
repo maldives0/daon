@@ -301,17 +301,21 @@ main > div > img {
     bottom: 5%;
     text-align: center;
     transform: translateX(-50%);
+    
 }
 
-.scroll p {
+.scroll p{
+   
     font-family: 'Inconsolata', monospace;
     font-size: 1.2em;
     text-transform: uppercase;
-
+    position:relative;
+text-shadow:2px 2px 2px rgba(0,0,0,0.8);
 }
 
-.scroll img {
+.scroll img{
     width: 25%;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.8));
 }
 
 .a_btn{
@@ -329,94 +333,28 @@ main > div > img {
 .a_btn a:hover{
     opacity:1;
 }
-.info {
-    height: 80vw;
-    position: relative;
-    margin: 5%;
 
-    font-family: 'Titillium Web', sans-serif;
-}
-
-.info > p {
-    margin-top: 5%;
-    width: 40%;
-    height: 50%;
-    box-shadow: inset 20px 0px 100px 100px #fff;
-    background: url(../img/sub/rose.jpg) no-repeat;
-    background-size: 100%;
-}
-
-
-.info > h1 {
-    font-size: 100px;
-    font-family: 'Dancing Script', cursive;
-    text-transform: uppercase;
-}
-
-.info > h4 {
-    margin: 6% 0;
-    font-size: 20px;
-    font-weight: 50;
-    font-family: 'Sunflower', sans-serif;
-}
-
-.info .info_btn {
-    display: block;
-}
-
-.info .info_btn a {
-    border: 1px solid gray;
-    padding: 1% 2%;
-    font-size: 20px;
-    color: #000;
-    font-family: 'Inconsolata', monospace;
-}
-
-.info ul {
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    margin: 5%;
-    width: 50%;
-    background: #fff;
-
-}
-
-.info ul > h4 {
-    font-size: 1.5em;
-    padding-bottom: 10px !important;
-    border-bottom: 1px solid gray;
-}
-
-.info > ul li {
-    line-height: 1.2;
-    list-style: square;
-    margin: 2% 2%;
-}
 /*footer--------------------------------*/
-footer {
+footer{
     position: relative;
-    height:10vh;
+    height:100vh;
 }
 
-footer .foot {
-    margin:15% auto;
-   width:100%;
-}
+footer .foot{
+    margin-top:5%;
+  }
 
 footer .foot > p{
     text-align:center;
-    
-    display:block;
-   
-        
+        display:block;
+           
 }
 
 footer .foot > p img{
     width:80%;
 }
 
-footer .foot > figcaption {
+footer .foot .f_t{
     text-align: center;
     white-space: pre-line;
     font-size: 10px;
@@ -424,17 +362,17 @@ footer .foot > figcaption {
     line-height: 2;
     position: absolute;
     left: 50%;
-    bottom: 0%;
+    bottom: -30%;
     transform: translate(-50%);
     padding: 2% 0;
 
 }
 
-footer .foot > figcaption p {
+footer .foot .f_t > p{
     text-align: center;
 }
 
-footer .foot > figcaption p img {
+footer .foot .f_t > p img {
     width: 90px;
     height: 10px;
 }
