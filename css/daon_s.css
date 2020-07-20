@@ -486,18 +486,18 @@ main {}
  
    width:100%; height:100%;
 }
-/*----------------community-----------------------------*/
+/*----------------c_n-----------------------------*/
 
-.community{
+.c_notice{
     height:100vh;
 }
-.community .c_n{
+.c_notice .c_n{
     width:100%;
     height:50vh;
     background:url(../img/sub/pen.jpg) no-repeat;
     background-size:100% 100%;
 }
-.community .c_n > h1{
+.c_notice .c_n > h1{
   
     text-align:center;
     color:#fff;
@@ -507,27 +507,125 @@ main {}
     font-family: 'Titillium Web', sans-serif;
     font-weight:100;
 }
-.community .c_n > h1 strong{
+.c_notice .c_n > h1 strong{
     font-family: 'Dancing Script', cursive;
     font-size:3em;
     font-weight:none;
 }
-.community .c_btn{
+.c_notice .c_btn{
     margin:5%;
 }
-.community .c_btn a{
+.c_notice .c_btn a{
     border:1px solid gray;
     font-family: 'Sunflower', sans-serif;
      padding: 1% 2%;
     font-size: 20px;
+    width:200px;
     color:#000;
+    text-align:center;
     
 }
-.community .c_btn a:nth-of-type(1){
+.c_notice .c_btn a:nth-of-type(1){
     margin-right:5%;
+    background:#ede1d3;
 }
-.community .c_t caption{}
-.community .c_t caption > strong{}
-.community .c_t thead{width:1000px; height:700px;}
-.community .c_t thead tr{}
-.community .c_t thead th{}
+.c_notice .c_t{
+   margin:5% auto;
+   width:80%; height:300px;
+    border:1px solid #000;
+}
+.c_notice .c_t caption{
+    width:100%;
+    font-size:25px;
+     white-space: pre-line;
+    text-align:center;
+    margin-bottom:2%;
+    line-height:2;
+    text-transform: uppercase;
+}
+.c_notice .c_t caption > strong{
+    font-size:2em;
+}
+.c_notice .c_t thead{
+   width:300px; height:50px;
+    border:1px solid #000;
+    background:#ede1d3;
+}
+.c_notice .c_t thead tr{ }
+.c_notice .c_t thead th{border-bottom:1px solid #000;}
+.c_notice .c_t tbody{
+    border:1px solid #000;
+}
+.c_notice .c_t tbody tr{}
+.c_notice .c_t tbody td{border-bottom:1px solid #000;}
+
+/*----------------c_p-----------------------------*/
+
+.c_photo{
+    height:50vh;
+}
+.c_photo .c_n{
+    width:100%;
+    height:50vh;
+    background:url(../img/sub/pen.jpg) no-repeat;
+    background-size:100% 100%;
+}
+.c_photo .c_n > h1{
+  
+    text-align:center;
+    color:#fff;
+
+    white-space: pre-line;
+    font-size:3em;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:100;
+}
+.c_photo .c_n > h1 strong{
+    font-family: 'Dancing Script', cursive;
+    font-size:3em;
+    font-weight:none;
+}
+.c_photo .c_btn{
+   
+    margin:5%;
+}
+.c_photo .c_btn a{
+    border:1px solid gray;
+    font-family: 'Sunflower', sans-serif;
+     padding: 1% 2%;
+    font-size: 20px;
+    width:200px;
+    color:#000;
+    text-align:center;
+    
+}
+.c_photo .c_btn a:nth-of-type(2){
+    margin-left:5%;
+    background:#ede1d3;
+}
+.c_photo > h1{ 
+    line-height:2;
+    width:100%;
+    font-size:25px;
+     white-space: pre-line;
+    text-align:center;
+    margin-bottom:2%;
+text-transform: uppercase;}
+.c_photo > h1 strong{
+    font-size:2em;
+}
+.c_photo > ul{
+    width:70%; height:90%;
+    border:1px solid #000;
+    margin:5% auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-content:space-around;
+}
+.c_photo > ul li{
+    width:30%;
+}
+.c_photo > ul li img{
+    width:100%;
+}
