@@ -3,26 +3,26 @@
 .about {
     width: 100%;
     height: 100vh;
-    background: url(../img/sub/a-1.jpg) right bottom no-repeat;
+    background: url(../img/sub/a_1.jpg) right bottom no-repeat;
     background-size: 80%;
     position: relative;
 }
 
 .about p {
     position: absolute;
-    bottom: -2%;
+    bottom: 10%;
     left: 0;
     background: #fff;
     border-radius: 50%;
 
-    width: 700px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
 
 
     white-space: pre-line;
     font-family: 'Sunflower', sans-serif;
     line-height: 2;
-    font-size: 2em;
+    font-size: 1.5em;
 
 
 }
@@ -30,7 +30,7 @@
 /*------------------------------view----------------------------*/
 
 .view{
-    height:100vh;
+    height:100%;
   
 }
 .view ul{position:relative; }
@@ -299,7 +299,70 @@ main {}
 .r_info .indi li:hover {
     background: #fff;
 }
+.info {
+    height: 80vw;
+    position: relative;
+    margin: 5%;
 
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.info > p {
+    margin-top: 5%;
+    width: 40%;
+    height: 50%;
+    box-shadow: inset 20px 0px 100px 100px #fff;
+    background: url(../img/sub/rose.jpg) no-repeat;
+    background-size: 100%;
+}
+
+
+.info > h1 {
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+}
+
+.info > h4 {
+    margin: 6% 0;
+    font-size: 20px;
+    font-weight: 50;
+    font-family: 'Sunflower', sans-serif;
+}
+
+.info .info_btn {
+    display: block;
+}
+
+.info .info_btn a {
+    border: 1px solid gray;
+    padding: 1% 2%;
+    font-size: 20px;
+    color: #000;
+    font-family: 'Inconsolata', monospace;
+}
+
+.info ul {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin: 5%;
+    width: 50%;
+    background: #fff;
+
+}
+
+.info ul > h4 {
+    font-size: 1.5em;
+    padding-bottom: 10px !important;
+    border-bottom: 1px solid gray;
+}
+
+.info > ul li {
+    line-height: 1.2;
+    list-style: square;
+    margin: 2% 2%;
+}
 
 /*-------------------------service-------------------------------*/
 .s_info{
@@ -308,7 +371,7 @@ main {}
     
    
 }
-.s_info div{
+.s_info > div{
     width:100%;
    height:100%;
         
@@ -319,7 +382,7 @@ main {}
 .s_info .s_n{
      margin-left:10%; padding:0;
     background:#fff;
-    width:30%; height:100%;
+    width:25%; height:100%;
     position: absolute;
     bottom:0; left:0;
     z-index:1;
@@ -333,7 +396,7 @@ main {}
 }
 
 
-.s_info ul{
+.s_info .s_n ul{
     position:relative;
   
   
@@ -357,22 +420,51 @@ main {}
     text-transform: uppercase;
 }
 
-.s_info .s_n ul li> h4{
-   
+.s_info .s_n ul li> h1{
+   text-align:center;
      color:#000;
-     font-size: 20px;
+     font-size: 1.5em;
     font-weight: 50;
     font-family: 'Sunflower', sans-serif;
    
 }
-.s_info .s_n ul li> h4 strong{
+.s_info .s_n ul li> h1 strong{
+     font-size: 2em;
+    font-weight: 50;
+}
+.s_info .s_n ul li> p{
   text-align:center;
-    font-size:2em;
+    margin-top:5%;
+    font-size:20px;
     font-weight: 500;
    font-family: 'Titillium Web', sans-serif;
 }
 
-
+.s_info .s_n .a_btn{
+   width:90%; 
+    position:absolute;
+    top:50%; left:5%;
+    transform:translateY(-50%);
+     margin:0; padding:0;
+}
+.s_info .s_n .a_btn > a{
+   font-size:0;
+    display:inline-block;
+    margin:0; padding:0;
+    width:40px; }
+.s_info .s_n .a_btn > a img{
+    width:100%; 
+   
+}
+.s_info .s_n .a_btn > a:nth-of-type(1){
+    transform:rotate(180deg);
+}
+.s_info .s_n .a_btn > a{
+    opacity:0.5;
+}
+.s_info .s_n .a_btn > a:hover{
+    opacity:1;
+}
 
 
 
@@ -394,3 +486,48 @@ main {}
  
    width:100%; height:100%;
 }
+/*----------------community-----------------------------*/
+
+.community{
+    height:100vh;
+}
+.community .c_n{
+    width:100%;
+    height:50vh;
+    background:url(../img/sub/pen.jpg) no-repeat;
+    background-size:100% 100%;
+}
+.community .c_n > h1{
+  
+    text-align:center;
+    color:#fff;
+
+    white-space: pre-line;
+    font-size:3em;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:100;
+}
+.community .c_n > h1 strong{
+    font-family: 'Dancing Script', cursive;
+    font-size:3em;
+    font-weight:none;
+}
+.community .c_btn{
+    margin:5%;
+}
+.community .c_btn a{
+    border:1px solid gray;
+    font-family: 'Sunflower', sans-serif;
+     padding: 1% 2%;
+    font-size: 20px;
+    color:#000;
+    
+}
+.community .c_btn a:nth-of-type(1){
+    margin-right:5%;
+}
+.community .c_t caption{}
+.community .c_t caption > strong{}
+.community .c_t thead{width:1000px; height:700px;}
+.community .c_t thead tr{}
+.community .c_t thead th{}
