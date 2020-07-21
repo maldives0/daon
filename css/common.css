@@ -78,7 +78,7 @@ footer {
     width: 100%; 
 }
 
-/*                ----------------------------------------------------    */
+/*           header     ----------------------------------------------------    */
 header {
     position: fixed;
     z-index: 100;
@@ -88,49 +88,37 @@ header {
 .header {
 
     width: 100%;
-    height: 50px;
-    padding: 1%;
+    height: 5vh;
+    padding:1% 2%;
     background: rgba(255, 255, 255, 0.5);
 
 }
 
-.header > a {
-    height: 50px;
+
+
+
+
+.header nav{
+     width: 50%;
+    margin:0 auto;
 }
-
-.header > a img {
-    width: 100%;
-    height: 100%;
-}
-
-.header .r_bt {
-    height: 50px;
-}
-
-.header .r_bt img {
-    width: 100%;
-    height: 100%;
-}
-
-.header nav {}
-
 .header nav > div {
     position: relative;
-    width: 100%;
+    width: 50%;
     height: 100%;
 
 }
 
-.header nav div > a {
+.header nav > div > a {
 
     text-transform: uppercase;
-    padding: 10% 5vw;
+    padding: 10% 4vw;
     color: #000;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: bold;
 }
 
-.header nav div ul {
+.header nav > div ul {
     display: none;
     position: absolute;
     top: 180%;
@@ -141,12 +129,12 @@ header {
 
 }
 
-.header nav div ul li {
+.header nav > div ul li {
     width: 100%;
     margin: 5% 0;
 }
 
-.header nav div ul li a {
+.header nav > div ul li a {
     color: #000;
     font-family: 'Titillium Web', sans-serif;
     font-size: 12px;
@@ -177,83 +165,108 @@ header {
 
 }
 
-.header nav div .s_list {
-    margin: 5% 0;
+.header nav > div .s_list {
+    margin: 1% 0;
     width: 100%;
     text-align: center;
 
 }
 
-.header nav div .s_list a {
+.header nav > div .s_list a {
     color: #000;
     font-family: 'Titillium Web', sans-serif;
     font-size: 12px;
-    padding: 5% 10%;
+    padding: 2% 10%;
     width: 100%;
 }
 
-/*-------------------active--------------------------*/
 
-.header nav.active {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 100vw;
-    display: block;
-    background: rgba(255, 255, 255, 0.5);
-    margin: 0;
+
+/*                ---------fixed-------------------------------------------    */
+.menu-trigger{
+    width:25px; height:25px;
+     position:fixed;
+        right:2%; top:2%;
+    z-index:100;
+    display:none;
+    transition:.5s;
+}
+ .menu-trigger > span{
+    position:absolute;
+    left:0; 
+    background:#fff;
+    width:100%; height:2px;
+   
+}
+.menu-trigger > span:nth-of-type(2){
+    top:50%;
+    transform: translateY(-50%);
+}
+ .menu-trigger > span:nth-of-type(3){
+    bottom:0;
+}
+ .menu-trigger.active > span{
+       
+        background:black;
+       
+    }
+    .menu-trigger.active > span:nth-of-type(1){
+        transform:rotate(45deg);
+        bottom:50%;
+    }
+    .menu-trigger.active > span:nth-of-type(2){display:none;}
+    .menu-trigger.active > span:nth-of-type(3){
+        transform:rotate(-45deg);
+        bottom:50%;
+    }
+.side{
+    display:block;
+    width:2%;
+    height:57%;
+    padding:auto;
+         position:fixed;
+      z-index:100;
+    right:5%; bottom:20%;
+white-space: pre-line;
+    background:rgba(0,0,0,0.1);
+}
+    
+ .side li{
+     
+          width:10px; height:10px;
+   padding:30% 0;
+   position:relative;
+   margin:1px auto;
+     white-space:pre-line;
 }
 
-.header nav.active div {
-    width: 100%;
-    height: 8%;
-    display: flex;
-    justify-content: center;
+ .side li a{
+   
     text-align: center;
+     margin:0 auto;
+    padding:5%;
+         color:#fff;
+        text-transform: uppercase;
+    font-size:1.5em;
+          font-family: 'Inconsolata', monospace;
+
+}
+.logo{
+     z-index: 100;
+     position:fixed;
+        left:2%;top:0;
 }
 
-.header nav.active div > a {
 
-    font-size: 2em;
-    padding: 5% 0;
-
+.r_btn{
+   
+      z-index: 100;
+    position:fixed;
+        right:0;top:0;
 }
-
-.header nav.active div ul {
-    background: ivory;
-    width: 50%;
-    height: 100%;
-    position: relative;
-    top: 0;
-    right: 50%;
-    display: none;
-}
-
-.header nav.active div .s_list {
-    display: block;
-}
-
-.header nav.active .r_n > ul p img {
-    display: none;
-}
-
-.header nav.active div:hover {
-    background: #99e4f3;
-    height: auto;
-}
-
-.header nav.active div:hover ul {
-    display: block;
-}
-
-/*                ----------------------------------------------------    */
-main > div {
-    height: 100vh;
-}
-
-main > div > img {
-    height: 100%;
+.r_btn img{
+  
+     height:45px;
 }
 
 .sns {
@@ -336,23 +349,17 @@ text-shadow:2px 2px 2px rgba(0,0,0,0.8);
 
 /*footer--------------------------------*/
 footer{
-    position: relative;
-   height:30vh;
+  
+    height:30vh;
 }
 
 footer .foot{
-    margin-top:5%;
+    margin:5%;
+        position: relative;
+    height:100%;
   }
 
-footer .foot > p{
-    text-align:center;
-        display:block;
-           
-}
 
-footer .foot > p img{
-    width:80%;
-}
 
 footer .foot .f_t{
     text-align: center;
