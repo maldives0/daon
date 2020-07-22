@@ -121,7 +121,7 @@ header {
 .header nav > div ul {
     display: none;
     position: absolute;
-    top: 180%;
+    top: 160%;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(255, 255, 255, 0.5);
@@ -144,17 +144,13 @@ header {
 
 }
 
-.header nav .r_n {}
-
-.header nav .r_n > ul {}
-
-.header nav .r_n > ul p {
-    text-align: center;
-    margin: 2% 0;
-
+.header nav .r_n {
+     position:relative;
 }
 
-.header nav .r_n > ul p img {
+
+
+.header nav .r_n > .s_list a img {
 
 
     box-sizing: border-box;
@@ -165,14 +161,14 @@ header {
 
 }
 
-.header nav > div .s_list {
-    margin: 1% 0;
+.header nav .r_n > .s_list {
+    
     width: 100%;
     text-align: center;
 
 }
 
-.header nav > div .s_list a {
+.header nav .r_n > .s_list a {
     color: #000;
     font-family: 'Titillium Web', sans-serif;
     font-size: 12px;
