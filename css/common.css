@@ -350,7 +350,7 @@ text-shadow:2px 2px 2px rgba(0,0,0,0.8);
 /*footer--------------------------------*/
 footer{
   
-    height:30vh;
+    
 }
 
 footer .foot{
@@ -364,7 +364,7 @@ footer .foot{
 footer .foot .f_t{
     text-align: center;
     white-space: pre-line;
-    font-size: 10px;
+    font-size: 1em;
     font-family: 'Titillium Web', sans-serif;
     line-height: 2;
     position: absolute;
