@@ -146,8 +146,8 @@ main {}
     position: absolute;
     top: 0;
     left: 0;
-    font-family: 'Sunflower', sans-serif;
-    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5em;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
@@ -869,14 +869,66 @@ footer {
         display: inline-block;
     }
     .a_btn{display:none;}
-    /*   ---------------------------view-------------*/
-    /*    ----------------------------travel--------------*/
+    /*   ---------------------------sub-------------*/
+   
    
     .travel article {
        flex-direction:column;
-        
-    }
+           }
+   .traffic {
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
 
+
+}
+
+.traffic > img {
+    position: absolute;
+    left: -20%;
+    bottom: 0%;
+   width:50%;
+    
+    z-index: 2;
+
+}
+
+.traffic .con {
+   flex-direction:column;
+
+
+}
+
+.traffic .con .map {
+
+    margin: 10%;
+}
+
+.traffic .con span {
+
+    display: block;
+    border: 1px solid #e6fafe;
+    border-radius: 100%;
+    vertical-align: center;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+
+.traffic span p {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    white-space: pre-line;
+    padding: 10%;
+    line-height: 1.7;
+    font-size: 20px;
+    background: #e6fafe;
+    font-family: 'Sunflower', sans-serif;
+    line-height: 1.5;
+}
 
     /*    ----------footer---------------*/
     footer {
