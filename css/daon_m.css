@@ -19,7 +19,27 @@ main > div > img{width:100%;
 
  
 .rooms{position:relative;}
+.rooms .indi {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: -250%;
+    transform: translateX(50%);
+width:100%;
+}
 
+.rooms .indi li {
+
+    margin-right: 2%;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+.rooms .indi li:hover {
+    background: #fff;
+}
 .service{
     width:100%;
     height:100vh;
@@ -278,14 +298,12 @@ text-shadow:2px 2px 2px rgba(0,0,0,0.8);
     }
     .r_btn{
         
-         z-index:200;
-    position:fixed;
-        right:50%; top:80%;
+       
+    position:absolute;
+        right:50%; top:70%;
           transform:translateX(50%);
 }
-    .r_btn img{
-        width:20vw;
-    }
+    
      .side{
         display:none;
     }
@@ -294,6 +312,9 @@ text-shadow:2px 2px 2px rgba(0,0,0,0.8);
         right:2%; top:2%;
       z-index:200;
         display:block;
+    }
+    .indi{
+        
     }
 /*    -----------------------------header------------*/
     .header{
@@ -317,7 +338,7 @@ text-shadow:2px 2px 2px rgba(0,0,0,0.8);
                              display:flex;
         flex-direction:column;
         justify-content:center;
-/*        text-align: center;*/
+
         padding:20% 0 40% 0;
        
     }
@@ -333,10 +354,9 @@ display:inline-block;
     }
 
     .header nav > div ul {
-        background:rgba(255,255,255,0.5);
-        width: 60%;
-      
-        position: relative;
+        background:rgba(0,0,0,0.1);
+        width: 80%;
+      position: relative;
         top: 0;
         right: 0;
         display: none;
@@ -347,11 +367,13 @@ display:inline-block;
      display:flex;
         justify-content:center;
         align-content:center;
-        margin:0 auto;
+        margin:5% auto;
+        font-size:1.2em;
     }
     .header nav > div ul li a{
         font-family: 'Titillium Web', sans-serif;
                padding:1%;
+        
     }
       
     .header nav > div:hover {
@@ -369,11 +391,24 @@ display:inline-block;
         width:100vw;
         height:100vh;
     }
-    
+    main > div {
+         position:relative;
+    }
     main > div > img{
      width:100%;
         height:100%;
 }
+    main > div > h1{
+        width:100%;
+        color:#fff;
+        text-align:center;
+        text-transform:uppercase;
+        font-size:3em;
+        position:absolute;
+        left:50%; top:50%;
+        transform:translate(-50%);
+        font-family: 'Dancing Script', cursive;
+    }
     .a_btn >a img{
         width:5vw;
        

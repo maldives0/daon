@@ -104,10 +104,11 @@ header {
 }
 .header nav > div {
     position: relative;
-    width: 50%;
+    width: 30%;
     height: 100%;
 
 }
+
 
 .header nav > div > a {
 
@@ -254,16 +255,7 @@ white-space: pre-line;
 }
 
 
-.r_btn{
-   
-      z-index: 100;
-    position:fixed;
-        right:0;top:0;
-}
-.r_btn img{
-  
-     height:45px;
-}
+
 
 .sns {
     position: fixed;
@@ -326,6 +318,8 @@ text-shadow:2px 2px 2px rgba(0,0,0,0.8);
     width: 25%;
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.8));
 }
+/* --------------------------btn------------------------------*/
+
 
 .a_btn{
     width:80%;
@@ -350,7 +344,7 @@ footer{
 }
 
 footer .foot{
-    margin:5%;
+    margin:2%;
         position: relative;
     height:100%;
   }
@@ -360,7 +354,7 @@ footer .foot{
 footer .foot .f_t{
     text-align: center;
     white-space: pre-line;
-    font-size: 1em;
+    font-size: 10px;
     font-family: 'Titillium Web', sans-serif;
     line-height: 2;
     position: absolute;
