@@ -1,29 +1,22 @@
 @import url('common.css');
 
-.about {
-    width: 100%;
-    height: 100vh;
-    
-    position: relative;
-}
 
-.about > div {
+
+.is {
 
 padding:10% 1%;
-    position: absolute;
-    bottom: 0%;
-    left: 20%;
+    
     background: #fff;
-    width: 20%;
+    width: 100%;
     height: 100%;
    
 
 }
-.about > div h1{
-    margin-bottom:20%;
+.is > h1{
+    margin-bottom:10%;
     text-transform:uppercase;
 }
-.about > div p{
+.is > p{
      white-space: pre-line;
     font-family: 'Sunflower', sans-serif;
     line-height: 2;
@@ -32,7 +25,7 @@ padding:10% 1%;
 
 }
 
-/*------------------------------view----------------------------*/
+
 
 .view {
     height: 100vh;
@@ -1035,10 +1028,8 @@ footer {
     .travel article {
         flex-direction: column;
     }
-    .about{
-       height:auto;
-    }
-    .about > div{
+    
+    .is{
          bottom:50%;
         left:50%;
         transform:translate(50% -50%);
@@ -1046,11 +1037,11 @@ footer {
         height:auto;
         
     }
-    .about > div h1{
+    .is > h1{
         font-size:1em;
         margin-bottom:10%;
     }
-    .about > div p{
+    .is > p{
         text-align:right;
         font-size:0.2em;
         display:block;
