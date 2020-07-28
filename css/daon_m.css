@@ -1,45 +1,36 @@
 @import url('common.css');
 
 /*main---------------------------------*/
-main{
-   
+
+
+
+
+  main {
+        width:100vw;
+        height:100vh;
+    }
+    main > div {
+         position:relative;
+    }
+    main > div > img{
+     width:100%;
+        height:100%;
 }
-
-
-main > div{
-     position:relative;
-    
-    
-    
-      } 
-main > div > img{width:100%;
-    height:100vh;
-}
-
+    main > div > h1{
+        width:100%;
+        color:#fff;
+        text-align:center;
+        text-transform:uppercase;
+        font-size:10em;
+        position:absolute;
+        left:50%; top:50%;
+        transform:translate(-50%);
+        font-family: 'Dancing Script', cursive;
+    }
 
  
 .rooms{position:relative;}
-.rooms .indi {
-    display: flex;
-    position: absolute;
-    left: 50%;
-    bottom: -250%;
-    transform: translateX(50%);
-width:100%;
-}
 
-.rooms .indi li {
-
-    margin-right: 2%;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #fff;
-    border-radius: 100%;
-}
-
-.rooms .indi li:hover {
-    background: #fff;
-}
 .service{
     width:100%;
     height:100vh;

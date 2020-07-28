@@ -1,92 +1,102 @@
 @import url('common.css');
 
-.view .a_btn{
-    width:80%;
-    position:absolute;
-    top:100%; left:10%;
-    transform: translate(-10% 50%);
-    }
-.view .indi{
+.view .a_btn {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10% -50%);
+}
+
+.view .indi {
     display: flex;
     position: absolute;
     left: 50%;
-    bottom: -40%;
+    bottom: 10%;
     transform: translateX(-50%);
-
+z-index:2;
 }
 
 .is {
 
-padding:3%;
-       background: #fff;
-    
-   
+    padding: 3%;
+    background: #fff;
+
+
 
 }
-.is > h1{
-    margin-bottom:5%;
-    text-transform:uppercase;
+
+.is > h1 {
+    margin: 5% 20%;
+    text-transform: uppercase;
 }
-.is > p{
-     white-space: pre-line;
+
+.is > p {
+    white-space: pre-line;
     font-family: 'Sunflower', sans-serif;
     line-height: 2;
     font-size: 20px;
-    text-align:center;
+    text-align: center;
 
 }
 
 
 
 .view {
-    width:100vw;
-   
+    width: 100vw;
+ 
 
 }
 
 .view .about {
-    width:100%; height: 100vh;
-     position:relative;
-   
-}
-.view .about li{
-     width:100%; height:100%;
-   overflow:hidden;
-    text-align:center;
-  
+    width: 100%;
+    height: 90vh;
+   position:relative;
 }
 
-.view .about li:nth-of-type(1){
-    background:url('../img/sub/a_1.jpg') center 0px no-repeat;
-    background-size:90%;
-    
+.view .about .v_list{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+
 }
+.view .about .v_list li{
+    height:100%;
+}
+
+.view .about .v_list li:nth-of-type(1) {
+    background: url('../img/sub/a_1.jpg') center 0px no-repeat;
+    background-size: 90%;
+
+}
+
 /*
-.view .about li:nth-of-type(2){
+.view .about .v_list li:nth-of-type(2){
      background:url('../img/main/m_1.jpg') center 0px no-repeat;
 }
-.view .about li:nth-of-type(3){
+.view .about .v_list li:nth-of-type(3){
      background:url('../img/main/m_22.jpg') center 0px no-repeat;
 }
-.view .about li:nth-of-type(4){
+.view .about .v_list li:nth-of-type(4){
      background:url('../img/main/m_3.jpg') center 0px no-repeat;
 }
-.view .about li:nth-of-type(5){
+.view .about .v_list li:nth-of-type(5){
      background:url('../img/main/m_55.jpg') center 0px no-repeat;
 }
-.view .about li:nth-of-type(6){
+.view .about .v_list li:nth-of-type(6){
      background:url('../img/main/m_4.jpg') center 0px no-repeat;
 }
-.view .about li:nth-of-type(7){
+.view .about .v_list li:nth-of-type(7){
      background:url('../img/sub/v_2.jpg') center 0px no-repeat;
 }
-.view .about li:nth-of-type(8){
+.view .about .v_list li:nth-of-type(8){
      background:url('../img/sub/v_10.jpg') center 0px no-repeat;
 }
-.view .about li:nth-of-type(9){
+.view .about .v_list li:nth-of-type(9){
      background:url('../img/sub/v_9.jpg') center 0px no-repeat;
 }
-.view .about li:nth-of-type(10){
+.view .about .v_list li:nth-of-type(10){
      background:url('../img/sub/v_2.jpg');
 }
 
@@ -142,7 +152,6 @@ main {}
     display: block;
     width: 100%;
     height: 100%;
-    text-align: center;
     white-space: pre-line;
     padding: 10%;
     line-height: 1.7;
@@ -241,8 +250,8 @@ main {}
 
 .rooms article > figure .room {
     position: relative;
-width:70vh;
-    height:50vh;
+    width: 80%;
+    height: 50%;
 
 }
 
@@ -332,12 +341,13 @@ width:70vh;
     font-size: 20px;
     color: #000;
     margin: 3%;
+
     font-family: 'Inconsolata', monospace;
     text-transform: uppercase;
 }
 
 .roommap > div .info_btn a:hover {
-    background: #f8f3ec;
+    background: #e5e5e5;
 }
 
 .roommap > div h1 {
@@ -368,32 +378,39 @@ width:70vh;
 
 /*------------------------------r_info------------------------------*/
 .r_info {
-    width:100vw;
-    height:100vh;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+     position: relative;
 }
 
 .room_l {
+    height: 100%;
    
-    position: relative;
 }
-.room_l li{
+
+.room_l li {
     width: 100%;
-    height: 100vh;
-    
+    height: 100%;
+
 }
+
 .room_o {
-    
-    position: relative;
+    height: 100%;
+   
 }
-.room_o li{
+
+.room_o li {
     width: 100%;
-    height: 100vh;
-    
+    height: 100%;
+
 }
-.room_l li:nth-of-type(1){
-    background:url(../img/sub/l_1.jpg) center 0px no-repeat;
-     background-size:100%;
+
+.room_l li:nth-of-type(1) {
+    background: url(../img/sub/l_1.jpg) center 0px no-repeat;
+    background-size: 100%;
 }
+
 /*
 .room_l li:nth-of-type(2){
     background:url(../img/sub/l_2.jpg) center 0px no-repeat;
@@ -433,10 +450,11 @@ width:70vh;
 }
 */
 
-.room_o li:nth-of-type(1){
-    background:url(../img/sub/r_1.jpg) center 0px no-repeat;
-     background-size:100%;
+.room_o li:nth-of-type(1) {
+    background: url(../img/sub/r_1.jpg) center 0px no-repeat;
+    background-size: 100%;
 }
+
 /*
 .room_o li:nth-of-type(2){
     background:url(../img/sub/r_2.jpg) center 0px no-repeat;
@@ -509,23 +527,6 @@ width:70vh;
     font-family: 'Sunflower', sans-serif;
 }
 
-.info .info_btn {
-    display: block;
-}
-
-.info .info_btn a {
-    border: 1px solid gray;
-    padding: 1% 2%;
-    font-size: 20px;
-    color: #000;
-    margin-right: 3%;
-    font-family: 'Inconsolata', monospace;
-    text-transform: uppercase;
-}
-
-.info .info_btn a:hover {
-    background: #f8f3ec;
-}
 
 .info ul {
 
@@ -550,7 +551,7 @@ width:70vh;
 
 /*-------------------------service-------------------------------*/
 .s_info {
-
+    width: 100vw;
     height: 100vh;
 
 
@@ -586,6 +587,7 @@ width:70vh;
 
 .s_info .s_n ul {
     position: relative;
+    margin-top:30%;
 
 
 
@@ -606,7 +608,7 @@ width:70vh;
 .s_info .s_n > h1 {
     position: absolute;
     left: -20%;
-    font-size: 70px;
+    font-size: 3em;
     font-family: 'Dancing Script', cursive;
     text-transform: uppercase;
 }
@@ -614,21 +616,21 @@ width:70vh;
 .s_info .s_n ul li > h1 {
     text-align: center;
     color: #000;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 50;
     font-family: 'Sunflower', sans-serif;
 
 }
 
 .s_info .s_n ul li > h1 strong {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 50;
 }
 
 .s_info .s_n ul li > p {
     text-align: center;
     margin-top: 5%;
-    font-size: 20px;
+    font-size: 0.8em;
     font-weight: 500;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -636,7 +638,7 @@ width:70vh;
 .s_info .s_n .a_btn {
     width: 90%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 5%;
     transform: translateY(-50%);
     margin: 0;
@@ -693,9 +695,6 @@ width:70vh;
 
 /*----------------c_n-----------------------------*/
 
-.c_notice {
-    height: 100vh;
-}
 
 .c_notice .c_n {
     width: 100%;
@@ -710,7 +709,7 @@ width:70vh;
     color: #fff;
 
     white-space: pre-line;
-    font-size: 3em;
+    font-size: 300%;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 100;
 }
@@ -721,28 +720,10 @@ width:70vh;
     font-weight: none;
 }
 
-.c_notice .c_btn {
-    margin: 5%;
-}
 
-.c_notice .c_btn a {
-    border: 1px solid gray;
-    font-family: 'Sunflower', sans-serif;
-    padding: 1% 2%;
-    font-size: 20px;
-    width: 200px;
-    color: #000;
-    text-align: center;
-
-}
-
-.c_notice .c_btn a:nth-of-type(1) {
-    margin-right: 5%;
-    background: #f8f3ec;
-}
 
 .c_notice .c_t {
-    margin: 5% auto;
+    margin: 2% auto;
     width: 80%;
     height: 300px;
     border: 1px solid #000;
@@ -750,7 +731,7 @@ width:70vh;
 
 .c_notice .c_t caption {
     width: 100%;
-    font-size: 25px;
+    font-size: 100%;
     white-space: pre-line;
     text-align: center;
     margin-bottom: 2%;
@@ -766,7 +747,7 @@ width:70vh;
     width: 300px;
     height: 50px;
     border: 1px solid #000;
-    background: #f8f3ec;
+    background: #e5e5e5;
 }
 
 .c_notice .c_t thead tr {}
@@ -777,6 +758,7 @@ width:70vh;
 
 .c_notice .c_t tbody {
     border: 1px solid #000;
+
 }
 
 .c_notice .c_t tbody tr {}
@@ -787,9 +769,7 @@ width:70vh;
 
 /*----------------c_p-----------------------------*/
 
-.c_photo {
-    height: 50vh;
-}
+.c_photo {}
 
 .c_photo .c_n {
     width: 100%;
@@ -815,31 +795,11 @@ width:70vh;
     font-weight: none;
 }
 
-.c_photo .c_btn {
-
-    margin: 5%;
-}
-
-.c_photo .c_btn a {
-    border: 1px solid gray;
-    font-family: 'Sunflower', sans-serif;
-    padding: 1% 2%;
-    font-size: 20px;
-    width: 200px;
-    color: #000;
-    text-align: center;
-
-}
-
-.c_photo .c_btn a:nth-of-type(2) {
-    margin-left: 5%;
-    background: #f8f3ec;
-}
 
 .c_photo > h1 {
     line-height: 2;
     width: 100%;
-    font-size: 25px;
+    font-size: 100%;
     white-space: pre-line;
     text-align: center;
     margin-bottom: 2%;
@@ -852,9 +812,9 @@ width:70vh;
 
 .c_photo > ul {
     width: 70%;
-    height: 90%;
+    height: 300px;
     border: 1px solid #000;
-    margin: 5% auto;
+    margin: 2% auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -878,7 +838,7 @@ width:70vh;
         width: 100vw;
     }
 
-    /*    ----------fixed-----------------------------*/
+    /*    ----------btn-----------------------------*/
     .scroll {
         position: fixed;
         z-index: 100;
@@ -965,6 +925,30 @@ width:70vh;
         display: block;
     }
 
+    .c_btn a {
+        padding: 3%;
+        font-size: 1em;
+    }
+
+    .c_btn a {
+        width: 30%;
+    }
+
+    .info_btn a {
+        padding: 3%;
+        font-size: 1em;
+    }
+
+    .indi > li{
+        margin-right:5px;
+        width:8px;
+        height:8px;
+    }
+
+    .a_btn > a img {
+        width:5vw;
+    }
+
     /*    -----------------------------header------------*/
     .header {
         background: 0;
@@ -1040,9 +1024,7 @@ width:70vh;
         display: inline-block;
     }
 
-    .a_btn {
-        display: none;
-    }
+
 
     /*   ---------------------------room-------------*/
 
@@ -1066,6 +1048,10 @@ width:70vh;
 
     }
 
+    .rooms article > figure .room {
+        height: 30vh;
+    }
+
     .rooms article > figure > div {
         margin: 0 auto;
     }
@@ -1078,7 +1064,8 @@ width:70vh;
 
 
     .rooms article .love > div .s_btn {
-        right: 0%;
+        right: -10%;
+        bottom: 20%;
 
     }
 
@@ -1087,8 +1074,8 @@ width:70vh;
     }
 
     .rooms article .only > div .s_btn {
-        top: 5%;
-        left: 15%;
+        top: 2%;
+        left: -5%;
 
     }
 
@@ -1100,7 +1087,7 @@ width:70vh;
 
 
     .roommap > div {
-        margin: 10% 2%;
+        margin: 10%;
     }
 
     .roommap > div .info_btn {
@@ -1110,11 +1097,9 @@ width:70vh;
 
     .roommap > div .info_btn a {
         width: 30%;
-
         padding: 2% 3%;
-
         margin: 1%;
-
+        font-size: 80%;
     }
 
     .roommap > div h1 {
@@ -1128,26 +1113,52 @@ width:70vh;
         font-size: 0.5em;
     }
 
+    .info > h1 {
+        font-size: 2.5em;
+    }
+
+    .info > h4 {
+        font-size: 0.5em;
+    }
+
+    .r_info {
+        height: 30vh;
+
+    }
+
+    .info > p {
+        display: none;
+    }
+
+    .info > ul {
+        margin-top: 15%;
+        width: 60%;
+        font-size: 0.5em;
+    }
+
     /*---------------about---------------------------*/
 
-    .travel article {
-        flex-direction: column;
-    }
-    
-    .is{
-      
-      margin-top:5%;
-    }
-    .is > h1{
-        font-size:1em;
-        margin-bottom:5%;
-    }
-    .is > p{
-        text-align:center;
-        font-size:0.1em;
-        display:block;
+  
+
+    .is {
+
+        margin-top: 5%;
     }
 
+    .is > h1 {
+        font-size: 1em;
+        margin-bottom: 5%;
+    }
+
+    .is > p {
+        text-align: center;
+        font-size: 0.1em;
+        display: block;
+    }
+    .view .about{
+        height:30vh;
+        overflow:hidden;
+    }
     .traffic {
         padding: 0;
         margin: 0 auto;
@@ -1203,24 +1214,78 @@ width:70vh;
         line-height: 1.5;
     }
 
+    /*   ---------------------------- travel&service&faci----------------------------------------*/
+      .travel article {
+        flex-direction: column;
+    }
+    .s_info .s_n {
+        font-size: 80%;
+        width: 100%;
+        height: 30%;
+        margin-left: 20%;
+    }
+
+    .s_info .s_n > h1 {
+        left: -10%;
+    }
+
+    .s_info .s_n > ul {
+        width: 80%;
+        margin-top:0%;
+
+    }
+    .s_info .s_n .a_btn{
+        width:70%;
+        top:50%;
+    }
+    .s_info .s_n .a_btn > a img{
+        width:5vw;
+    }
+
+    /*----------------------------------------------community------------------------------------*/
+    .c_photo {
+        width: 100%;
+    }
+
+    .c_notice {
+        width: 100%;
+    }
+
+    .c_photo .c_n > h1 {
+        font-size: 150%;
+    }
+
+    .c_notice .c_n > h1 {
+        font-size: 150%;
+    }
+
+
     /*    ----------footer---------------*/
     footer {
 
         width: 100vw;
-        height: 30vh;
+
     }
 
     footer .foot {
+        text-align: center;
         width: 100%;
         margin: 0 auto;
 
     }
 
     footer .foot .f_t {
+        line-height: 0.8;
         width: 100%;
-
-        margin: 5% auto;
-        font-size: 0.2em;
-        bottom: 0;
+        margin-top: 20%;
+        font-size: 0.5em;
+ 
+    }
+    footer .foot .f_t > p:nth-of-type(1){
+        margin-top:2%;
+    }
+    footer .foot .f_t > p:nth-of-type(2) {
+        display: none;
+        
     }
 }
