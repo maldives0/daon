@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/test1.js"></script>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    html,
+    body {
+        margin: 0;
+        overflow: hidden;
+
+    }
+
+    main {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+
+        transition: 1s;
+
+
+    }
+
+    main>div {
+
+        height: 100vh;
+        background: rgb(105, 90, 90);
+
+    }
+
+    main>div:nth-of-type(odd) {
+
+        background: rgb(73, 68, 68);
+    }
+
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .side {
+        display: block;
+        width: 2%;
+        height: 57%;
+        padding: auto;
+        position: fixed;
+        z-index: 100;
+        right: 5%;
+        bottom: 20%;
+        white-space: pre-line;
+        background: rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .side li {
+
+        width: 100%;
+        position: relative;
+
+
+    }
+
+    .side li a {
+        width: 10px;
+        margin: 0 auto;
+        padding: 5%;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-family: 'Inconsolata', monospace;
+
+    }
+
+    .side li.active {
+        background: chartreuse;
+    }
+</style>
+
+<body>
+    <div>
+
+
+        <ul class="side">
+            <li><a href="#">d</a></li>
+            <li><a href="#">a</a></li>
+            <li><a href="#">o</a></li>
+            <li><a href="#">n</a></li>
+            <li><a href="#">p</a></li>
+
+        </ul>
+
+
+        <main>
+            <div class="0 main">
+                0
+            </div>
+            <div class="1 main">
+                1
+            </div>
+
+            <div class="2 main">
+                2
+
+            </div>
+            <div class="3 main">
+                3
+            </div>
+            <div class="4 main">
+                4
+            </div>
+            <div class="5 main">
+                5
+            </div>
+
+
+
+        </main>
+
+
+    </div>
+</body>
+
+</html>
