@@ -367,11 +367,13 @@ header {
 .a_btn a:nth-of-type(1) {
     transform: rotate(180deg);
 }
-.a_btn a {
-    opacity: 0.8;
+.a_btn a{
+    width:55px;
+    height:82px;
+    opacity:0.8;
 }
-.a_btn a img {
-    width: 40%;
+.a_btn a img{
+    width:100%;
 }
 .a_btn a:hover {
     opacity: 1;
