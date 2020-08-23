@@ -4,36 +4,72 @@ window.addEventListener('DOMContentLoaded', function () {
     var ulEle = about.querySelector('.v_list');
     var liEle;
 
+    var idx = 0;
+
     //li tag create
     for (var i = 0; i < 10; i++) {
-        ulEle.innerHTML += "<li data-num='" + i + "'></li>";
+        ulEle.innerHTML += "<li class='p" + i + "'></li>";
         liEle = ulEle.querySelectorAll('li');
 
     };
+    var len = liEle.length;
+
     //li style
     liEle.forEach(function (a, i) {
+        var back = "background:url('../img/sub/v_" + (i + 1) + ".jpg') center 0px no-repeat;";
+        var left = "left:" + 100 * i + "%;";
 
-
-        a.style = "background:url('../img/sub/v_" + (i + 1) + ".jpg') center 0px no-repeat; left:" + 100 * i + "px;";
-
-
+        a.style = back + left;
 
     });
-    //btn
-    var aBtn = about.querySelectorAll('.a_btn a');
-    //$(aBtn).on('click',btn);
-    aBtn.forEach(function a(c){
-        c.addEventListener('click', btn);
-    });
-   
-    function btn(a, i) {
+    //slide
 
-        if (i == 0) {
-            //prev
-            prev();
-        } else {
-            //next
-            next();
+    function aniFun() {
+        pos = "left:" + (-100 * idx) + "%;";
+        ulEle.style = pos;
+        callBack();
+    };
+    function callBack() {
+        if (idx == len) {
+            idx = 0;
+            pos = "left:" + (-100 * idx) + "%;";
+            ulEle.style = pos;
         }
-    }
+        if (idx == -1) {
+            idx = len - 1;
+            pos = "left:" + (-100 * idx) + "%;";
+            ulEle.style = pos;
+        }
+    };
+    //clone
+// var first = document.getElementsByClassName('#p0');
+// console.log(first)
+// ulEle.appendChild();
+    // var first = $('.v_list li:first').clone();
+//     var last =  $('.v_list li:last').clone();
+//    $('.v_list').prepend(last);
+    $('.v_list').append(first);
+
+   
+
+    //btn
+    var aBtn = document.querySelectorAll('.a_btn a');
+    var pos;
+
+
+    aBtn[0].addEventListener('click', prev);
+    aBtn[1].addEventListener('click', next);
+
+    function prev() {
+        idx--;
+        aniFun();
+
+    };
+    function next() {
+        idx++;
+        aniFun();
+    };
+
+
+
 });
