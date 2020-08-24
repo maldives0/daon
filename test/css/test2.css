@@ -64,6 +64,9 @@ box-sizing:border-box;
     height:100%;
 }
 
+.indi a.active{
+    background:#fff;
+}
 
 
 
