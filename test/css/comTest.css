@@ -378,7 +378,7 @@ text-shadow:2px 2px 2px rgba(0,0,0,0.8);
  
 }
 
-.indi > li{
+.indi > a{
 
     margin-right: 20px;
     width: 10px;
@@ -387,7 +387,7 @@ text-shadow:2px 2px 2px rgba(0,0,0,0.8);
     border-radius: 100%;
 }
 
-.indi > li:hover{
+.indi > a:hover{
     background: #fff;
 }
 

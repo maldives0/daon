@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     var about = document.querySelector('.about');
     var ulEle = about.querySelector('.v_list');
+
     var liEle;
 
     var idx = 0;
@@ -28,6 +29,8 @@ window.addEventListener('DOMContentLoaded', function () {
         pos = "left:" + (-100 * idx) + "%;";
         ulEle.style = pos;
         callBack();
+        white(idx);
+
     };
     function callBack() {
         if (idx == len) {
@@ -42,15 +45,15 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     };
     //clone
-// var first = document.getElementsByClassName('#p0');
-// console.log(first)
-// ulEle.appendChild();
+    // var first = document.getElementsByClassName('#p0');
+    // console.log(first)
+    // ulEle.appendChild();
     // var first = $('.v_list li:first').clone();
-//     var last =  $('.v_list li:last').clone();
-//    $('.v_list').prepend(last);
-    $('.v_list').append(first);
+    //     var last =  $('.v_list li:last').clone();
+    //    $('.v_list').prepend(last);
+    // $('.v_list').append(first);
 
-   
+
 
     //btn
     var aBtn = document.querySelectorAll('.a_btn a');
@@ -61,15 +64,51 @@ window.addEventListener('DOMContentLoaded', function () {
     aBtn[1].addEventListener('click', next);
 
     function prev() {
+        indiA[idx].classList.remove('active');
         idx--;
         aniFun();
 
     };
     function next() {
+        indiA[idx].classList.remove('active');
         idx++;
         aniFun();
+
     };
 
+    //indi
+    var indiUl = about.querySelector('.indi');
 
+
+    // 
+    for (var i = 0; i < len; i++) {
+
+        indiUl.innerHTML += "<a data-num='" + i + "'></a>";
+    };
+    var indiA = indiUl.querySelectorAll('a');
+
+    indiA[0].classList.add('active');
+    indiA.forEach(function indi(a) {
+
+
+        a.addEventListener('click', click);
+    });
+
+    function white() {
+        for (var i = 0; i < len; i++) {
+            indiA[i].classList.remove('active');
+        };
+        indiA[idx].classList.add('active');
+    }
+    
+    function click() {
+        for (var i = 0; i < len; i++) {
+            indiA[i].classList.remove('active');
+        };
+        this.classList.add('active');
+        var aI = this.dataset.num;
+        pos = "left:" + (-100 * aI) + "%;";
+        ulEle.style = pos;
+    };
 
 });
