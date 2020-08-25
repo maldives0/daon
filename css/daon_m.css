@@ -1,539 +1,525 @@
 @import url('common.css');
-
 /*main---------------------------------*/
 
-
-
-
-  main {
-        width:100vw;
-        height:100vh;
-    }
-    main > div {
-         position:relative;
-    }
-    main > div > img{
-     width:100%;
-        height:100%;
+main {
+    width: 100vw;
+    height: 100vh;
 }
-    main > div > h1{
-        width:100%;
-        color:#fff;
-        text-align:center;
-        text-transform:uppercase;
-        font-size:10em;
-        position:absolute;
-        left:50%; top:50%;
-        transform:translate(-50%);
-        font-family: 'Dancing Script', cursive;
-    }
 
- 
-.rooms{position:relative;}
+main>div {
+    position: relative;
+}
 
-.service{
-    width:100%;
-    height:100vh;
-    overflow:hidden;
-   position:relative;
-    background:url(../img/sub/only.jpg);
+main>div>img {
+    width: 100%;
+    height: 100%;
+}
 
+main>div>h1 {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    font-family: 'Dancing Script', cursive;
 }
-.service > article{
-    width:80%; height:100%;
-    float:right;
-  
-     
+
+.rooms {
+    position: relative;
 }
-.service > article > div{
-    width:30%;
- position:absolute;
-    top:20%; left:-5%;
-    
+
+.service {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: url(../img/sub/only.jpg);
 }
-.service > article > div h2{
-    text-align:center;
-   font-size: 20px;
+
+.service>article {
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+
+.service>article>div {
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    left: -5%;
+}
+
+.service>article>div h2 {
+    text-align: center;
+    font-size: 20px;
     font-family: 'Sunflower', sans-serif;
 }
-.service > article > div h2 strong{
-    display:block;
-    margin:10%;
-   font-family: 'Dancing Script', cursive;
+
+.service>article>div h2 strong {
+    display: block;
+    margin: 10%;
+    font-family: 'Dancing Script', cursive;
     font-size: 3em;
 }
-.service > article .s{
-   height:100%;
-}
-.service > article .s li{ 
-height:100%;
-   position:relative;
+
+.service>article .s {
+    height: 100%;
 }
 
-.service > article .s li img{width:100%;
-height:100%;}
-.service > article .s li a{
-width:100%; height:100%;}
-.service > article .s li a h2{
-    margin:0; padding:0;
-    background:rgba(0,0,0,0.5);
-    width:100%; height:100%;
-    position: absolute;
-    top:0; left:0;
-     display:flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    
-    white-space:pre-line;
-    text-align:center;
-    color:#fff;
-     font-size:25px;
-    line-height:1.5;
-}
-.service > article .s li a h2 strong{
-    font-size:50px;
-    font-weight: 100;
-   font-family: 'Titillium Web', sans-serif;
-}
-.service > article .s li:nth-of-type(1):hover h2{
-    background:none;
-     transition:.5s;
-    opacity:0;
-}
-.service > article .s li:nth-of-type(2):hover h2{ background:none;
-    opacity:0;
- transition:.5s;}
-.service > article .s li:nth-of-type(3):hover h2{ background:none;
-    opacity:0;
- transition:.5s;}
-
-.facilities{
-    margin:0;
-           background-size:100%;
-   height:100vh;
-}
-.facilities .vdo{
-     margin:0; padding:0;
-    position:relative;
-    overflow:hidden;
-    width:100%; height:100%;
-     flex-direction: column;
-}
-.facilities .vdo video{
-    width:100%; height:100%;
-    position:absolute;
-    z-index:0;
-    left:0; bottom:0;
-    transform:scale(1.2);
-}
-.facilities .vdo .title{
-    width:100%;
-   padding:3% 0;
-     background:rgba(0,0,0,0.2);
-        z-index:1;
-        white-space: pre-line;
-    
-}
-.facilities .vdo .title h1{
-    color:#fff;
-    font-size:25px;
-        text-align:center;
-      font-family: 'Titillium Web', sans-serif;
-    
-}
-.facilities .vdo .title h1 strong{
-       font-size:80px;
-     font-weight:none;
-    font-family: 'Noto Sans KR', sans-serif;
-    }
-.facilities .vdo article{
-   margin:0 auto;
-    width:80%;
-
-}
-
-.facilities .vdo article figure{
+.service>article .s li {
+    height: 100%;
     position: relative;
-  
-margin:0;
-
-
-    overflow:hidden;
-}
-.facilities .vdo article figure p{
-    opacity:1;
-    width:300px; height:300px;
-    
-}
-.facilities .vdo article figure p img{
-    width:100%; height:100%;
-    
-    
-}
-.facilities .vdo article figure p:before{
-        content:'';
-    width:100%; height:100%;
-    position:absolute;
-    left:0; bottom:0;
-    background:rgba(0,0,0,0.5);
-    
-}
-.facilities .vdo article figure p:after{
-    content:'';
-    display:block;
-    position:absolute;
-    left:50%; bottom:6%;
-    transform:translate(-50%);
-    border:2px solid #fff;
-    width:90%; height:90%;
-      
 }
 
-.facilities .vdo article figure:hover p:before,
-.facilities .vdo article figure:hover p:after,
-.facilities .vdo article figure:hover figcaption
-{
-    transition:.5s;
- opacity:0;
+.service>article .s li img {
+    width: 100%;
+    height: 100%;
 }
-.facilities .vdo article figure p img{width:150%;
-height:200%;}
-.facilities .vdo article figure figcaption{
-    width:100%; 
-    height:100%;
-    position:absolute;
-    left:0%; bottom:0%;
-    text-align:center;   
-    white-space:pre-line;
-    color:#fff;
-     font-family: 'Titillium Web', sans-serif;
-    
-    display:flex;
+
+.service>article .s li a {
+    width: 100%;
+    height: 100%;
+}
+
+.service>article .s li a h2 {
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items:center;
-   
+    justify-content: center;
+    align-items: center;
+    white-space: pre-line;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    line-height: 1.5;
 }
 
-.roommap{
-    margin-top:10%;
-    text-align:center;
-    height:100vh;
+.service>article .s li a h2 strong {
+    font-size: 50px;
+    font-weight: 100;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.service>article .s li:nth-of-type(1):hover h2 {
+    background: none;
+    transition: .5s;
+    opacity: 0;
+}
+
+.service>article .s li:nth-of-type(2):hover h2 {
+    background: none;
+    opacity: 0;
+    transition: .5s;
+}
+
+.service>article .s li:nth-of-type(3):hover h2 {
+    background: none;
+    opacity: 0;
+    transition: .5s;
+}
+
+.facilities {
+    margin: 0;
+    background-size: 100%;
+    height: 100vh;
+}
+
+.facilities .vdo {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.facilities .vdo video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+    transform: scale(1.2);
+}
+
+.facilities .vdo .title {
+    width: 100%;
+    padding: 3% 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    white-space: pre-line;
+}
+
+.facilities .vdo .title h1 {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.facilities .vdo .title h1 strong {
+    font-size: 80px;
+    font-weight: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.facilities .vdo article {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.facilities .vdo article figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+.facilities .vdo article figure p {
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+}
+
+.facilities .vdo article figure p img {
+    width: 100%;
+    height: 100%;
+}
+
+.facilities .vdo article figure p:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.facilities .vdo article figure p:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 6%;
+    transform: translate(-50%);
+    border: 2px solid #fff;
+    width: 90%;
+    height: 90%;
+}
+
+.facilities .vdo article figure:hover p:before, .facilities .vdo article figure:hover p:after, .facilities .vdo article figure:hover figcaption {
+    transition: .5s;
+    opacity: 0;
+}
+
+.facilities .vdo article figure p img {
+    width: 150%;
+    height: 200%;
+}
+
+.facilities .vdo article figure figcaption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    text-align: center;
+    white-space: pre-line;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.roommap {
+    margin-top: 10%;
+    text-align: center;
+    height: 100vh;
 }
 
 /*----------------------media480---------------------------*/
-@media (max-width:480px){
-   
-    body{
-        width:100vw;
+
+@media (max-width:480px) {
+    body {
+        width: 100vw;
     }
-    
-/*    ----------fixed-----------------------------*/
+    /*    ----------fixed-----------------------------*/
     .scroll {
-    position: fixed;
-    z-index: 100;
-    left: 50%;
-    bottom: 5%;
-    text-align: center;
-    transform: translateX(-50%);
-    
-}
-
-.scroll p{
-   color:#fff;
-    font-family: 'Inconsolata', monospace;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    position:relative;
-text-shadow:2px 2px 2px rgba(0,0,0,0.8);
-}
-
-.scroll img{
-    width: 5vw;
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.8));
-}
-
+        position: fixed;
+        z-index: 100;
+        left: 50%;
+        bottom: 5%;
+        text-align: center;
+        transform: translateX(-50%);
+    }
+    .scroll p {
+        color: #fff;
+        font-family: 'Inconsolata', monospace;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        position: relative;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    }
+    .scroll img {
+        width: 5vw;
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
+    }
     .sns .link a {
-    width: 25px;
-    height: 25px;
-    background: url('../img/main/bt_sns_b.png') no-repeat;
-    background-size: 150px;
-    display: inline-block;
-    margin: 3px;
-}
+        width: 25px;
+        height: 25px;
+        background: url('../img/main/bt_sns_b.png') no-repeat;
+        background-size: 150px;
+        display: inline-block;
+        margin: 3px;
+    }
     .sns .link a:nth-of-type(1) {
-    background-position: 8px 0;
-}
-
-.sns .link a:nth-of-type(2) {
-    background-position: -39px 0;
-}
-
-.sns .link a:nth-of-type(3) {
-    background-position: -83px 0;
-}
-
-.sns .link a:nth-of-type(4) {
-    background-position: -130px 0;
-}
-
-    .logo{
-        
-        z-index:200;
-        position:fixed;
-        left:2%; top:0;
+        background-position: 8px 0;
     }
-    .logo img{
-       width:20vw;
+    .sns .link a:nth-of-type(2) {
+        background-position: -39px 0;
     }
-    .r_btn{
-        
-       
-    position:absolute;
-        right:50%; top:70%;
-          transform:translateX(50%);
-}
-    
-     .side{
-        display:none;
+    .sns .link a:nth-of-type(3) {
+        background-position: -83px 0;
     }
-    .menu-trigger{
-        position:fixed;
-        right:2%; top:2%;
-      z-index:200;
-        display:block;
+    .sns .link a:nth-of-type(4) {
+        background-position: -130px 0;
     }
-    .indi{
-        
+    .logo {
+        z-index: 200;
+        position: fixed;
+        left: 2%;
+        top: 0;
+        width: 100px;
+        height: 36px;
+        background: rgba(255, 255, 255, .2);
     }
-/*    -----------------------------header------------*/
-    .header{
-        background:0;
+    .logo img {
+        width: 100%;
     }
-    .header nav.active{
-        transform:translateX(0%);
+    .r_btn {
+        z-index: 200;
+        position: fixed;
+        right: 50%;
+        transform:translateX(50%);
+       top: 80%;
+        width: 150px;
+        height: 36px;
+        background: url('../img/main/bt_reservation.png') no-repeat;
+        background-size: 100% 100%;
     }
-    .header nav{
-         position:fixed;
+    .side {
+        display: none;
+    }
+    .menu-trigger {
+        position: fixed;
+        right: 5%;
+        top: 2%;
+        z-index: 200;
+        display: block;
+    }
+    /*    -----------------------------header------------*/
+    .header {
+        background: 0;
+    }
+    .header nav.active {
+        transform: translateX(0%);
+    }
+    .header nav {
+        position: fixed;
         top: 0;
         right: 0;
-         z-index:200;
+        z-index: 200;
         width: 100%;
         height: 100vh;
         display: block;
         background: #fff;
-        margin:0;
-        transform:translateX(100%);
-       transition:.5s;
-                             display:flex;
-        flex-direction:column;
-        justify-content:center;
-
-        padding:20% 0 40% 0;
-       
+        margin: 0;
+        transform: translateX(100%);
+        transition: .5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20% 0 40% 0;
     }
-    .header nav > div{
-       width:70%;
-       
+    .header nav>div {
+        width: 70%;
     }
-    .header nav > div > a {
-display:inline-block;
+    .header nav>div>a {
+        display: inline-block;
         font-size: 1.5em;
         padding: 5% 0;
-
     }
-
-    .header nav > div ul {
-        background:rgba(0,0,0,0.1);
+    .header nav>div ul {
+        background: rgba(0, 0, 0, 0.1);
         width: 80%;
-      position: relative;
+        position: relative;
         top: 0;
         right: 0;
         display: none;
-        margin:5%;
-        
+        margin: 5%;
     }
-    .header nav > div ul li{
-     display:flex;
-        justify-content:center;
-        align-content:center;
-        margin:5% auto;
-        font-size:1.2em;
+    .header nav>div ul li {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 5% auto;
+        font-size: 1.2em;
     }
-    .header nav > div ul li a{
+    .header nav>div ul li a {
         font-family: 'Titillium Web', sans-serif;
-               padding:1%;
-        
+        padding: 1%;
     }
-      
-    .header nav > div:hover {
-        background:ivory;
-        width:100%;
-        height:auto;
+    .header nav>div:hover {
+        background: ivory;
+        width: 100%;
+        height: auto;
     }
-
-    .header nav > div:hover ul {
-        display:inline-block;
+    .header nav>div:hover ul {
+        display: inline-block;
     }
-   
-/*   ----------------------------main--------------*/
+    /*   ----------------------------main--------------*/
     main {
-        width:100vw;
-        height:100vh;
+        width: 100vw;
+        height: 100vh;
     }
-    main > div {
-         position:relative;
+    main>div {
+        position: relative;
     }
-    main > div > img{
-     width:100%;
-        height:100%;
-}
-    main > div > h1{
-        width:100%;
-        color:#fff;
-        text-align:center;
-        text-transform:uppercase;
-        font-size:3em;
-        position:absolute;
-        left:50%; top:50%;
-        transform:translate(-50%);
+    main>div>img {
+        width: 100%;
+        height: 100%;
+    }
+    main>div>h1 {
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3em;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%);
         font-family: 'Dancing Script', cursive;
     }
-    .a_btn >a img{
-        width:5vw;
-       
+    .a_btn>a img {
+        width: 5vw;
     }
-   .service{
-  
-    width:100vw;
-    
-       padding-bottom:5%;
-   height:auto;
-      
-
-}
-.service > article{
-  
-   display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-content:center;
-    float:none;
-     margin:0 auto;
-  
-     
-}
-.service > article > div{
-    width:100%;
-        margin-top:10%;
- position:static;
-   
-    
-}
-.service > article > div h2{
-   
-   
-   
-    padding:0;
-    
-    line-height:1.5;
-   font-size: 90%;
-   
-}
-.service > article > div h2 strong{
-    
-    font-size: 5em;
-}
-
-    .service > article .s{
-        display:flex;
-        flex-direction:column;
+    .service {
+        width: 100vw;
+        padding-bottom: 5%;
+        height: auto;
     }
-    .service > article .s li{
-        margin-bottom:5%;
-        width:50%;
-        height:30%;
-        
+    .service>article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        float: none;
+        margin: 0 auto;
     }
-    .service > article .s li:nth-of-type(2){
-       margin-left:50%;
+    .service>article>div {
+        width: 100%;
+        margin-top: 10%;
+        position: static;
     }
-   
-    
-    .service > article .s li a h2{
-   
-     font-size:80%;
-    line-height:1.5;
-}
-.service > article .s li a h2 strong{
-    font-size:2em;
-    font-weight: 100;
-   font-family: 'Titillium Web', sans-serif;
-}
-    .facilities{
-    margin:0;
-        height:auto;
-           background-size:100%;
-  
-}
-
-.facilities .vdo video{
-    width:100%; 
-    position:absolute;
-    z-index:0;
-    left:0; bottom:40%;
-    
-}
-.facilities .vdo .title{
-   
-     background:none;
-        display:block;
+    .service>article>div h2 {
+        padding: 0;
+        line-height: 1.5;
+        font-size: 90%;
+    }
+    .service>article>div h2 strong {
+        font-size: 5em;
+    }
+    .service>article .s {
+        display: flex;
+        flex-direction: column;
+    }
+    .service>article .s li {
+        margin-bottom: 5%;
+        width: 50%;
+        height: 30%;
+    }
+    .service>article .s li:nth-of-type(2) {
+        margin-left: 50%;
+    }
+    .service>article .s li a h2 {
+        font-size: 80%;
+        line-height: 1.5;
+    }
+    .service>article .s li a h2 strong {
+        font-size: 2em;
+        font-weight: 100;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    .facilities {
+        margin: 0;
+        height: auto;
+        background-size: 100%;
+    }
+    .facilities .vdo video {
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        bottom: 40%;
+    }
+    .facilities .vdo .title {
+        background: none;
+        display: block;
         white-space: pre-line;
-     z-index:1;
-}
-.facilities .vdo .title h1{
-  
-    font-size:90%;
-    
-    
-}
-.facilities .vdo .title h1 strong{
-       font-size:4em;
-    
-  
+        z-index: 1;
     }
-.facilities .vdo article{
-   margin:0 auto;
-    flex-direction:column;
-    
-    
-}
-
-.facilities .vdo article figure{
-    position: relative;
-  width:100%; height:50%;
-margin:2% auto;
-    overflow:hidden;
-}
-    .roommap{height:auto;}
-    .roommap img{
-        width:100%;
+    .facilities .vdo .title h1 {
+        font-size: 90%;
     }
-/*    ----------footer---------------*/
-    footer{
-       
-         width:100vw;
-        height:50vh;}
-    footer  .foot{
-         width:100%;
-        margin:0 auto;
+    .facilities .vdo .title h1 strong {
+        font-size: 4em;
     }
-    footer  .foot .f_t{
-      width:100%;
-       
-        margin:5% auto;
-        font-size:0.2em;
-       bottom:0;
+    .facilities .vdo article {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .facilities .vdo article figure {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        margin: 2% auto;
+        overflow: hidden;
+    }
+    .roommap {
+        height: auto;
+    }
+    .roommap img {
+        width: 100%;
+    }
+    /*    ----------footer---------------*/
+    footer {
+        width: 100vw;
+        height: 50vh;
+    }
+    footer .foot {
+        width: 100%;
+        margin: 0 auto;
+    }
+    footer .foot .f_t {
+        width: 100%;
+        margin: 5% auto;
+        font-size: 0.2em;
+        bottom: 0;
     }
 }
