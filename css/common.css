@@ -1,31 +1,36 @@
 /*한글제목*/
+
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap");
 /*font-family: 'Titillium Web', sans-serif;*/
 
 /*한글본문*/
+
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 /*font-family: 'Titillium Web', sans-serif;*/
+
 @import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap");
 /*font-family: 'Sunflower', sans-serif;*/
 
 /*영어제목*/
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
 /*font-family: 'Noto Sans KR', sans-serif;*/
 
 /* 영어본문*/
+
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
 /*font-family: 'Inconsolata', monospace;*/
+
 /*이텔릭체*/
+
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 /*font-family: 'Dancing Script', cursive;*/
 
-html,
-body {
+html, body {
     margin: 0;
 }
 
-ul,
-li {
+ul, li {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -37,17 +42,10 @@ li {
 
 a {
     text-decoration: none;
-
     color: #fff;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
 }
@@ -70,13 +68,12 @@ p {
     align-items: center;
 }
 
-header,
-main,
-footer {
+header, main, footer {
     width: 100%;
 }
 
 /*           header     ----------------------------------------------------    */
+
 header {
     position: fixed;
     z-index: 100;
@@ -94,13 +91,14 @@ header {
     width: 50%;
     margin: 0 auto;
 }
-.header nav > div {
+
+.header nav>div {
     position: relative;
-    width: 30%;
+    width: 20%;
     height: 100%;
 }
 
-.header nav > div > a {
+.header nav>div>a {
     text-transform: uppercase;
     padding: 10% 4vw;
     color: #000;
@@ -108,7 +106,7 @@ header {
     font-weight: bold;
 }
 
-.header nav > div ul {
+.header nav>div ul {
     display: none;
     position: absolute;
     top: 160%;
@@ -118,12 +116,12 @@ header {
     width: 90%;
 }
 
-.header nav > div ul li {
+.header nav>div ul li {
     width: 100%;
     margin: 5% 0;
 }
 
-.header nav > div ul li a {
+.header nav>div ul li a {
     color: #000;
     font-family: "Titillium Web", sans-serif;
     font-size: 12px;
@@ -135,7 +133,7 @@ header {
     position: relative;
 }
 
-.header nav .r_n > .s_list a img {
+.header nav .r_n>.s_list a img {
     box-sizing: border-box;
     border: 2px solid white;
     overflow: hidden;
@@ -143,12 +141,12 @@ header {
     height: 80px;
 }
 
-.header nav .r_n > .s_list {
+.header nav .r_n>.s_list {
     width: 100%;
     text-align: center;
 }
 
-.header nav .r_n > .s_list a {
+.header nav .r_n>.s_list a {
     color: #000;
     font-family: "Titillium Web", sans-serif;
     font-size: 12px;
@@ -157,6 +155,7 @@ header {
 }
 
 /*                ---------fixed-------------------------------------------    */
+
 .menu-trigger {
     width: 25px;
     height: 25px;
@@ -167,34 +166,42 @@ header {
     display: none;
     transition: 0.5s;
 }
-.menu-trigger > span {
+
+.menu-trigger>span {
     position: absolute;
     left: 0;
     background: #fff;
     width: 100%;
     height: 2px;
 }
-.menu-trigger > span:nth-of-type(2) {
+
+.menu-trigger>span:nth-of-type(2) {
     top: 50%;
     transform: translateY(-50%);
 }
-.menu-trigger > span:nth-of-type(3) {
+
+.menu-trigger>span:nth-of-type(3) {
     bottom: 0;
 }
-.menu-trigger.active > span {
+
+.menu-trigger.active>span {
     background: black;
 }
-.menu-trigger.active > span:nth-of-type(1) {
+
+.menu-trigger.active>span:nth-of-type(1) {
     transform: rotate(45deg);
     bottom: 50%;
 }
-.menu-trigger.active > span:nth-of-type(2) {
+
+.menu-trigger.active>span:nth-of-type(2) {
     display: none;
 }
-.menu-trigger.active > span:nth-of-type(3) {
+
+.menu-trigger.active>span:nth-of-type(3) {
     transform: rotate(-45deg);
     bottom: 50%;
 }
+
 .side {
     display: block;
     width: 2%;
@@ -213,10 +220,12 @@ header {
     width: 100%;
     position: relative;
 }
+
 .side li a.active {
-    background:#99e4f3;
-    border-radius:100%;
+    background: #99e4f3;
+    border-radius: 100%;
 }
+
 .side li a {
     width: 10px;
     text-align: center;
@@ -227,11 +236,24 @@ header {
     font-size: 1.5em;
     font-family: "Inconsolata", monospace;
 }
+
 .logo {
     z-index: 100;
     position: fixed;
     left: 2%;
     top: 0;
+    padding: 0 10px;
+}
+
+.r_btn {
+    z-index: 200;
+    position: fixed;
+    right: 5%;
+    top: 0;
+    width: 150px;
+    height: 36px;
+    background: url('../img/main/bt_reservation.png') no-repeat;
+    background-size: 100% 100%;
 }
 
 .sns {
@@ -292,7 +314,9 @@ header {
     width: 25%;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
 }
+
 /* --------------------------btn------------------------------*/
+
 .c_btn {
     margin: 2% auto;
     text-align: center;
@@ -306,6 +330,7 @@ header {
     width: 200px;
     color: #000;
 }
+
 .c_btn a:hover {
     background: #d3e8e9;
 }
@@ -344,7 +369,7 @@ header {
     transform: translateX(-50%);
 }
 
-.indi > li {
+.indi>li {
     margin-right: 20px;
     width: 10px;
     height: 10px;
@@ -352,7 +377,7 @@ header {
     border-radius: 100%;
 }
 
-.indi > li:hover {
+.indi>li:hover {
     background: #fff;
 }
 
@@ -364,24 +389,28 @@ header {
     left: 5%;
     transform: translateY(-50%);
 }
+
 .a_btn a:nth-of-type(1) {
     transform: rotate(180deg);
 }
-.a_btn a{
-    width:55px;
-    height:82px;
-    opacity:0.8;
+
+.a_btn a {
+    width: 55px;
+    height: 82px;
+    opacity: 0.8;
 }
-.a_btn a img{
-    width:100%;
+
+.a_btn a img {
+    width: 100%;
 }
+
 .a_btn a:hover {
     opacity: 1;
 }
 
 /*footer--------------------------------*/
-footer {
-}
+
+footer {}
 
 footer .foot {
     margin: 2%;
@@ -397,12 +426,12 @@ footer .foot .f_t {
     padding: 2% 0;
 }
 
-footer .foot .f_t > p {
+footer .foot .f_t>p {
     text-align: center;
     margin: 0;
 }
 
-footer .foot .f_t > p img {
+footer .foot .f_t>p img {
     width: 90px;
     height: 10px;
 }
