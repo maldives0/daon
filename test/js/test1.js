@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', function () {
              $('.side li').removeClass('active');
              $(this).addClass('active');
              var i = $(this).index();
-             //console.log(pArr)
+           
              main.style.transform = "translateY(-" + pArr[i] + "px)";
             
                  

@@ -222,8 +222,10 @@ header nav .r_n>.s_list a {
     position: relative;
 }
 
-.side li a.active {
-   color: #a8c06e;
+.side li.active a{
+   background: #cfee88;
+   background-size:100% 100%;
+   border-radius:50%;
    
 }
 

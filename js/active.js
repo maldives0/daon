@@ -3,52 +3,58 @@
 window.addEventListener('DOMContentLoaded', function () {
     var main = document.querySelector('main');
     var mDiv = document.querySelectorAll('main .main');
+  
     var pos = 0;
-
-    var sideA = document.querySelectorAll('.side li a');
-    var sArr = [];
-    //side bar click
-
-    sideA[0].classList.add('active');
-    sideA.forEach(function (s,i) {
-        sArr.push(i);
-        s.addEventListener('click',function() {
-           for(var i in sArr){
-               sideA[i].classList.remove('active');
-           }
-           
-            this.classList.add('active');
-        });
-       
-    });
+    var pArr = [];
    
-    //mouse wheel
+   
     mDiv.forEach(function (el, idx) {
-        el.addEventListener('mousewheel', move);
-        function move(e) {
-            if (e.wheelDelta < 0) {
-               
-                pos = this.nextElementSibling.offsetTop;
-                for(var i in sArr){
-                    sideA[i].classList.remove('active');
-                   
-                }
-                sideA[idx+1].classList.add('active');
-               
-            } else {
-               
-                pos = this.previousElementSibling.offsetTop;
-                for(var i in sArr){
-                    sideA[i].classList.remove('active');
-                   
-                }
-                console.log(idx)
-                sideA[idx-1].classList.add('active');
-            }
-            main.style = "transform:translateY(-" + pos + "px)"
+        pArr.push(el.offsetTop);
+       
+        //mouse wheel
+        el.addEventListener('mousewheel', mouse);
+        function mouse(e) {
+              window.scrollTo(0, 0);
+              if (e.wheelDelta < 0) {
+                    try {
+                         
+                          pos = this.nextElementSibling.offsetTop;
+                          
+                          $('.side li')[idx].classList.remove('active');
+                          $('.side li')[idx].nextElementSibling.classList.add('active');
+                    } catch{ }
+
+
+              } else {
+                    try {
+                          pos = this.previousElementSibling.offsetTop;
+                          $('.side li')[idx].classList.remove('active');
+                          $('.side li')[idx].previousElementSibling.classList.add('active');
+                    } catch{ }
+
+              }
+           
+    
+
+              main.style.transform = "translateY(-" + pos + "px)";
         };
     });
-
+   
+          //sidebar click
+          $('.side li')[0].classList.add('active');
+          $('.side li').on('click',lc);
+          function lc(a){
+                
+           $('.side li').removeClass('active');
+           $(this).addClass('active');
+           var i = $(this).index();
+         
+           main.style.transform = "translateY(-" + pArr[i] + "px)";
+          
+               
+          };   
+         
+      
 });
 //nav toggle
 window.addEventListener('DOMContentLoaded', function () {
