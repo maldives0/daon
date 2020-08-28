@@ -80,6 +80,7 @@ main>div>h1 {
 }
 
 .service>article .s li {
+    width:33%;
     height: 100%;
     position: relative;
 }
@@ -342,13 +343,13 @@ main>div>h1 {
         display: block;
     }
     /*    -----------------------------header------------*/
-    .header {
+    header {
         background: 0;
     }
-    .header nav.active {
+    header nav.active {
         transform: translateX(0%);
     }
-    .header nav {
+    header nav {
         position: fixed;
         top: 0;
         right: 0;
@@ -365,15 +366,15 @@ main>div>h1 {
         justify-content: center;
         padding: 20% 0 40% 0;
     }
-    .header nav>div {
+    header nav>div {
         width: 70%;
     }
-    .header nav>div>a {
+    header nav>div>a {
         display: inline-block;
         font-size: 1.5em;
         padding: 5% 0;
     }
-    .header nav>div ul {
+    header nav>div ul {
         background: rgba(0, 0, 0, 0.1);
         width: 80%;
         position: relative;
@@ -382,18 +383,18 @@ main>div>h1 {
         display: none;
         margin: 5%;
     }
-    .header nav>div ul li {
+    header nav>div ul li {
         display: flex;
         justify-content: center;
         align-content: center;
         margin: 5% auto;
         font-size: 1.2em;
     }
-    .header nav>div ul li a {
+    header nav>div ul li a {
         font-family: 'Titillium Web', sans-serif;
         padding: 1%;
     }
-    .header nav>div:hover {
+    header nav>div:hover {
         background: ivory;
         width: 100%;
         height: auto;

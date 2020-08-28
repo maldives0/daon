@@ -74,31 +74,31 @@ header, main, footer {
 
 /*           header     ----------------------------------------------------    */
 
+
+
 header {
     position: fixed;
     z-index: 100;
     display: inline-block;
-}
-
-.header {
     width: 100%;
-    height: 5vh;
-    padding: 1% 2%;
+        padding:  3px 2%;
     background: rgba(255, 255, 255, 0.5);
 }
 
-.header nav {
+header nav {
+    
     width: 50%;
     margin: 0 auto;
 }
 
-.header nav>div {
+header nav>div {
     position: relative;
-    width: 20%;
-    height: 100%;
+    width: 30%;
+   
 }
 
-.header nav>div>a {
+
+header nav>div>a {
     text-transform: uppercase;
     padding: 10% 4vw;
     color: #000;
@@ -106,7 +106,7 @@ header {
     font-weight: bold;
 }
 
-.header nav>div ul {
+header nav>div ul {
     display: none;
     position: absolute;
     top: 160%;
@@ -116,12 +116,12 @@ header {
     width: 90%;
 }
 
-.header nav>div ul li {
+header nav>div ul li {
     width: 100%;
     margin: 5% 0;
 }
 
-.header nav>div ul li a {
+header nav>div ul li a {
     color: #000;
     font-family: "Titillium Web", sans-serif;
     font-size: 12px;
@@ -129,11 +129,11 @@ header {
     width: 100%;
 }
 
-.header nav .r_n {
+header nav .r_n {
     position: relative;
 }
 
-.header nav .r_n>.s_list a img {
+header nav .r_n>.s_list a img {
     box-sizing: border-box;
     border: 2px solid white;
     overflow: hidden;
@@ -141,12 +141,12 @@ header {
     height: 80px;
 }
 
-.header nav .r_n>.s_list {
+header nav .r_n>.s_list {
     width: 100%;
     text-align: center;
 }
 
-.header nav .r_n>.s_list a {
+header nav .r_n>.s_list a {
     color: #000;
     font-family: "Titillium Web", sans-serif;
     font-size: 12px;
@@ -205,12 +205,13 @@ header {
 .side {
     display: block;
     width: 2%;
-    height: 57%;
+    height:auto;
     padding: auto;
     position: fixed;
     z-index: 100;
     right: 5%;
-    bottom: 20%;
+    bottom: 50%;
+    transform:translateY(50%);
     white-space: pre-line;
     background: rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -222,34 +223,29 @@ header {
 }
 
 .side li a.active {
-    background: #99e4f3;
-    border-radius: 100%;
+   color: #a8c06e;
+   
 }
 
 .side li a {
-    width: 10px;
+    width: 100%; 
     text-align: center;
     margin: 0 auto;
     padding: 5%;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.5em;
-    font-family: "Inconsolata", monospace;
+    font-size: 1.2em;
+    font-weight:bold;
+    font-family: 'Dancing Script', cursive;
 }
 
 .logo {
-    z-index: 100;
-    position: fixed;
-    left: 2%;
-    top: 0;
-    padding: 0 10px;
+   width:100%; height:auto;
+   
 }
 
 .r_btn {
-    z-index: 200;
-    position: fixed;
-    right: 5%;
-    top: 0;
+  
     width: 150px;
     height: 36px;
     background: url('../img/main/bt_reservation.png') no-repeat;
