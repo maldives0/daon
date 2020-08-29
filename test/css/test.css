@@ -1,0 +1,305 @@
+
+
+/*main---------------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    overflow: hidden;
+
+}
+
+main {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    transition: 1s;
+
+
+}
+
+main>div {
+
+    height: 100vh;
+    background: rgb(105, 90, 90);
+
+}
+
+main>div:nth-of-type(odd) {
+
+    background: rgb(73, 68, 68);
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.side {
+    display: block;
+    width: 2%;
+    height: 57%;
+    padding: auto;
+    position: fixed;
+    z-index: 100;
+    right: 5%;
+    bottom: 20%;
+    white-space: pre-line;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.side li {
+
+    width: 100%;
+    position: relative;
+
+
+}
+
+.side li a {
+    width: 10px;
+    margin: 0 auto;
+    padding: 5%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+.side li.active {
+    background: chartreuse;
+}
+
+.main{
+    text-align:center;
+   
+}
+
+svg .st path{
+    fill:#fff;
+    
+}
+
+svg .line{
+    fill:transparent;
+    stroke:#fff;
+    stroke-width:40px; 
+    
+    stroke-dasharray:4000px;
+    stroke-dashoffset:4000px;
+    animation:dash 4s forwards;
+    
+   
+}
+@keyframes dash{
+        100%{
+           
+             stroke-dashoffset:0px;
+        }
+}
+   
+ /* -------------------2------------ */
+ @import url('comTest.css');
+
+.view .a_btn {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10% -50%);
+}
+.view .a_btn a{
+    
+background:#000;
+}
+.view .indi {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+z-index:2;
+}
+
+
+
+
+
+.view {
+    width: 100vw;
+  height:100vh;
+
+}
+
+.view .about {
+  
+    width:80%; 
+    height:80%;
+   position:relative;
+     overflow: hidden;
+     margin:0 auto;
+}
+
+.view .about .v_list{
+    width:100%; 
+    height:100%;
+  
+    text-align: left;
+    position:absolute;
+    top:0; left:0;
+   
+
+box-sizing:border-box;
+}
+.view .about .v_list li{
+ width:100%; 
+    height:100%;
+    position:absolute;
+   
+    background-size: 100% 100%;
+}
+
+
+.view .about .v_list li{
+    width:100%; 
+    height:100%;
+}
+
+.indi a.active{
+    background:#fff;
+}
+
+
+/* -------------------3---------------- */
+.service {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: url(../img/sub/only.jpg);
+}
+
+.service>article {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+.service>article>div {
+    width: 100%;
+    position: absolute;
+    z-index:100;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+  
+       opacity:1;
+}
+.service>article>div.fade {
+    animation:fadeOut 10s forwards;
+}
+@keyframes fadeOut{
+    0%{opacity:1;}
+    50%,100%{opacity:0;}
+}
+.service>article>div h2 {
+    text-align: center;
+    font-size: 3em;
+    font-weight:normal;
+    font-family: 'Sunflower', sans-serif;
+    color:#fff;
+}
+
+.service>article>div h2 strong {
+    display: block;
+    margin: 5%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5em;
+}
+
+.service>article .s {
+    height: 100%;
+    display:flex;
+    justify-items:flex-end;
+    opacity:0;
+   
+}
+.service>article .s.fade {
+    animation:fadeIn 10s forwards;
+    animation-delay:3s;
+}
+@keyframes fadeIn{
+0%{opacity:0;}
+50%,100%{opacity:1;}
+}
+.service>article .s li {
+    width:33%;
+    height: 100%;
+    position: relative;
+}
+
+.service>article .s li img {
+    width: 100%;
+    height: 100%;
+}
+
+.service>article .s li a {
+    width: 100%;
+    height: 100%;
+}
+
+.service>article .s li a h2 {
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: pre-line;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: normal;
+    font-family: 'Sunflower', sans-serif;
+}
+
+.service>article .s li a h2 strong {
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 'Sunflower', sans-serif;
+}
+
+.service>article .s li:nth-of-type(1):hover h2 {
+    background: none;
+    transition: .5s;
+    opacity: 0;
+}
+
+.service>article .s li:nth-of-type(2):hover h2 {
+    background: none;
+    opacity: 0;
+    transition: .5s;
+}
+
+.service>article .s li:nth-of-type(3):hover h2 {
+    background: none;
+    opacity: 0;
+    transition: .5s;
+}

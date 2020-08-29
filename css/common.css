@@ -408,7 +408,10 @@ header nav .r_n>.s_list a {
 
 /*footer--------------------------------*/
 
-footer {}
+footer {
+    width:100vw;
+    height:50vh;
+}
 
 footer .foot {
     margin: 2%;

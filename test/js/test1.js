@@ -6,28 +6,31 @@ window.addEventListener('DOMContentLoaded', function () {
       var pArr = [];
      
      
-      mDiv.forEach(function (el, idx) {
+     
+      $('main .main').each(function (el, idx) {
             pArr.push(el.offsetTop);
-           
+     
+      });
             //mouse wheel
-            el.addEventListener('mousewheel', mouse);
+            $('main .main').on('mousewheel', mouse);
             function mouse(e) {
-                  window.scrollTo(0, 0);
+               $(window).scrollTop(0, 0);
+               console.log(e.wheelDelta)
                   if (e.wheelDelta < 0) {
                         try {
-                             
-                              pos = this.nextElementSibling.offsetTop;
-                              
-                              $('.side li')[idx].classList.remove('active');
-                              $('.side li')[idx].nextElementSibling.classList.add('active');
+                            
+                              pos = $(this).next().offset().Top;
+                              console.log(pos)
+                              $('.side li').eq(idx).removeClass('active');
+                              $('.side li').eq(idx).next().addClass('active');
                         } catch{ }
 
 
                   } else {
                         try {
-                              pos = this.previousElementSibling.offsetTop;
-                              $('.side li')[idx].classList.remove('active');
-                              $('.side li')[idx].previousElementSibling.classList.add('active');
+                              pos = $(this).prev().offset().Top;
+                              $('.side li').eq(idx).removeClass('active');
+                              $('.side li').eq(idx).prev().addClass('active');
                         } catch{ }
 
                   }
@@ -52,24 +55,7 @@ window.addEventListener('DOMContentLoaded', function () {
             };   
            
           
-           
       
-      });
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
