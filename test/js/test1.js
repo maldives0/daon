@@ -1,61 +1,97 @@
+
+
+//scroll
 window.addEventListener('DOMContentLoaded', function () {
       var main = document.querySelector('main');
       var mDiv = document.querySelectorAll('main .main');
-    
+      var len = mDiv.length;
       var pos = 0;
       var pArr = [];
+   
+      var sList = document.querySelectorAll('.side li');
      
-     
-     
-      $('main .main').each(function (el, idx) {
+      mDiv.forEach(function (el, idx) {
             pArr.push(el.offsetTop);
-     
-      });
+
             //mouse wheel
-            $('main .main').on('mousewheel', mouse);
+            el.addEventListener('mousewheel', mouse);
             function mouse(e) {
-               $(window).scrollTop(0, 0);
-               console.log(e.wheelDelta)
+                  window.scrollTo(0, 0);
+                 
                   if (e.wheelDelta < 0) {
                         try {
-                            
-                              pos = $(this).next().offset().Top;
-                              console.log(pos)
-                              $('.side li').eq(idx).removeClass('active');
-                              $('.side li').eq(idx).next().addClass('active');
-                        } catch{ }
+                             
+                              pos = this.nextElementSibling.offsetTop;
+
+                              sList[idx].classList.remove('active');
+                              sList[idx].nextElementSibling.classList.add('active');
+                        } catch{ 
+
+                             if( idx == len-1 ){
+                                   pos = mDiv[len-1].offsetTop;
+                             }
+                        }
 
 
                   } else {
                         try {
-                              pos = $(this).prev().offset().Top;
-                              $('.side li').eq(idx).removeClass('active');
-                              $('.side li').eq(idx).prev().addClass('active');
-                        } catch{ }
-
+                              pos = this.previousElementSibling.offsetTop;
+                              sList[idx].classList.remove('active');
+                              sList[idx].previousElementSibling.classList.add('active');
+                        } catch{
+                              if( idx == 0 ){
+                                    pos = mDiv[0].offsetTop;
+                         }
+                        }
                   }
-               
-        
 
                   main.style.transform = "translateY(-" + pos + "px)";
-            };
 
-            //sidebar click
-            $('.side li')[0].classList.add('active');
-            $('.side li').on('click',lc);
-            function lc(a){
-                  
-             $('.side li').removeClass('active');
-             $(this).addClass('active');
-             var i = $(this).index();
+                  //fade
+                
+
+
+             
+            };
+      });
+
+
+      //sidebar click
+     sList[0].classList.add('active');
+     
+     sList.forEach(function(el){
+           el.addEventListener('click',lc);
+     });
+     
+      function lc(a) {
+            sList.forEach(function(e){
+           e.classList.remove('active');
+         
+      });
+            this.classList.add('active');
+            var thisParent = a.currentTarget.parentElement;
            
-             main.style.transform = "translateY(-" + pArr[i] + "px)";
+            var thisChildren = thisParent.children;
+           
+            var i = Array.from(thisChildren).indexOf(a.currentTarget);
+           console.log(pArr[i])
+            main.style.transform = "translateY(-" + pArr[i] + "px)";
             
-                 
-            };   
            
-          
-      
-    
+
+      };
+
+
+
+
+
+
 
 });
+
+
+
+
+
+
+

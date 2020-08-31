@@ -1,33 +1,18 @@
 @import url('common.css');
 
-.view .a_btn {
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-10% -50%);
-}
 
-.view .indi {
-    display: flex;
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    transform: translateX(-50%);
-z-index:2;
+.indi a.active{
+    background:#fff;
 }
-
 .is {
 
     padding: 3%;
     background: #fff;
 
-
-
 }
 
 .is > h1 {
-    margin:5%;
+    margin-top:1%;
     font-size: 4.5em;
     font-family: 'Dancing Script', cursive;
     text-transform: uppercase;
@@ -40,7 +25,7 @@ z-index:2;
     line-height: 2;
     font-size: 20px;
     text-align: center;
-    margin-top:10%;
+    margin-top:1%;
 
 }
 
@@ -48,63 +33,37 @@ z-index:2;
 
 .view {
     width: 100vw;
- 
+   
 
 }
 
 .view .about {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
    position:relative;
+  
+    overflow: hidden;
+  
 }
 
 .view .about .v_list{
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    text-align: center;
+    position:absolute;
+    left:0; top:0;
+    
+   
 
 }
 .view .about .v_list li{
+    width:100%;
     height:100%;
+    position:absolute;
+    left:0; top:0;
+    transition:1s;
+   
 }
 
-.view .about .v_list li:nth-of-type(1) {
-    background: url('../img/sub/a_1.jpg') center 0px no-repeat;
-    background-size: 90%;
-
-}
-
-/*
-.view .about .v_list li:nth-of-type(2){
-     background:url('../img/main/m_1.jpg') center 0px no-repeat;
-}
-.view .about .v_list li:nth-of-type(3){
-     background:url('../img/main/m_22.jpg') center 0px no-repeat;
-}
-.view .about .v_list li:nth-of-type(4){
-     background:url('../img/main/m_3.jpg') center 0px no-repeat;
-}
-.view .about .v_list li:nth-of-type(5){
-     background:url('../img/main/m_55.jpg') center 0px no-repeat;
-}
-.view .about .v_list li:nth-of-type(6){
-     background:url('../img/main/m_4.jpg') center 0px no-repeat;
-}
-.view .about .v_list li:nth-of-type(7){
-     background:url('../img/sub/v_2.jpg') center 0px no-repeat;
-}
-.view .about .v_list li:nth-of-type(8){
-     background:url('../img/sub/v_10.jpg') center 0px no-repeat;
-}
-.view .about .v_list li:nth-of-type(9){
-     background:url('../img/sub/v_9.jpg') center 0px no-repeat;
-}
-.view .about .v_list li:nth-of-type(10){
-     background:url('../img/sub/v_2.jpg');
-}
-
-*/
 
 
 /*-----------------------------traffic---------------------------------*/

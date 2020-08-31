@@ -44,15 +44,7 @@ window.addEventListener('DOMContentLoaded', function () {
             ulEle.style = pos;
         }
     };
-    //clone
-    // var first = document.getElementsByClassName('#p0');
-    // console.log(first)
-    // ulEle.appendChild();
-    // var first = $('.v_list li:first').clone();
-    //     var last =  $('.v_list li:last').clone();
-    //    $('.v_list').prepend(last);
-    // $('.v_list').append(first);
-
+   
 
 
     //btn
