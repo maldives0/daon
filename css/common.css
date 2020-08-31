@@ -367,7 +367,7 @@ header nav .r_n>.s_list a {
     transform: translateX(-50%);
 }
 
-.indi>li {
+.indi>a {
     margin-right: 20px;
     width: 10px;
     height: 10px;
@@ -375,7 +375,7 @@ header nav .r_n>.s_list a {
     border-radius: 100%;
 }
 
-.indi>li:hover {
+.indi>a:hover {
     background: #fff;
 }
 
