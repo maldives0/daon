@@ -380,11 +380,11 @@ header nav .r_n>.s_list a {
 }
 
 .a_btn {
-   
-    width: 90%;
+   z-index:0;
+    width: 80%;
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 10%;
     transform: translateY(-50%);
 }
 
