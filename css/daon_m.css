@@ -51,9 +51,25 @@ svg .line{
         }
 }
 
-.rooms {
-    position: relative;
+.rooms .room{
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+   
 }
+.rooms .room .r_list{
+    width:100%;
+    height:100%;
+    position:relative;
+
+}
+.rooms .room .r_list li{
+    width:100%; height:100%;
+    position:absolute;
+    top:0; left:0;
+}
+
 
 .service {
     width: 100%;
@@ -82,7 +98,7 @@ svg .line{
        background-size:100%;
 }
 .service>article>div.fade {
-    animation:fadeOut 5s forwards;
+    animation:fadeOut 15s forwards;
     
 }
 @keyframes fadeOut{
