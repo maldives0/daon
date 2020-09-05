@@ -363,7 +363,7 @@ header nav .r_n>.s_list a {
     display: flex;
     position: absolute;
     left: 50%;
-    bottom: 10%;
+    bottom: 15%;
     transform: translateX(-50%);
 }
 
