@@ -6,12 +6,39 @@ html{
 html,body{
     overflow:hidden;
 }
+.scroll {
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    bottom: 5%;
+    text-align: center;
+    transform: translateX(-50%);
+    display:block;
+}
+.scroll.active{
+    display:none;
+}
+
+.scroll p {
+    color: #fff;
+    font-family: "Inconsolata", monospace;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.scroll img {
+    width: 25%;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
+}
 main {
     width: 100%;
     position: absolute;
     top:0; left:0;
     overflow:hidden;
     transition:1s;
+    z-index:10;
 }
 
 main>div {
@@ -326,26 +353,31 @@ svg .line{
     height: 100vh;
     background:url(../img/main/roommap.jpg) center no-repeat;
     background-size:100%;
+    z-index:0;
 }
 
 footer{
-    position:absolute;
+    position:relative;
     top:0; left:0;
-    transform:translateY(40%);
    
-    
 }
 
 footer .foot {
+    z-index:11;
+  height:20vh; 
  position:absolute;
  left:50%;
  bottom:10%;
  transform:translateX(-50%);
     margin: 2%;
-   
+   display:none;
+  
 }
-
-footer   .foot .f_t {
+footer .foot.active{
+    display:block;
+    
+}
+footer .foot .f_t {
     text-align: center;
     white-space: pre-line;
     font-size: 0.5em;
