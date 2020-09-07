@@ -328,8 +328,15 @@ svg .line{
     background-size:100%;
 }
 
+footer{
+    position:absolute;
+    top:0; left:0;
+    transform:translateY(40%);
+   
+    
+}
 
-.roommap  .foot {
+footer .foot {
  position:absolute;
  left:50%;
  bottom:10%;
@@ -338,7 +345,7 @@ svg .line{
    
 }
 
-.roommap  .foot .f_t {
+footer   .foot .f_t {
     text-align: center;
     white-space: pre-line;
     font-size: 0.5em;
@@ -347,12 +354,12 @@ svg .line{
     padding: 2% 0;
 }
 
-.roommap  .foot .f_t>p {
+footer .foot .f_t>p {
     text-align: center;
     margin: 0;
 }
 
-.roommap  .foot .f_t>p img {
+footer .foot .f_t>p img {
     width: 90px;
     height: 10px;
 }

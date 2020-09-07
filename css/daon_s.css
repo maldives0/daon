@@ -265,12 +265,16 @@ width:20%;
     height: 40%;
 
 }
-
-
-
-
-
-
+.rooms article > figure .room ul {
+    position: absolute;
+    top:0; left:0;
+   width:100%; height:100%;
+}
+.rooms article > figure .room ul li {
+    position: absolute;
+    top:0; left:0;
+   width:100%; height:100%;
+}
 
 
 .rooms article > figure > div .s_btn > a img {
@@ -282,11 +286,11 @@ width:20%;
 
 
 .rooms article .love > div .s_btn > a:nth-of-type(1) img {
-    transform: rotate(180deg);
+    transform: rotateX(-180deg);
 }
 
 .rooms article .only > div .s_btn > a:nth-of-type(1) img {
-    transform: rotate(180deg);
+    transform: rotateX(-180deg);
 }
 
 .rooms article .love > div .s_btn {
