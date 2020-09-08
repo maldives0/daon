@@ -1,92 +1,79 @@
 @import url('common.css');
-
-
-
-.is {
- text-align:center;
- background: #fff;
-padding:3% ;
-}
-
-.is > h1 {
-    padding:5% ;
-    font-size: 4.5em;
+.tit_w {
+    padding: 3%;
+    font-size: 8em;
     font-family: 'Dancing Script', cursive;
     text-transform: uppercase;
-   
+    color: #fff;
+    text-align: center;
 }
 
-.is > p {
+.tit_b {
+    padding: 3%;
+    font-size: 8em;
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.is {
+    text-align: center;
+    background: #fff;
+    padding: 3%;
+}
+
+.is>p {
     white-space: pre-line;
     font-family: 'Sunflower', sans-serif;
     line-height: 2;
     font-size: 20px;
     text-align: center;
-    margin-top:1%;
-
+    margin-top: 1%;
 }
-
-
 
 .view {
     width: 100vw;
-   
-
 }
 
 .view .about {
     width: 100%;
     height: 100vh;
-   position:relative;
-  
+    position: relative;
     overflow: hidden;
-  
 }
 
-.view .about .v_list{
+.view .about .v_list {
     width: 100%;
     height: 100%;
-    position:relative;
-   
-    
-   
-
-}
-.view .about .v_list li{
-    width:100%;
-    height:100%;
-    position:absolute;
-    left:0; top:0;
-   
-   
+    position: relative;
 }
 
-
+.view .about .v_list li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
 /*-----------------------------traffic---------------------------------*/
+
 main {}
-.traffic > h1 {
-    margin:5%;
-    font-size: 4.5em;
-    font-family: 'Dancing Script', cursive;
-    text-transform: uppercase;
-   
-}
+
 .traffic {
     padding: 0;
     margin: 0 auto;
     width: 80%;
     height: 100%;
-
-
 }
 
-.traffic > img {
+.traffic>img {
     position: absolute;
     left: 10%;
     bottom: 0%;
     z-index: 2;
-width:20%;
+    width: 20%;
 }
 
 .traffic .con {
@@ -94,30 +81,23 @@ width:20%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .traffic .con .map {
-
     margin: 10%;
 }
 
 .traffic .con .a_info {
-
-   
     border: 1px solid #e6fafe;
     border-radius: 100%;
-   
     overflow: hidden;
     width: 500px;
     height: 500px;
 }
 
-.traffic .con .a_info > p {
-   
-   text-align:center;
-    vertical-align:center;
+.traffic .con .a_info>p {
+    text-align: center;
+    vertical-align: center;
     overflow: hidden;
     width: 500px;
     height: 500px;
@@ -127,56 +107,45 @@ width:20%;
     font-size: 2em;
     background: #e6fafe;
     font-family: 'Sunflower', sans-serif;
-    
 }
 
 /*--------------------------travel------------------------------------*/
 
-.t_m{
+.t_m {
     width: 100%;
     height: 100vh;
     background: url('../img/sub/beach.jpg') no-repeat;
-    background-size:100% 100%;
- position:relative;
- text-align:center;
+    background-size: 100% 100%;
+    position: relative;
+    text-align: center;
+}
 
-}
-.t_m > h1 {
-   padding-top:2%;
-    font-size:8em;
-    font-family: 'Dancing Script', cursive;
-    text-transform: uppercase;
-    color:#fff;
-   
-}
 .travel {
     width: 1000px;
-    height:300px;
-    position:absolute;
-    top:50%; left:50%;
-    transform:translateX(-50%) translateY(-50%);
-    text-align:left;
-    z-index:5;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: left;
+    z-index: 5;
     overflow: hidden;
 }
 
-
 .travel article {
-  
     position: absolute;
-       top:0; left:0;
-   
-   
+    top: 0;
+    left: 0;
 }
 
 .travel article figure {
     position: absolute;
-    top:0; left:0;
-  
+    top: 0;
+    left: 0;
 }
 
 .travel article figure a {
-    position:absolute;
+    position: absolute;
     top: 0%;
     left: 0%;
     border: 5px solid #fff;
@@ -184,8 +153,6 @@ width:20%;
     overflow: hidden;
     width: 300px;
     height: 300px;
-  
-   
 }
 
 .travel article figure a img {
@@ -200,8 +167,7 @@ width:20%;
     position: absolute;
     top: 50%;
     left: 50%;
-   
-    transform:translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.5em;
@@ -214,102 +180,87 @@ width:20%;
     display: none;
 }
 
-
-
 /*---------------------rooms--------------------------------------*/
-.rooms > h1 {
-    position:absolute;
-    left:10%;
-    top:10%;
-    z-index:2;
-   
-    font-size: 5em;
-    font-family: 'Dancing Script', cursive;
-    text-transform: uppercase;
-   
-} 
 
 .rooms article {
-
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 
 .rooms article .love {
-
     height: 100%;
     background: url(../img/sub/love.jpeg);
 }
 
 .rooms article .only {
-
     height: 100%;
     background: url(../img/sub/only.jpg);
 }
-.rooms article .love > div{
-    margin-top:20%;
+
+.rooms article .love>div {
+    margin-top: 10%;
 }
-.rooms article > figure {
+
+.rooms article>figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
-    margin: 0 auto;
-
+    margin: 5% auto;
 }
 
-.rooms article > figure .room {
+.rooms article>figure .room {
     position: relative;
     width: 70%;
     height: 40%;
-
+    overflow: hidden;
 }
-.rooms article > figure .room ul {
+
+.rooms article>figure .room ul {
     position: absolute;
-    top:0; left:0;
-   width:100%; height:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-.rooms article > figure .room ul li {
+
+.rooms article>figure .room ul li {
     position: absolute;
-    top:0; left:0;
-   width:100%; height:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-
-.rooms article > figure > div .s_btn > a img {
+.rooms article>figure>.s_btn>a img {
     width: 30px;
     height: 30px;
     display: block;
     margin-bottom: 8px;
 }
 
-
-.rooms article .love > div .s_btn > a:nth-of-type(1) img {
+.rooms article .love>.s_btn>a:nth-of-type(1) img {
     transform: rotateX(-180deg);
 }
 
-.rooms article .only > div .s_btn > a:nth-of-type(1) img {
+.rooms article .only>.s_btn>a:nth-of-type(1) img {
     transform: rotateX(-180deg);
 }
 
-.rooms article .love > div .s_btn {
+.rooms article .love>.s_btn {
     position: absolute;
-    bottom: 40%;
-    right: -5%;
-
+    bottom: 2%;
+    left: 43%;
 }
 
-.rooms article .only > div .s_btn {
+.rooms article .only>.s_btn {
     position: absolute;
-    top: 0;
-    left: -5%;
-
+    bottom: -8%;
+    left: 55%;
 }
 
-
-
-.rooms article > figure > figcaption {
+.rooms article>figure>figcaption {
     white-space: pre-line;
     font-size: 2.5em;
     line-height: 1.5;
@@ -319,7 +270,7 @@ width:20%;
     color: rgba(0, 0, 0, 0.2);
 }
 
-.rooms article > figure > figcaption strong {
+.rooms article>figure>figcaption strong {
     color: #434343;
     font-family: 'Dancing Script', cursive;
     font-size: .8em;
@@ -332,47 +283,43 @@ width:20%;
 
 .rooms article .love figcaption {
     text-align: right;
-    margin-bottom: 0%;
+    margin-bottom: 2%;
 }
 
 .roommap {
     width: 100vw;
     margin: 0 auto;
-
-
 }
 
-.roommap > div {
+.roommap>div {
     margin: 5%;
 }
 
-.roommap > div .info_btn {
+.roommap>div .info_btn {
     display: block;
 }
 
-.roommap > div .info_btn a {
+.roommap>div .info_btn a {
     border: 1px solid gray;
     padding: 1% 2%;
     font-size: 20px;
     color: #000;
     margin: 3%;
-
     font-family: 'Inconsolata', monospace;
     text-transform: uppercase;
 }
 
-.roommap > div .info_btn a:hover {
-    background: #e5e5e5;
+.roommap>div .info_btn a:hover {
+    background: #d3e8e9;
 }
 
-.roommap > div h1 {
-
+.roommap>div h1 {
     font-family: 'Dancing Script', cursive;
     text-transform: uppercase;
     font-size: 5em;
 }
 
-.roommap > div h4 {
+.roommap>div h4 {
     margin: 5% auto;
     font-size: 20px;
     font-weight: 50;
@@ -381,44 +328,40 @@ width:20%;
     font-family: 'Sunflower', sans-serif;
 }
 
-.roommap > p {
+.roommap>p {
     width: 80%;
     margin: 0 auto;
-
 }
 
-.roommap > p img {
+.roommap>p img {
     width: 100%;
 }
 
 /*------------------------------r_info------------------------------*/
+
 .r_info {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-     position: relative;
+    position: relative;
 }
 
 .room_l {
     height: 100%;
-   
 }
 
 .room_l li {
     width: 100%;
     height: 100%;
-
 }
 
 .room_o {
     height: 100%;
-   
 }
 
 .room_o li {
     width: 100%;
     height: 100%;
-
 }
 
 .room_l li:nth-of-type(1) {
@@ -513,11 +456,10 @@ width:20%;
     height: 80vw;
     position: relative;
     margin: 5%;
-
     font-family: 'Titillium Web', sans-serif;
 }
 
-.info > p {
+.info>p {
     margin-top: 5%;
     width: 40%;
     height: 50%;
@@ -526,14 +468,13 @@ width:20%;
     background-size: 100%;
 }
 
-
-.info > h1 {
+.info>h1 {
     font-size: 100px;
     font-family: 'Dancing Script', cursive;
     text-transform: uppercase;
 }
 
-.info > h4 {
+.info>h4 {
     margin: 6% 0;
     font-size: 20px;
     font-weight: 50;
@@ -542,175 +483,231 @@ width:20%;
     font-family: 'Sunflower', sans-serif;
 }
 
-
 .info ul {
-
     float: right;
     margin: 3%;
     width: 30%;
     background: #fff;
-
 }
 
-.info ul > h4 {
+.info ul>h4 {
     font-size: 1.2em;
     padding-bottom: 10px !important;
     border-bottom: 1px solid gray;
 }
 
-.info > ul li {
+.info>ul li {
     line-height: 1.8;
     list-style: square;
-
 }
 
 /*-------------------------service-------------------------------*/
-.s_info {
+
+.service {
     width: 100%;
     height: 100vh;
-
-
-}
-
-.s_info > div {
-    width: 100%;
-    height: 100%;
-;
-}
-
-
-
-.s_info .s_n {
-    margin-left: 10%;
-    padding: 0;
-    background: #fff;
-    width: 25%;
-    height: 100%;
-    position: absolute;
-    bottom: 0%;
-    left: 0;
-    z-index: 1;
-
-    flex-direction: column;
-    white-space: pre-line;
-
-    color: #000;
-    font-size: 25px;
-    
-
-}
-
-
-.s_info .s_n ul {
+    overflow: hidden;
     position: relative;
-    margin-top:30%;
- overflow:hidden;
-
-
 }
 
-.s_info .s_n ul li {
-
-    display: inline-block;
+.service>article {
     width: 100%;
     height: 100%;
-  overflow:hidden;
+    padding:5%;
+    background: url(../img/main/water.jpg) center no-repeat;
+    background-size: 100%;
 }
 
-.s_info .s_n > h1 {
+.service>article .s {
+    height: 60%;
+ 
+}
+
+
+
+.service>article .s li {
+    width: 45%;
+   
+    position: relative;
+    border-radius:100%;
+    overflow:hidden;
+}
+
+.service>article .s li img {
+    width: 100%;
+    height: 100%;
+}
+
+.service>article .s li a {
+    width: 100%;
+    height: 100%;
+}
+
+.service>article .s li a h2 {
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
     position: absolute;
-  top:10%;
-    left: -10%;
-    font-size: 3em;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: pre-line;
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    line-height: 1.5;
+    font-weight: normal;
+    font-family: 'Sunflower', sans-serif;
+}
+
+.service>article .s li a h2 strong {
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 'Sunflower', sans-serif;
+}
+
+.service>article .s li:nth-of-type(1):hover h2 {
+    background: none;
+    transition: .5s;
+    opacity: 0;
+}
+
+.service>article .s li:nth-of-type(2):hover h2 {
+    background: none;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+/* ------------------------faci------------------- */
+
+.facilities {
+    margin: 0;
+    background-size: 100%;
+    height: 100vh;
+}
+
+.facilities .vdo {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.facilities .vdo video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+    transform: scale(1.2);
+}
+
+.facilities .vdo .title {
+    width: 100%;
+    padding: 1% 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    white-space: pre-line;
+    flex-direction: column;
+}
+
+.facilities .vdo .title h1 {
+    font-size: 8em;
     font-family: 'Dancing Script', cursive;
     text-transform: uppercase;
-}
-
-.s_info .s_n ul li > h1 {
+    color: #fff;
     text-align: center;
-    color: #000;
-    font-size: 1.2em;
-    font-weight: 50;
-    font-family: 'Sunflower', sans-serif;
-    
-
+    font-weight: none;
 }
 
-.s_info .s_n ul li > h1 strong {
-    font-size: 1.5em;
-    font-weight: 50;
-}
-
-.s_info .s_n ul li > p {
-    text-align: center;
-    margin-top: 5%;
-    font-size: 0.8em;
-    font-weight: 500;
+.facilities .vdo .title strong {
+    font-size: 30px;
+    font-weight: none;
+    color: #fff;
     font-family: 'Titillium Web', sans-serif;
-   
 }
 
-.s_info .s_n .a_btn {
-    width: 90%;
-    position: absolute;
-    top: 40%;
-    left: 5%;
-    transform: translateY(-50%);
-    margin: 0;
-    padding: 0;
+.facilities .vdo article {
+    margin: 5% auto;
+    width: 80%;
 }
 
-.s_info .s_n .a_btn > a {
-    font-size: 0;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    width: 40px;
-}
-
-.s_info .s_n .a_btn > a img {
-    width: 100%;
-
-}
-
-.s_info .s_n .a_btn > a:nth-of-type(1) {
-    transform: rotate(180deg);
-}
-
-.s_info .s_n .a_btn > a {
-    opacity: 0.5;
-}
-
-.s_info .s_n .a_btn > a:hover {
-    opacity: 1;
-}
-
-
-
-.s_info .s_i {
+.facilities .vdo article figure {
     position: relative;
-    width: 100%;
-    height: 100%;
+    margin: 0;
     overflow: hidden;
-    display: flex;
-    justify-content: flex-end;
-   
 }
 
-.s_info .s_i li p {
-overflow:hidden;
-    width: 100vw;
-    height: 100%;
+.facilities .vdo article figure p {
+    opacity: 1;
+    width: 300px;
+    height: 300px;
 }
 
-.s_info .s_i li p img {
-
+.facilities .vdo article figure p img {
     width: 100%;
     height: 100%;
+}
+
+.facilities .vdo article figure p:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.facilities .vdo article figure p:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 6%;
+    transform: translate(-50%);
+    border: 2px solid #fff;
+    width: 90%;
+    height: 90%;
+}
+
+.facilities .vdo article figure:hover p:before, .facilities .vdo article figure:hover p:after, .facilities .vdo article figure:hover figcaption {
+    transition: .5s;
+    opacity: 0;
+}
+
+.facilities .vdo article figure p img {
+    width: 150%;
+    height: 200%;
+}
+
+.facilities .vdo article figure figcaption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    text-align: center;
+    white-space: pre-line;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*----------------c_n-----------------------------*/
-
 
 .c_notice .c_n {
     width: 100%;
@@ -719,31 +716,26 @@ overflow:hidden;
     background-size: 100% 100%;
 }
 
-.c_notice .c_n > h1 {
-
+.c_notice .c_n>h1 {
     text-align: center;
     color: #fff;
-
     white-space: pre-line;
     font-size: 300%;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 100;
 }
 
-.c_notice .c_n > h1 strong {
+.c_notice .c_n>h1 strong {
     font-family: 'Dancing Script', cursive;
     font-size: 3em;
     font-weight: none;
 }
 
-
-
 .c_notice .c_t {
     margin: 2% auto;
     width: 70%;
-
     border: 1px solid #000;
-    border-collapse:collapse;
+    border-collapse: collapse;
 }
 
 .c_notice .c_t caption {
@@ -756,56 +748,49 @@ overflow:hidden;
     text-transform: uppercase;
 }
 
-.c_notice .c_t caption > strong {
+.c_notice .c_t caption>strong {
     font-size: 2em;
 }
 
 .c_notice .c_t thead {
-   
- 
     background: #f8f3ec;
-    text-align:center;
+    text-align: center;
 }
 
-.c_notice .c_t thead tr{
-    
-    
-}
+.c_notice .c_t thead tr {}
 
 .c_notice .c_t thead th:nth-of-type(1) {
-   width:10%;
+    width: 10%;
 }
+
 .c_notice .c_t thead th:nth-of-type(2) {
-   width:50%;
+    width: 50%;
 }
+
 .c_notice .c_t thead th:nth-of-type(3) {
-   width:15%;
+    width: 15%;
 }
+
 .c_notice .c_t thead th:nth-of-type(4) {
-   width:15%;
+    width: 15%;
 }
+
 .c_notice .c_t thead th:nth-of-type(5) {
-   width:10%;
+    width: 10%;
 }
 
 .c_notice .c_t tbody {
-   
- text-align:center;
-     
+    text-align: center;
 }
 
 .c_notice .c_t tbody tr {
-     border-bottom: 1px solid #000;
-   
-}
-.c_notice .c_t tbody tr:nth-of-type(1){
-   
+    border-bottom: 1px solid #000;
 }
 
+.c_notice .c_t tbody tr:nth-of-type(1) {}
+
 .c_notice .c_t tbody tr:nth-of-type(1) td:nth-of-type(1) {
-   
-    background:#e5e5e5;
-       
+    background: #e5e5e5;
 }
 
 /*----------------c_p-----------------------------*/
@@ -819,25 +804,22 @@ overflow:hidden;
     background-size: 100% 100%;
 }
 
-.c_photo .c_n > h1 {
-
+.c_photo .c_n>h1 {
     text-align: center;
     color: #fff;
-
     white-space: pre-line;
     font-size: 3em;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 100;
 }
 
-.c_photo .c_n > h1 strong {
+.c_photo .c_n>h1 strong {
     font-family: 'Dancing Script', cursive;
     font-size: 3em;
     font-weight: none;
 }
 
-
-.c_photo > h1 {
+.c_photo>h1 {
     line-height: 2;
     width: 100%;
     font-size: 100%;
@@ -847,16 +829,15 @@ overflow:hidden;
     text-transform: uppercase;
 }
 
-.c_photo > h1 strong {
+.c_photo>h1 strong {
     font-size: 2em;
 }
 
 .c_photo .f {
     width: 80%;
-    
     border: 1px solid #000;
     margin: 2% auto;
-    padding:2%;
+    padding: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -864,28 +845,29 @@ overflow:hidden;
 }
 
 .c_photo .f li {
-   margin-right:5%;
+    margin-right: 5%;
 }
 
-.c_photo .f li .f_no_p > a img {
-   width:200px;height:150px;
-    margin:5% auto;
+.c_photo .f li .f_no_p>a img {
+    width: 200px;
+    height: 150px;
+    margin: 5% auto;
 }
-.c_photo .f li .f_no_n{
-     text-align:center;
+
+.c_photo .f li .f_no_n {
+    text-align: center;
 }
-.c_photo .f li .f_no_n > a{
-   
-    color:#000;
+
+.c_photo .f li .f_no_n>a {
+    color: #000;
 }
 
 /*----------------------media480---------------------------*/
-@media (max-width:480px) {
 
+@media (max-width:480px) {
     body {
         width: 100vw;
     }
-
     /*    ----------btn-----------------------------*/
     .scroll {
         position: fixed;
@@ -894,9 +876,7 @@ overflow:hidden;
         bottom: 5%;
         text-align: center;
         transform: translateX(-50%);
-
     }
-
     .scroll p {
         color: #fff;
         font-family: 'Inconsolata', monospace;
@@ -905,12 +885,10 @@ overflow:hidden;
         position: relative;
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     }
-
     .scroll img {
         width: 5vw;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
     }
-
     .sns .link a {
         width: 25px;
         height: 25px;
@@ -919,52 +897,40 @@ overflow:hidden;
         display: inline-block;
         margin: 3px;
     }
-
     .sns .link a:nth-of-type(1) {
         background-position: 8px 0;
     }
-
     .sns .link a:nth-of-type(2) {
         background-position: -39px 0;
     }
-
     .sns .link a:nth-of-type(3) {
         background-position: -83px 0;
     }
-
     .sns .link a:nth-of-type(4) {
         background-position: -130px 0;
     }
-
     .logo {
-
         z-index: 200;
         position: fixed;
         left: 2%;
         top: 0;
     }
-
     .logo img {
         width: 20vw;
     }
-
     .r_btn {
-
         z-index: 200;
         position: fixed;
         right: 50%;
         top: 80%;
         transform: translateX(50%);
     }
-
     .r_btn img {
         width: 30vw;
     }
-
     .side {
         display: none;
     }
-
     .menu-trigger {
         position: fixed;
         right: 2%;
@@ -972,40 +938,32 @@ overflow:hidden;
         z-index: 200;
         display: block;
     }
-
     .c_btn a {
         padding: 3%;
         font-size: 1em;
     }
-
     .c_btn a {
         width: 30%;
     }
-
     .info_btn a {
         padding: 3%;
         font-size: 1em;
     }
-
-    .indi > li{
-        margin-right:5px;
-        width:8px;
-        height:8px;
+    .indi>li {
+        margin-right: 5px;
+        width: 8px;
+        height: 8px;
     }
-
-    .a_btn > a img {
-        width:5vw;
+    .a_btn>a img {
+        width: 5vw;
     }
-
     /*    -----------------------------header------------*/
     .header {
         background: 0;
     }
-
     .header nav.active {
         transform: translateX(0%);
     }
-
     .header nav {
         position: fixed;
         top: 0;
@@ -1023,22 +981,16 @@ overflow:hidden;
         justify-content: center;
         /*        text-align: center;*/
         padding: 20% 0 40% 0;
-
     }
-
-    .header nav > div {
+    .header nav>div {
         width: 70%;
-
     }
-
-    .header nav > div > a {
+    .header nav>div>a {
         display: inline-block;
         font-size: 1.5em;
         padding: 5% 0;
-
     }
-
-    .header nav > div ul {
+    .header nav>div ul {
         background: rgba(255, 255, 255, 0.5);
         width: 60%;
         position: relative;
@@ -1046,218 +998,158 @@ overflow:hidden;
         right: 0;
         display: none;
         margin: 5%;
-
     }
-
-    .header nav > div ul li {
+    .header nav>div ul li {
         display: flex;
         justify-content: center;
         align-content: center;
         margin: 0 auto;
     }
-
-    .header nav > div ul li a {
+    .header nav>div ul li a {
         font-family: 'Titillium Web', sans-serif;
         padding: 1%;
     }
-
-    .header nav > div:hover {
+    .header nav>div:hover {
         background: #f8f3ec;
         width: 100%;
         height: auto;
     }
-
-    .header nav > div:hover ul {
+    .header nav>div:hover ul {
         display: inline-block;
     }
-
-
-
     /*   ---------------------------room-------------*/
-
-.rooms > h1 {
-    position:absolute;
-    left:5%;
-    top:5%;
-    font-size:3em;}
+    .rooms>h1 {
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        font-size: 3em;
+    }
     .rooms article {
         display: block;
         height: 100%;
-
-
     }
-    .room_l{
-        margin-top:20%;
+    .room_l {
+        margin-top: 20%;
     }
-
     .rooms article .love {
         width: 100%;
         padding: 3%;
-
     }
-   
-
     .rooms article .only {
         width: 100%;
         padding: 3%;
-
     }
-
-    .rooms article > figure .room {
+    .rooms article>figure .room {
         height: 30vh;
     }
-
-    .rooms article > figure > div {
+    .rooms article>figure>div {
         margin: 0% auto;
     }
-
-    .rooms article > figure > div .s_btn > a img {
+    .rooms article>figure>div .s_btn>a img {
         width: 50%;
         height: 50%;
-
     }
-
-
-    .rooms article .love > div .s_btn {
+    .rooms article .love>div .s_btn {
         right: -15%;
         bottom: 10%;
-
     }
-
-    .rooms article .only > div p {
+    .rooms article .only>div p {
         float: right;
     }
-
-    .rooms article .only > div .s_btn {
+    .rooms article .only>div .s_btn {
         top: 15%;
         left: -10%;
-
     }
-
-    .rooms article > figure > figcaption {
+    .rooms article>figure>figcaption {
         font-size: 1.2em;
-
     }
-
-
-
-    .roommap > div {
+    .roommap>div {
         margin: 10%;
     }
-
-    .roommap > div .info_btn {
+    .roommap>div .info_btn {
         display: block;
-
     }
-
-    .roommap > div .info_btn a {
+    .roommap>div .info_btn a {
         width: 30%;
         padding: 2% 3%;
         margin: 1%;
         font-size: 80%;
     }
-
-    .roommap > div h1 {
-
-
+    .roommap>div h1 {
         font-size: 3em;
     }
-
-    .roommap > div h4 {
+    .roommap>div h4 {
         margin: 5% auto;
         font-size: 0.5em;
     }
-
-    .info > h1 {
+    .info>h1 {
         font-size: 2.5em;
     }
-
-    .info > h4 {
+    .info>h4 {
         font-size: 0.5em;
     }
-
     .r_info {
         height: 30vh;
-
     }
-
-    .info > p {
+    .info>p {
         display: none;
     }
-
-    .info > ul {
+    .info>ul {
         margin-top: 15%;
         width: 60%;
         font-size: 0.5em;
     }
-
     /*---------------about---------------------------*/
-
-  
-
     .is {
-
         margin-top: 5%;
     }
-
-    .is > h1 {
+    .is>h1 {
         font-size: 3em;
         margin-bottom: 5%;
     }
-
-    .is > p {
+    .is>p {
         text-align: center;
         font-size: 0.1em;
         display: block;
     }
-    .view .about{
-        height:30vh;
-        overflow:hidden;
+    .view .about {
+        height: 30vh;
+        overflow: hidden;
     }
     .traffic {
         padding: 0;
         margin: 0 auto;
         width: 80%;
         height: 100%;
-
-
     }
-    .traffic > h1{
-        margin:10% 0 auto;
-        font-size:3em;
+    .traffic>h1 {
+        margin: 10% 0 auto;
+        font-size: 3em;
     }
-    .traffic > img {
+    .traffic>img {
         position: absolute;
         left: -35%;
         bottom: -30%;
         width: 60%;
-
         z-index: 2;
-
     }
-
     .traffic .con {
         flex-direction: column;
-
-
     }
-
     .traffic .con .map {
-
         margin: 10%;
     }
-    .traffic .con .a_info{
-        width:400px;
-        height:400px;
+    .traffic .con .a_info {
+        width: 400px;
+        height: 400px;
     }
-    .traffic .con .a_info > p{
-        font-size:1.5em;
-         width:400px;
-        height:400px;
+    .traffic .con .a_info>p {
+        font-size: 1.5em;
+        width: 400px;
+        height: 400px;
     }
-
     /*   ---------------------------- travel&service&faci----------------------------------------*/
-      .travel article {
+    .travel article {
         flex-direction: column;
     }
     .s_info .s_n {
@@ -1266,77 +1158,59 @@ overflow:hidden;
         height: 30%;
         margin-left: 20%;
     }
-
-    .s_info .s_n > h1 {
+    .s_info .s_n>h1 {
         left: -10%;
-        font-size:3em;
+        font-size: 3em;
     }
-
-    .s_info .s_n > ul {
+    .s_info .s_n>ul {
         width: 80%;
-        margin-top:0%;
-
+        margin-top: 0%;
     }
-    .s_info .s_n .a_btn{
-        width:70%;
-        top:50%;
+    .s_info .s_n .a_btn {
+        width: 70%;
+        top: 50%;
     }
-    .s_info .s_n .a_btn > a img{
-        width:5vw;
+    .s_info .s_n .a_btn>a img {
+        width: 5vw;
     }
-
     /*----------------------------------------------community------------------------------------*/
-   
     .c_notice {
         width: 100%;
     }
-     .c_notice .c_n > h1 {
+    .c_notice .c_n>h1 {
         font-size: 150%;
     }
-    .c_notice .c_t thead,
-     .c_notice .c_t tbody{
-         font-size:10px;
+    .c_notice .c_t thead, .c_notice .c_t tbody {
+        font-size: 10px;
     }
-    
-     .c_photo {
+    .c_photo {
         width: 100%;
     }
-
-    .c_photo .c_n > h1 {
+    .c_photo .c_n>h1 {
         font-size: 150%;
     }
-
-   
     .c_photo .f {
-        flex-direction:column;
+        flex-direction: column;
     }
-
     /*    ----------footer---------------*/
     footer {
-
         width: 100vw;
-
     }
-
     footer .foot {
         text-align: center;
         width: 100%;
         margin: 0 auto;
-
     }
-
     footer .foot .f_t {
         line-height: 0.8;
         width: 100%;
         margin-top: 20%;
         font-size: 0.5em;
- 
     }
-    footer .foot .f_t > p:nth-of-type(1){
-        margin-top:2%;
+    footer .foot .f_t>p:nth-of-type(1) {
+        margin-top: 2%;
     }
-    footer .foot .f_t > p:nth-of-type(2) {
+    footer .foot .f_t>p:nth-of-type(2) {
         display: none;
-        
     }
 }

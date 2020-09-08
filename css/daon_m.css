@@ -363,7 +363,7 @@ footer{
 }
 
 footer .foot {
-    z-index:11;
+   z-index:0; 
   height:20vh; 
  position:absolute;
  left:50%;
@@ -375,6 +375,7 @@ footer .foot {
 }
 footer .foot.active{
     display:block;
+    z-index:11;
     
 }
 footer .foot .f_t {
