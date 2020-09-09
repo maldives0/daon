@@ -1,669 +1,792 @@
-@import url('common.css');
+@import url("common.css");
 /*main---------------------------------*/
-html{
-    scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
 }
-html,body{
-    overflow:hidden;
+
+body {
+  overflow: hidden;
 }
+
 .scroll {
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  bottom: 5%;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+}
+
+.scroll.active {
+  display: none;
+}
+
+.scroll p {
+  color: #fff;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.scroll img {
+  width: 25%;
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
+          filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
+}
+
+main {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 10;
+}
+
+main > div {
+  height: 100vh;
+  position: relative;
+}
+
+main > div > img {
+  width: 100%;
+  height: 100%;
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+svg .st path {
+  fill: #fff;
+}
+
+svg .line {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 40px;
+  stroke-dasharray: 4000px;
+  stroke-dashoffset: 4000px;
+  -webkit-animation: dash 5s forwards;
+          animation: dash 5s forwards;
+}
+
+@-webkit-keyframes dash {
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.rooms .room {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.rooms .room .r_list {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.rooms .room .r_list li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.service {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.service > article {
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+
+.service > article > div {
+  width: 100%;
+  padding: 20vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+  background: url(../img/main/water.jpg) center no-repeat;
+  background-size: 100%;
+}
+
+.service > article > div.fade {
+  -webkit-animation: fadeOut 15s forwards;
+          animation: fadeOut 15s forwards;
+}
+
+.service > article > div h2 {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 3em;
+  font-weight: normal;
+  font-family: 'Sunflower', sans-serif;
+  color: #fff;
+}
+
+.service > article > div h2 strong {
+  display: block;
+  margin: 5%;
+  font-family: 'Dancing Script', cursive;
+  font-size: 5em;
+}
+
+.service > article .s {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: flex-end;
+  opacity: 0;
+}
+
+.service > article .s.fade {
+  -webkit-animation: fadeIn 5s forwards;
+          animation: fadeIn 5s forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.service > article .s li {
+  width: 33%;
+  height: 100%;
+  position: relative;
+}
+
+.service > article .s li img {
+  width: 100%;
+  height: 100%;
+}
+
+.service > article .s li a {
+  width: 100%;
+  height: 100%;
+}
+
+.service > article .s li a h2 {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: pre-line;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: normal;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.service > article .s li a h2 strong {
+  font-size: 50px;
+  font-weight: normal;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.service > article .s li:nth-of-type(1):hover h2 {
+  background: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+.service > article .s li:nth-of-type(2):hover h2, .service > article .s li:nth-of-type(3):hover h2 {
+  background: none;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
+.facilities {
+  margin: 0;
+  background-size: 100%;
+  height: 100vh;
+}
+
+.facilities .vdo {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.facilities .vdo video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.facilities .vdo .title {
+  width: 100%;
+  padding: 3% 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  white-space: pre-line;
+}
+
+.facilities .vdo .title h1 {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.facilities .vdo .title h1 strong {
+  font-size: 80px;
+  font-weight: none;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.facilities .vdo article {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.facilities .vdo article figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.facilities .vdo article figure p {
+  opacity: 1;
+  width: 300px;
+  height: 300px;
+}
+
+.facilities .vdo article figure p img {
+  width: 100%;
+  height: 100%;
+}
+
+.facilities .vdo article figure p:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.facilities .vdo article figure p:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 6%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border: 2px solid #fff;
+  width: 90%;
+  height: 90%;
+}
+
+.facilities .vdo article figure:hover p:before, .facilities .vdo article figure:hover p:after {
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+.facilities .vdo article figure:hover figcaption {
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+.facilities .vdo article figure p img {
+  width: 150%;
+  height: 200%;
+}
+
+.facilities .vdo article figure figcaption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  text-align: center;
+  white-space: pre-line;
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.roommap {
+  margin-top: 10%;
+  position: relative;
+  height: 100vh;
+  background: url(../img/main/roommap.jpg) center no-repeat;
+  background-size: 100%;
+  z-index: 0;
+}
+
+footer {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+footer .foot {
+  z-index: 0;
+  height: 20vh;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 2%;
+  display: none;
+}
+
+footer .foot.active {
+  display: block;
+  z-index: 11;
+}
+
+footer .foot .f_t {
+  text-align: center;
+  white-space: pre-line;
+  font-size: 0.5em;
+  font-family: "Titillium Web", sans-serif;
+  line-height: 2;
+  padding: 2% 0;
+}
+
+footer .foot .f_t > p {
+  text-align: center;
+  margin: 0;
+}
+
+footer .foot .f_t > p img {
+  width: 90px;
+  height: 10px;
+}
+
+/*----------------------media480---------------------------*/
+@media (max-width: 480px) {
+  body {
+    width: 100vw;
+  }
+  /*    ----------fixed-----------------------------*/
+  .scroll {
     position: fixed;
     z-index: 100;
     left: 50%;
     bottom: 5%;
     text-align: center;
-    transform: translateX(-50%);
-    display:block;
-}
-.scroll.active{
-    display:none;
-}
-
-.scroll p {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .scroll p {
     color: #fff;
-    font-family: "Inconsolata", monospace;
-    font-size: 1.5em;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2em;
     text-transform: uppercase;
     position: relative;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
-}
-
-.scroll img {
-    width: 25%;
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
-}
-main {
-    width: 100%;
-    position: absolute;
-    top:0; left:0;
-    overflow:hidden;
-    transition:1s;
-    z-index:10;
-}
-
-main>div {
-    height: 100vh;
-    position:relative;
-}
-
-main>div>img {
-    width: 100%;
-    height: 100%;
-}
-svg{
-    position:absolute;
-    top:50%; left:50%;
-    transform:translate(-50%);
-}
-svg .st path{
-    fill:#fff;
-    
-}
-
-svg .line{
-    fill:transparent;
-    stroke:#fff;
-    stroke-width:40px; 
-    
-    stroke-dasharray:4000px;
-    stroke-dashoffset:4000px;
-    animation:dash 5s forwards;
-    
-   
-}
-@keyframes dash{
-        100%{
-           
-             stroke-dashoffset:0px;
-        }
-}
-
-.rooms .room{
-    width:100%;
-    height:100vh;
-    position:relative;
-    overflow:hidden;
-   
-}
-.rooms .room .r_list{
-    width:100%;
-    height:100%;
-    position:relative;
-
-}
-.rooms .room .r_list li{
-    width:100%; height:100%;
-    position:absolute;
-    top:0; left:0;
-}
-
-
-.service {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-  
-}
-
-.service>article {
-    width: 100%;
-    height: 100%;
-    float: right;
-}
-
-.service>article>div {
-    width: 100%; padding:20vh;
-    position: absolute;
-   
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
-   transition:1s;
-       opacity:1;
-       background: url(../img/main/water.jpg) center no-repeat;
-       background-size:100%;
-}
-.service>article>div.fade {
-    animation:fadeOut 15s forwards;
-    
-}
-@keyframes fadeOut{
-    0%{opacity:1;}
-    50%,100%{opacity:0;
-      }
-}
-.service>article>div h2 {
-    text-align: center;
-   display:flex;
-   justify-content:center;
-   align-items:center;
-   flex-direction:column;
-    font-size: 3em;
-    font-weight:normal;
-    font-family: 'Sunflower', sans-serif;
-    color:#fff;
-}
-
-.service>article>div h2 strong {
-    display: block;
-    margin: 5%;
-    font-family: 'Dancing Script', cursive;
-    font-size: 5em;
-}
-
-.service>article .s {
-    height: 100%;
-    display:flex;
-    justify-items:flex-end;
-    opacity:0;
-   
-}
-.service>article .s.fade {
-    animation:fadeIn 5s forwards;
-    animation-delay:2s;
-}
-@keyframes fadeIn{
-0%{opacity:0;}
-50%,100%{opacity:1;}
-}
-.service>article .s li {
-    width:33%;
-    height: 100%;
-    position: relative;
-}
-
-.service>article .s li img {
-    width: 100%;
-    height: 100%;
-}
-
-.service>article .s li a {
-    width: 100%;
-    height: 100%;
-}
-
-.service>article .s li a h2 {
-    margin: 0;
-    padding: 0;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  }
+  .scroll img {
+    width: 5vw;
+    -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
+            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
+  }
+  .sns .link a {
+    width: 25px;
+    height: 25px;
+    background: url("../img/main/bt_sns_b.png") no-repeat;
+    background-size: 150px;
+    display: inline-block;
+    margin: 3px;
+  }
+  .sns .link a:nth-of-type(1) {
+    background-position: 8px 0;
+  }
+  .sns .link a:nth-of-type(2) {
+    background-position: -39px 0;
+  }
+  .sns .link a:nth-of-type(3) {
+    background-position: -83px 0;
+  }
+  .sns .link a:nth-of-type(4) {
+    background-position: -130px 0;
+  }
+  .logo {
+    z-index: 200;
+    position: fixed;
+    left: 2%;
     top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    white-space: pre-line;
-    text-align: center;
-    color: #fff;
-    font-size: 30px;
-    line-height: 1.5;
-    font-weight: normal;
-    font-family: 'Sunflower', sans-serif;
-}
-
-.service>article .s li a h2 strong {
-    font-size: 50px;
-    font-weight: normal;
-    font-family: 'Sunflower', sans-serif;
-}
-
-.service>article .s li:nth-of-type(1):hover h2 {
-    background: none;
-    transition: .5s;
-    opacity: 0;
-}
-
-.service>article .s li:nth-of-type(2):hover h2 {
-    background: none;
-    opacity: 0;
-    transition: .5s;
-}
-
-.service>article .s li:nth-of-type(3):hover h2 {
-    background: none;
-    opacity: 0;
-    transition: .5s;
-}
-
-.facilities {
-    margin: 0;
-    background-size: 100%;
+    width: 100px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .logo img {
+    width: 100%;
+  }
+  .r_btn {
+    z-index: 200;
+    position: fixed;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    top: 80%;
+    width: 150px;
+    height: 36px;
+    background: url("../img/main/bt_reservation.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .side {
+    display: none;
+  }
+  .menu-trigger {
+    position: fixed;
+    right: 5%;
+    top: 2%;
+    z-index: 200;
+    display: block;
+  }
+  /*    -----------------------------header------------*/
+  header {
+    background: 0;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 200;
+    width: 100%;
     height: 100vh;
-}
-
-.facilities .vdo {
+    display: block;
+    background: #fff;
     margin: 0;
-    padding: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20% 0 40% 0;
+  }
+  header nav.active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  header nav > div {
+    width: 70%;
+  }
+  header nav > div > a {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 5% 0;
+  }
+  header nav > div ul {
+    background: rgba(0, 0, 0, 0.1);
+    width: 80%;
     position: relative;
-    overflow: hidden;
+    top: 0;
+    right: 0;
+    display: none;
+    margin: 5%;
+  }
+  header nav > div ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 5% auto;
+    font-size: 1.2em;
+  }
+  header nav > div ul li a {
+    font-family: 'Titillium Web', sans-serif;
+    padding: 1%;
+  }
+  header nav > div:hover {
+    background: ivory;
+    width: 100%;
+    height: auto;
+  }
+  .header nav > div:hover ul {
+    display: inline-block;
+  }
+  /*   ----------------------------main--------------*/
+  main {
+    width: 100vw;
+    height: 100vh;
+  }
+  main > div {
+    position: relative;
+  }
+  main > div > img {
     width: 100%;
     height: 100%;
-    flex-direction: column;
-}
-
-.facilities .vdo video {
+  }
+  main > div > h1 {
     width: 100%;
-    height: 100%;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    font-family: 'Dancing Script', cursive;
+  }
+  .a_btn > a img {
+    width: 5vw;
+  }
+  .service {
+    width: 100vw;
+    padding-bottom: 5%;
+    height: auto;
+  }
+  .service > article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    float: none;
+    margin: 0 auto;
+  }
+  .service > article > div {
+    width: 100%;
+    margin-top: 10%;
+    position: static;
+  }
+  .service > article > div h2 {
+    padding: 0;
+    line-height: 1.5;
+    font-size: 90%;
+  }
+  .service > article > div h2 strong {
+    font-size: 5em;
+  }
+  .service > article .s {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service > article .s li {
+    margin-bottom: 5%;
+    width: 50%;
+    height: 30%;
+  }
+  .service > article .s li:nth-of-type(2) {
+    margin-left: 50%;
+  }
+  .service > article .s li a h2 {
+    font-size: 80%;
+    line-height: 1.5;
+  }
+  .service > article .s li a h2 strong {
+    font-size: 2em;
+    font-weight: 100;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  .facilities {
+    margin: 0;
+    height: auto;
+    background-size: 100%;
+  }
+  .facilities .vdo video {
+    width: 100%;
     position: absolute;
     z-index: 0;
     left: 0;
-    bottom: 0;
-    transform: scale(1.2);
-}
-
-.facilities .vdo .title {
-    width: 100%;
-    padding: 3% 0;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    white-space: pre-line;
-}
-
-.facilities .vdo .title h1 {
-    color: #fff;
-    font-size: 25px;
-    text-align: center;
-    font-family: 'Titillium Web', sans-serif;
-    
-}
-
-.facilities .vdo .title h1 strong {
-    font-size: 80px;
-    font-weight: none;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-.facilities .vdo article {
-    margin: 0 auto;
-    width: 80%;
-}
-
-.facilities .vdo article figure {
-    position: relative;
-    margin: 0;
-    overflow: hidden;
-}
-
-.facilities .vdo article figure p {
-    opacity: 1;
-    width: 300px;
-    height: 300px;
-}
-
-.facilities .vdo article figure p img {
-    width: 100%;
-    height: 100%;
-}
-
-.facilities .vdo article figure p:before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.facilities .vdo article figure p:after {
-    content: '';
+    bottom: 40%;
+  }
+  .facilities .vdo .title {
+    background: none;
     display: block;
-    position: absolute;
-    left: 50%;
-    bottom: 6%;
-    transform: translate(-50%);
-    border: 2px solid #fff;
-    width: 90%;
-    height: 90%;
-}
-
-.facilities .vdo article figure:hover p:before, .facilities .vdo article figure:hover p:after, .facilities .vdo article figure:hover figcaption {
-    transition: .5s;
-    opacity: 0;
-}
-
-.facilities .vdo article figure p img {
-    width: 150%;
-    height: 200%;
-}
-
-.facilities .vdo article figure figcaption {
+    white-space: pre-line;
+    z-index: 1;
+  }
+  .facilities .vdo .title h1 {
+    font-size: 90%;
+  }
+  .facilities .vdo .title h1 strong {
+    font-size: 4em;
+  }
+  .facilities .vdo article {
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .facilities .vdo article figure {
+    position: relative;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0%;
-    bottom: 0%;
-    text-align: center;
-    white-space: pre-line;
-    color: #fff;
-    font-family: 'Titillium Web', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 50%;
+    margin: 2% auto;
+    overflow: hidden;
+  }
+  .roommap {
+    height: auto;
+  }
+  .roommap img {
+    width: 100%;
+  }
+  /*    ----------footer---------------*/
+  footer {
+    width: 100vw;
+    height: 50vh;
+  }
+  footer .foot {
+    width: 100%;
+    margin: 0 auto;
+  }
+  footer .foot .f_t {
+    width: 100%;
+    margin: 5% auto;
+    font-size: 0.2em;
+    bottom: 0;
+  }
 }
-
-.roommap {
-    margin-top: 10%;
-   position:relative;
-    height: 100vh;
-    background:url(../img/main/roommap.jpg) center no-repeat;
-    background-size:100%;
-    z-index:0;
-}
-
-footer{
-    position:relative;
-    top:0; left:0;
-   
-}
-
-footer .foot {
-   z-index:0; 
-  height:20vh; 
- position:absolute;
- left:50%;
- bottom:10%;
- transform:translateX(-50%);
-    margin: 2%;
-   display:none;
-  
-}
-footer .foot.active{
-    display:block;
-    z-index:11;
-    
-}
-footer .foot .f_t {
-    text-align: center;
-    white-space: pre-line;
-    font-size: 0.5em;
-    font-family: "Titillium Web", sans-serif;
-    line-height: 2;
-    padding: 2% 0;
-}
-
-footer .foot .f_t>p {
-    text-align: center;
-    margin: 0;
-}
-
-footer .foot .f_t>p img {
-    width: 90px;
-    height: 10px;
-}
-/*----------------------media480---------------------------*/
-
-@media (max-width:480px) {
-    body {
-        width: 100vw;
-    }
-    /*    ----------fixed-----------------------------*/
-    .scroll {
-        position: fixed;
-        z-index: 100;
-        left: 50%;
-        bottom: 5%;
-        text-align: center;
-        transform: translateX(-50%);
-    }
-    .scroll p {
-        color: #fff;
-        font-family: 'Inconsolata', monospace;
-        font-size: 1.2em;
-        text-transform: uppercase;
-        position: relative;
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
-    }
-    .scroll img {
-        width: 5vw;
-        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
-    }
-    .sns .link a {
-        width: 25px;
-        height: 25px;
-        background: url('../img/main/bt_sns_b.png') no-repeat;
-        background-size: 150px;
-        display: inline-block;
-        margin: 3px;
-    }
-    .sns .link a:nth-of-type(1) {
-        background-position: 8px 0;
-    }
-    .sns .link a:nth-of-type(2) {
-        background-position: -39px 0;
-    }
-    .sns .link a:nth-of-type(3) {
-        background-position: -83px 0;
-    }
-    .sns .link a:nth-of-type(4) {
-        background-position: -130px 0;
-    }
-    .logo {
-        z-index: 200;
-        position: fixed;
-        left: 2%;
-        top: 0;
-        width: 100px;
-        height: 36px;
-        background: rgba(255, 255, 255, .2);
-    }
-    .logo img {
-        width: 100%;
-    }
-    .r_btn {
-        z-index: 200;
-        position: fixed;
-        right: 50%;
-        transform:translateX(50%);
-       top: 80%;
-        width: 150px;
-        height: 36px;
-        background: url('../img/main/bt_reservation.png') no-repeat;
-        background-size: 100% 100%;
-    }
-    .side {
-        display: none;
-    }
-    .menu-trigger {
-        position: fixed;
-        right: 5%;
-        top: 2%;
-        z-index: 200;
-        display: block;
-    }
-    /*    -----------------------------header------------*/
-    header {
-        background: 0;
-    }
-    header nav.active {
-        transform: translateX(0%);
-    }
-    header nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 200;
-        width: 100%;
-        height: 100vh;
-        display: block;
-        background: #fff;
-        margin: 0;
-        transform: translateX(100%);
-        transition: .5s;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 20% 0 40% 0;
-    }
-    header nav>div {
-        width: 70%;
-    }
-    header nav>div>a {
-        display: inline-block;
-        font-size: 1.5em;
-        padding: 5% 0;
-    }
-    header nav>div ul {
-        background: rgba(0, 0, 0, 0.1);
-        width: 80%;
-        position: relative;
-        top: 0;
-        right: 0;
-        display: none;
-        margin: 5%;
-    }
-    header nav>div ul li {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin: 5% auto;
-        font-size: 1.2em;
-    }
-    header nav>div ul li a {
-        font-family: 'Titillium Web', sans-serif;
-        padding: 1%;
-    }
-    header nav>div:hover {
-        background: ivory;
-        width: 100%;
-        height: auto;
-    }
-    .header nav>div:hover ul {
-        display: inline-block;
-    }
-    /*   ----------------------------main--------------*/
-    main {
-        width: 100vw;
-        height: 100vh;
-    }
-    main>div {
-        position: relative;
-    }
-    main>div>img {
-        width: 100%;
-        height: 100%;
-    }
-    main>div>h1 {
-        width: 100%;
-        color: #fff;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 3em;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%);
-        font-family: 'Dancing Script', cursive;
-    }
-    .a_btn>a img {
-        width: 5vw;
-    }
-    .service {
-        width: 100vw;
-        padding-bottom: 5%;
-        height: auto;
-    }
-    .service>article {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        float: none;
-        margin: 0 auto;
-    }
-    .service>article>div {
-        width: 100%;
-        margin-top: 10%;
-        position: static;
-    }
-    .service>article>div h2 {
-        padding: 0;
-        line-height: 1.5;
-        font-size: 90%;
-    }
-    .service>article>div h2 strong {
-        font-size: 5em;
-    }
-    .service>article .s {
-        display: flex;
-        flex-direction: column;
-    }
-    .service>article .s li {
-        margin-bottom: 5%;
-        width: 50%;
-        height: 30%;
-    }
-    .service>article .s li:nth-of-type(2) {
-        margin-left: 50%;
-    }
-    .service>article .s li a h2 {
-        font-size: 80%;
-        line-height: 1.5;
-    }
-    .service>article .s li a h2 strong {
-        font-size: 2em;
-        font-weight: 100;
-        font-family: 'Titillium Web', sans-serif;
-    }
-    .facilities {
-        margin: 0;
-        height: auto;
-        background-size: 100%;
-    }
-    .facilities .vdo video {
-        width: 100%;
-        position: absolute;
-        z-index: 0;
-        left: 0;
-        bottom: 40%;
-    }
-    .facilities .vdo .title {
-        background: none;
-        display: block;
-        white-space: pre-line;
-        z-index: 1;
-    }
-    .facilities .vdo .title h1 {
-        font-size: 90%;
-    }
-    .facilities .vdo .title h1 strong {
-        font-size: 4em;
-    }
-    .facilities .vdo article {
-        margin: 0 auto;
-        flex-direction: column;
-    }
-    .facilities .vdo article figure {
-        position: relative;
-        width: 100%;
-        height: 50%;
-        margin: 2% auto;
-        overflow: hidden;
-    }
-    .roommap {
-        height: auto;
-    }
-    .roommap img {
-        width: 100%;
-    }
-    /*    ----------footer---------------*/
-    footer {
-        width: 100vw;
-        height: 50vh;
-    }
-    footer .foot {
-        width: 100%;
-        margin: 0 auto;
-    }
-    footer .foot .f_t {
-        width: 100%;
-        margin: 5% auto;
-        font-size: 0.2em;
-        bottom: 0;
-    }
-}
+/*# sourceMappingURL=daon_m.css.map */
