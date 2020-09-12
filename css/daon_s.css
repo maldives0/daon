@@ -668,38 +668,26 @@
 }
 
 .c_photo .f {
-  width: 80%;
   border: 1px solid #000;
+  width: 80%;
   margin: 2% auto;
   padding: 2%;
+}
+
+.c_photo .f li > span {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.c_photo .f li > p {
+  margin-top: 2px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-}
-
-.c_photo .f li {
-  margin-right: 5%;
-}
-
-.c_photo .f li .f_no_p > a img {
-  width: 200px;
-  height: 150px;
-  margin: 5% auto;
-}
-
-.c_photo .f li .f_no_n {
-  text-align: center;
-}
-
-.c_photo .f li .f_no_n > a {
-  color: #000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*----------------------media480---------------------------*/

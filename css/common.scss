@@ -1,0 +1,630 @@
+/*한글제목*/
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap");
+
+/*font-family: 'Titillium Web', sans-serif;*/
+
+/*한글본문*/
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+/*font-family: 'Titillium Web', sans-serif;*/
+
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap");
+
+/*font-family: 'Sunflower', sans-serif;*/
+
+/*영어제목*/
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
+
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+/* 영어본문*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
+
+/*font-family: 'Inconsolata', monospace;*/
+
+/*이텔릭체*/
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+/*font-family: 'Dancing Script', cursive;*/
+
+html, body {
+  margin: 0;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.f_s {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f_c {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.f_a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header, main, footer {
+  width: 100%;
+}
+//----------------room---------------------- 
+.room {
+  width: 100%;
+  height: 100vh;
+ 
+  overflow: hidden;
+
+  .r_list {
+    width: 100%;
+    height: 100%;
+   
+    .ban{
+      height:100vh;
+    }
+    li {
+      transition:.7s;
+      width: 100%;
+      height: 100%;
+      
+    }
+  }
+}
+/* ------------------------fac------------------- */
+
+.fac {
+  margin: 0;
+  background-size: 100%;
+  height: 100vh;
+
+  .vdo {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+    video {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      bottom: 0;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.title {
+  width: 100%;
+  padding: 1% 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  white-space: pre-line;
+  flex-direction: column;
+
+  h1 {
+    font-size: 8em;
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-weight: none;
+  }
+
+  strong {
+    font-size: 30px;
+    font-weight: none;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+  }
+}
+
+.fac .vdo article {
+  margin: 5% auto;
+  width: 80%;
+
+  figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+
+    p {
+      opacity: 1;
+      width: 300px;
+      height: 300px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 4%;
+        transform: translate(-50%);
+        border: 2px solid #fff;
+        width: 90%;
+        height: 90%;
+      }
+    }
+
+    &:hover {
+      p {
+        &:before, &:after {
+          transition: .5s;
+          opacity: 0;
+        }
+      }
+
+      figcaption {
+        transition: .5s;
+        opacity: 0;
+      }
+    }
+
+    p img {
+      width: 100%;
+      height: 100%;
+    }
+
+    figcaption {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0%;
+      bottom: 0%;
+      text-align: center;
+      white-space: pre-line;
+      color: #fff;
+      font-family: 'Titillium Web', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 80vw;
+  height: 80vh;
+  background: rgba(255, 255, 255, 0.8);
+
+  &.active {
+    display: block;
+  }
+
+  figure {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    p {
+      width: 40%;
+      height: 50%;
+      text-align: center;
+      margin-right: 3%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    figcaption {
+      width: 40%;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 1.5;
+      white-space: pre-line;
+      margin-bottom: 5%;
+
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        white-space:pre-line;
+        font-size: 2em;
+        margin-bottom: 3%;
+      }
+    }
+  }
+}
+
+
+/*           header     ----------------------------------------------------    */
+
+header {
+  position: fixed;
+  z-index: 100;
+  display: inline-block;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+
+  nav {
+    width: 90%;
+    
+    margin: 0 auto;
+
+    > div {
+      position: relative;
+      width: 30%; 
+      padding:5px;
+      text-align:center;
+      vertical-align:center;
+
+      > a {
+        text-transform: uppercase;
+        padding: 2px 4vw;
+        width:100%; height:100%;
+        color: #000;
+        font-family: "Noto Sans KR", sans-serif;
+        font-weight: bold;
+       
+      }
+
+      ul {
+        display: none;
+        position: absolute;
+        top: 160%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(248, 246, 246, 0.8);
+        width: 90%;
+      }
+
+      ul.active {
+        display: block;
+      }
+
+      ul li {
+        width: 100%;
+        margin: 5% 0;
+
+        a {
+          color: #000;
+          font-family: "Titillium Web", sans-serif;
+          font-size: 12px;
+          padding: 5% 10%;
+          width: 100%;
+          
+        }
+      }
+    }
+    .logo {
+      width:100%; height:100%;
+     background:url(../img/main/logo.png) center / 100% 100% no-repeat;
+     
+    }
+    
+    .r_btn {
+      width:100%;height:100%;
+      background:url(../img/main/bt_reservation.png) center / 100% 100% no-repeat;
+    }
+    
+    .r_n {
+      position: relative;
+
+      > .s_list {
+        a {
+          img {
+            box-sizing: border-box;
+            border: 2px solid white;
+            overflow: hidden;
+            width: 130px;
+            height: 80px;
+          }
+
+          color: #000;
+          font-family: "Titillium Web", sans-serif;
+          font-size: 12px;
+          padding: 2% 10%;
+          width: 100%;
+        }
+
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*                ---------fixed-------------------------------------------    */
+
+.menu-trigger {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  right: 2%;
+  top: 2%;
+  z-index: 100;
+  display: none;
+  transition: 0.5s;
+
+  > span {
+    position: absolute;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 2px;
+
+    &:nth-of-type(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:nth-of-type(3) {
+      bottom: 0;
+    }
+  }
+
+  &.active > span {
+    background: black;
+
+    &:nth-of-type(1) {
+      transform: rotate(45deg);
+      bottom: 50%;
+    }
+
+    &:nth-of-type(2) {
+      display: none;
+    }
+
+    &:nth-of-type(3) {
+      transform: rotate(-45deg);
+      bottom: 50%;
+    }
+  }
+}
+
+.side {
+  display: block;
+  width: 2%;
+  height: auto;
+  padding: auto;
+  position: fixed;
+  z-index: 100;
+  right: 5%;
+  bottom: 50%;
+  transform: translateY(50%);
+  white-space: pre-line;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  li {
+    width: 100%;
+    position: relative;
+
+    &.active a {
+      text-shadow: 2px 2px 2px  #d3e8e9;
+      color: #d3e8e9;}
+
+    a {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      padding: 5%;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      font-weight: bold;
+      font-family: 'Dancing Script', cursive;
+    }
+  }
+}
+
+
+.sns {
+  position: fixed;
+  z-index: 100;
+  left: 5%;
+  bottom: 5%;
+
+  .link {
+    font-size: 0;
+
+    a {
+      width: 40px;
+      height: 40px;
+      background: url("../img/main/bt_sns_b.png") no-repeat;
+      background-size: 200px;
+      display: inline-block;
+      margin: 6px;
+
+      &:nth-of-type(1) {
+        background-position: 0px 0;
+      }
+
+      &:nth-of-type(2) {
+        background-position: -50px 0;
+      }
+
+      &:nth-of-type(3) {
+        background-position: -100px 0;
+      }
+
+      &:nth-of-type(4) {
+        background-position: -160px 0;
+      }
+    }
+  }
+}
+
+/* --------------------------btn------------------------------*/
+
+.c_btn {
+  margin: 2% auto;
+  text-align: center;
+
+  a {
+    border: 1px solid gray;
+    font-family: "Sunflower", sans-serif;
+    padding: 1% 2%;
+    font-size: 20px;
+    width: 200px;
+    color: #000;
+
+    &:hover {
+      background: #d3e8e9;
+    }
+
+    &:nth-of-type(1) {
+      margin-right: 5%;
+    }
+  }
+}
+
+.info_btn {
+  a {
+    &:nth-of-type(1) {
+      margin-right: 5%;
+    }
+
+    border: 1px solid gray;
+    padding: 1% 2%;
+    font-size: 20px;
+    color: #000;
+    margin-right: 3%;
+    font-family: "Inconsolata", monospace;
+    text-transform: uppercase;
+
+    &:hover {
+      background: #e5e5e5;
+    }
+  }
+
+  display: block;
+}
+
+.indi {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform: translateX(-50%);
+
+  > a {
+    margin-right: 20px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+
+    &:hover {
+      background: #fff;
+    }
+  }
+
+  a.active {
+    background: #fff;
+  }
+}
+
+.a_btn {
+  z-index: 0;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+
+  a {
+    &:nth-of-type(1) {
+      transform: rotate(180deg);
+    }
+
+    width: 55px;
+    height: 82px;
+    opacity: 0.8;
+
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+/*footer--------------------------------*/
+
+footer {
+  width: 100vw;
+  height: 100vh;
+
+  .foot {
+    margin: 2%;
+    height: 100%;
+
+    .f_t {
+      text-align: center;
+      white-space: pre-line;
+      font-size: 0.5em;
+      font-family: "Titillium Web", sans-serif;
+      line-height: 2;
+      padding: 2% 0;
+
+      > p {
+        text-align: center;
+        margin: 0;
+
+        img {
+          width: 90px;
+          height: 10px;
+        }
+      }
+    }
+  }
+}
