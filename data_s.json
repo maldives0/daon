@@ -1,0 +1,22 @@
+{
+    "service": [
+        {
+            "name": "아메리카노",
+            "tit": "americano",
+            "desc": " 모든 입실 손님께 아메리카노가 무료로 제공됩니다.",
+            "imgSrc": "img/sub/s_a1.jpg"
+        },
+        {
+            "name": "올레티비",
+            "tit": "olleh tv",
+            "desc": " 다온은 전 객실이 와이파이존입니다. 빠른 검색으로 주변의 여행지와 인근 맛집 검색으로 더욱 즐거운 여행을 완성해보시기 바랍니다.",
+            "imgSrc": "img/sub/s_a2.jpg"
+        },
+        {
+            "name": "와이파이",
+            "tit": "wifi",
+            "desc": " 대형TV가 객실마다 설치되어 있습니다. 올레티비도 모든 객실에서 즐기실 수 있습니다.",
+            "imgSrc": "img/sub/s_a3.jpg"
+        }
+    ]
+}
