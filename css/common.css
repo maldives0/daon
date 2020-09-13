@@ -16,11 +16,13 @@
 /*이텔릭체*/
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 /*font-family: 'Dancing Script', cursive;*/
-html, body {
+html,
+body {
   margin: 0;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -36,7 +38,13 @@ a {
   color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -76,7 +84,9 @@ h1, h2, h3, h4, h5, h6, p {
           align-items: center;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   width: 100%;
 }
 
@@ -96,8 +106,8 @@ header, main, footer {
 }
 
 .room .r_list li {
-  -webkit-transition: .7s;
-  transition: .7s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   width: 100%;
   height: 100%;
 }
@@ -147,7 +157,7 @@ header, main, footer {
 
 .title h1 {
   font-size: 8em;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -158,7 +168,7 @@ header, main, footer {
   font-size: 30px;
   font-weight: none;
   color: #fff;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .fac .vdo article {
@@ -184,7 +194,7 @@ header, main, footer {
 }
 
 .fac .vdo article figure p:before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -194,7 +204,7 @@ header, main, footer {
 }
 
 .fac .vdo article figure p:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 50%;
@@ -207,14 +217,14 @@ header, main, footer {
 }
 
 .fac .vdo article figure:hover p:before, .fac .vdo article figure:hover p:after {
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   opacity: 0;
 }
 
 .fac .vdo article figure:hover figcaption {
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   opacity: 0;
 }
 
@@ -232,7 +242,7 @@ header, main, footer {
   text-align: center;
   white-space: pre-line;
   color: #fff;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,8 +328,6 @@ header nav > div {
   position: relative;
   width: 30%;
   padding: 5px;
-  text-align: center;
-  vertical-align: center;
 }
 
 header nav > div > a {
@@ -335,21 +343,17 @@ header nav > div > a {
 header nav > div ul {
   display: none;
   position: absolute;
-  top: 160%;
+  top: 0%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, 70%);
+          transform: translate(-50%, 70%);
   background: rgba(248, 246, 246, 0.8);
   width: 90%;
-}
-
-header nav > div ul.active {
-  display: block;
+  padding: 5px 0;
 }
 
 header nav > div ul li {
   width: 100%;
-  margin: 5% 0;
 }
 
 header nav > div ul li a {
@@ -372,16 +376,22 @@ header nav .r_btn {
   background: url(../img/main/bt_reservation.png) center/100% 100% no-repeat;
 }
 
-header nav .r_n {
-  position: relative;
+header nav .t_list {
+  -webkit-transform: translate(-50%, 15%);
+          transform: translate(-50%, 15%);
 }
 
-header nav .r_n > .s_list {
+header nav .s_list {
+  -webkit-transform: translate(-50%, 25%);
+          transform: translate(-50%, 25%);
   width: 100%;
   text-align: center;
 }
 
-header nav .r_n > .s_list a {
+header nav .s_list a {
+  display: block;
+  width: 100%;
+  height: 100%;
   color: #000;
   font-family: "Titillium Web", sans-serif;
   font-size: 12px;
@@ -389,64 +399,49 @@ header nav .r_n > .s_list a {
   width: 100%;
 }
 
-header nav .r_n > .s_list a img {
+header nav .s_list a img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 2px solid white;
   overflow: hidden;
-  width: 130px;
-  height: 80px;
+  width: 100%;
+  height: 100%;
 }
 
 /*                ---------fixed-------------------------------------------    */
 .menu-trigger {
-  width: 25px;
-  height: 25px;
   position: fixed;
   right: 2%;
   top: 2%;
-  z-index: 100;
+  z-index: 200;
   display: none;
+}
+
+.menu-trigger a {
+  display: block;
+  width: 25px;
+  height: 25px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.menu-trigger > span {
+.menu-trigger a > span {
+  display: block;
   position: absolute;
   left: 0;
-  background: #fff;
+  background: #000;
   width: 100%;
   height: 2px;
 }
 
-.menu-trigger > span:nth-of-type(2) {
+.menu-trigger a > span:nth-of-type(2) {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
-.menu-trigger > span:nth-of-type(3) {
+.menu-trigger a > span:nth-of-type(3) {
   bottom: 0;
-}
-
-.menu-trigger.active > span {
-  background: black;
-}
-
-.menu-trigger.active > span:nth-of-type(1) {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  bottom: 50%;
-}
-
-.menu-trigger.active > span:nth-of-type(2) {
-  display: none;
-}
-
-.menu-trigger.active > span:nth-of-type(3) {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  bottom: 50%;
 }
 
 .side {
@@ -471,7 +466,7 @@ header nav .r_n > .s_list a img {
 }
 
 .side li.active a {
-  text-shadow: 2px 2px 2px  #d3e8e9;
+  text-shadow: 2px 2px 2px #d3e8e9;
   color: #d3e8e9;
 }
 
@@ -484,7 +479,7 @@ header nav .r_n > .s_list a img {
   text-transform: uppercase;
   font-size: 1.2em;
   font-weight: bold;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 .sns {

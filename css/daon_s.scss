@@ -122,8 +122,8 @@
 }
 
 .travel {
-  width: 1000px;
-  height: 300px;
+  width: 1050px;
+  height: 350px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -141,6 +141,8 @@
       position: absolute;
       top: 0;
       left: 0;
+      text-align:center;
+      display:inline-block;
 
       a {
         position: absolute;
@@ -735,40 +737,35 @@
     }
   }
 
-  .logo {
-    z-index: 200;
-    position: fixed;
-    left: 2%;
-    top: 0;
-
-    img {
-      width: 20vw;
-    }
-  }
-
-  .r_btn {
-    z-index: 200;
-    position: fixed;
-    right: 50%;
-    top: 80%;
-    transform: translateX(50%);
-
-    img {
-      width: 30vw;
-    }
-  }
-
+  
   .side {
     display: none;
   }
 
   .menu-trigger {
-    position: fixed;
-    right: 2%;
-    top: 2%;
-    z-index: 200;
+   
     display: block;
+    &.active >a 
+    
+    {
+      span {
+       
+      &:nth-of-type(1) {
+        transform: rotate(45deg);
+        bottom: 50%;
+      }
+  
+      &:nth-of-type(2) {
+        display: none;
+      }
+  
+      &:nth-of-type(3) {
+        transform: rotate(-45deg);
+        bottom: 50%;
+      }
+    }
   }
+}
 
   .c_btn a {
     padding: 3%;
@@ -793,7 +790,7 @@
 
   /*    -----------------------------header------------*/
 
-  .header {
+  header {
     background: 0;
 
     nav {
@@ -816,27 +813,46 @@
       flex-direction: column;
       justify-content: center;
 
-      /*        text-align: center;*/
+      
       padding: 20% 0 40% 0;
 
       > div {
         width: 70%;
-
-        > a {
-          display: inline-block;
-          font-size: 1.5em;
-          padding: 5% 0;
+        padding-top:5%;
+     
+        .logo {
+          z-index: 200;
+          position: fixed;
+          left: 2%;
+          top: 2%;
+          width:20%; height:8%;
         }
-
+      
+        .r_btn {
+          z-index: 200;
+          position: fixed;
+          right: 50%;
+          top: 80%;
+          transform: translateX(50%);
+          width:30%; height:8%;
+        }
+      
+        > a {
+         
+          font-size: 1.5em;
+          
+        }
+        .t_list,.s_list{
+          transform:translateY(0%);
+        }
         ul {
-          background: rgba(255, 255, 255, 0.5);
-          width: 60%;
-          position: relative;
-          top: 0;
-          right: 0;
+          background: ivory;
+          width: 80%;
+          position: static;
+         bottom:0;
           display: none;
-          margin: 5%;
-
+          transform:translateY(0%);
+          padding:4%;
           li {
             display: flex;
             justify-content: center;
@@ -844,32 +860,27 @@
             margin: 0 auto;
 
             a {
-              font-family: 'Titillium Web', sans-serif;
+            
+              font-size:1.1em;
               padding: 1%;
             }
           }
         }
 
-        &:hover {
-          background: #f8f3ec;
-          width: 100%;
-          height: auto;
-
-          ul {
-            display: inline-block;
-          }
-        }
+       
       }
     }
+  
+  
   }
-
   /*   ---------------------------room-------------*/
-
+ 
   .rooms {
     > h1 {
       position: absolute;
-      left: 5%;
-      top: 5%;
+      left: 50%;
+      top: 3%;
+      transform:translateX(-50%);
       font-size: 3em;
     }
 
@@ -879,19 +890,26 @@
     }
   }
 
-  .room_l {
-    margin-top: 20%;
-  }
+  
 
   .rooms article {
     .love, .only {
       width: 100%;
       padding: 3%;
     }
-
+    .love .room{
+      margin-top:20%;
+    }
+    
     > figure {
+      margin:0 auto;
+     
       .room {
-        height: 30vh;
+        height:50vh;
+        ul{
+          height:50vh;
+         
+        }
       }
 
       > div {
@@ -904,24 +922,31 @@
       }
     }
 
-    .love > div .s_btn {
-      right: -15%;
-      bottom: 10%;
+    .love .s_btn {
+      left: 85%;
+      bottom: 40%;
+      img{
+        width:70%;  height:70%;
+      }
     }
 
-    .only > div {
+    .only {
       p {
         float: right;
       }
 
       .s_btn {
-        top: 15%;
-        left: -10%;
+        left: 85%;
+      bottom: -40%;
+      img{
+        width:70%; height:70%;
+      }
       }
     }
 
     > figure > figcaption {
       font-size: 1.2em;
+      line-height:none;
     }
   }
 
@@ -983,7 +1008,7 @@
     > {
       h1 {
         font-size: 3em;
-        margin-bottom: 5%;
+      
       }
 
       p {
@@ -995,7 +1020,7 @@
   }
 
   .view .about {
-    height: 30vh;
+    height: 60vh;
     overflow: hidden;
   }
 
@@ -1042,9 +1067,12 @@
 
   /*   ---------------------------- travel&service&faci----------------------------------------*/
 
-  .travel article {
-    flex-direction: column;
-  }
+  .travel {
+    width: 100vw;
+    height: 100vh;
+   
+    overflow: hidden;
+  }  
 
   .s_info .s_n {
     font-size: 80%;
@@ -1084,21 +1112,24 @@
     }
 
     .c_t {
+      width:95%;
       thead, tbody {
-        font-size: 10px;
+        font-size: 14px;
       }
     }
   }
-
+ 
   .c_photo {
     width: 100%;
 
     .c_n > h1 {
       font-size: 150%;
     }
-
+    
     .f {
-      flex-direction: column;
+      width:90%;
+      margin:0 auto;
+      padding:0;
     }
   }
 
@@ -1106,7 +1137,7 @@
 
   footer {
     width: 100vw;
-
+    height:10vh;
     .foot {
       text-align: center;
       width: 100%;
@@ -1130,4 +1161,5 @@
       }
     }
   }
+  
 }
