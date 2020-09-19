@@ -333,43 +333,20 @@ footer {
     }
   }
 
-  .logo {
-    z-index: 200;
-    position: fixed;
-    left: 2%;
-    top: 0;
-    width: 100px;
-    height: 36px;
-    background: rgba(255, 255, 255, 0.2);
-
-    img {
-      width: 100%;
-    }
-  }
-
-  .r_btn {
-    z-index: 200;
-    position: fixed;
-    right: 50%;
-    transform: translateX(50%);
-    top: 80%;
-    width: 150px;
-    height: 36px;
-    background: url('../img/main/bt_reservation.png') no-repeat;
-    background-size: 100% 100%;
-  }
 
   .side {
     display: none;
   }
 
   .menu-trigger {
-    position: fixed;
-    right: 5%;
-    top: 2%;
-    z-index: 200;
+
     display: block;
+    >a{
+      span {
+        background:#fff;
+         }
   }
+}
 
   /*    -----------------------------header------------*/
 
@@ -395,53 +372,67 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+
       padding: 20% 0 40% 0;
 
       > div {
         width: 70%;
+        padding-top:5%;
 
-        > a {
-          display: inline-block;
-          font-size: 1.5em;
-          padding: 5% 0;
+        .logo {
+          z-index: 200;
+          position: fixed;
+          left: 2%;
+          top: 2%;
+          width:20%; height:8%;
         }
 
-        ul {
-          background: rgba(0, 0, 0, 0.1);
-          width: 80%;
-          position: relative;
-          top: 0;
-          right: 0;
-          display: none;
-          margin: 5%;
+        .r_btn {
+          z-index: 200;
+          position: fixed;
+          right: 50%;
+          top: 80%;
+          transform: translateX(50%);
+          width:30%; height:8%;
+        }
 
+        > a {
+
+          font-size: 1.5em;
+
+        }
+        .t_list,.s_list{
+          transform:translateY(0%);
+        }
+        ul {
+          background: ivory;
+          width: 80%;
+          position: static;
+         bottom:0;
+          display: none;
+          transform:translateY(0%);
+          padding:4%;
           li {
             display: flex;
             justify-content: center;
             align-content: center;
-            margin: 5% auto;
-            font-size: 1.2em;
+            margin: 0 auto;
 
             a {
-              font-family: 'Titillium Web', sans-serif;
+
+              font-size:1.1em;
               padding: 1%;
             }
           }
         }
 
-        &:hover {
-          background: ivory;
-          width: 100%;
-          height: auto;
-        }
+
       }
     }
-  }
 
-  .head nav > div:hover ul {
-    display: inline-block;
-  }
 
+  }
   /*   ----------------------------main--------------*/
 
   main {

@@ -89,7 +89,7 @@ window.addEventListener('DOMContentLoaded', function () {
            
             var i = Array.from(thisChildren).indexOf(a.currentTarget);
          
-
+            
            if (sTop == pArr[i]) {
             sDiv.classList.add('fade');
             sUl.classList.add('fade');

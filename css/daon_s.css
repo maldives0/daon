@@ -122,7 +122,7 @@
   text-align: center;
 }
 
-.travel {
+.t_m .travel {
   width: 1050px;
   height: 350px;
   position: absolute;
@@ -135,13 +135,17 @@
   overflow: hidden;
 }
 
-.travel article {
+.t_m .travel article {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.travel article figure {
+.t_m .travel article figure {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -149,7 +153,7 @@
   display: inline-block;
 }
 
-.travel article figure a {
+.t_m .travel article figure a {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -160,12 +164,12 @@
   height: 300px;
 }
 
-.travel article figure a img {
+.t_m .travel article figure a img {
   width: 100%;
   height: 100%;
 }
 
-.travel article figure figcaption {
+.t_m .travel article figure figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,12 +187,12 @@
   background: rgba(0, 0, 0, 0.5);
   font-family: 'Titillium Web', sans-serif;
   font-size: 1.5em;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   color: #fff;
 }
 
-.travel article figure:hover figcaption {
+.t_m .travel article figure:hover figcaption {
   display: none;
 }
 
@@ -774,7 +778,7 @@
     height: 8px;
   }
   .a_btn > a img {
-    width: 5vw;
+    width: 7vw;
   }
   /*    -----------------------------header------------*/
   header {
@@ -1011,10 +1015,36 @@
     height: 400px;
   }
   /*   ---------------------------- travel&service&faci----------------------------------------*/
-  .travel {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+  .tit_w {
+    padding-top: 10%;
+    font-size: 5em;
+  }
+  .t_m .travel {
+    width: 390px;
+    height: 500px;
+  }
+  .t_m .travel article {
+    width: 400px;
+    height: 400px;
+    top: 30%;
+  }
+  .t_m .travel article figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: inline-block;
+  }
+  .t_m .travel article figure figcaption {
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+  }
+  .t_m .a_btn {
+    width: 90%;
+    left: 5%;
+    top: 30%;
+    z-index: 10;
   }
   .s_info .s_n {
     font-size: 80%;
@@ -1024,7 +1054,6 @@
   }
   .s_info .s_n > h1 {
     left: -10%;
-    font-size: 3em;
   }
   .s_info .s_n > ul {
     width: 80%;
@@ -1035,7 +1064,7 @@
     top: 50%;
   }
   .s_info .s_n .a_btn > a img {
-    width: 5vw;
+    width: 7vw;
   }
   /*----------------------------------------------community------------------------------------*/
   .c_notice {
@@ -1074,7 +1103,7 @@
   footer .foot .f_t {
     line-height: 0.8;
     width: 100%;
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 0.5em;
   }
   footer .foot .f_t > p:nth-of-type(1) {

@@ -119,7 +119,7 @@
   background-size: 100% 100%;
   position: relative;
   text-align: center;
-}
+
 
 .travel {
   width: 1050px;
@@ -133,11 +133,13 @@
   overflow: hidden;
 
   article {
+    width:100%; height:100%;
     position: absolute;
     top: 0;
     left: 0;
 
     figure {
+      width:100%; height:100%;
       position: absolute;
       top: 0;
       left: 0;
@@ -171,8 +173,7 @@
         background: rgba(0, 0, 0, 0.5);
         font-family: 'Titillium Web', sans-serif;
         font-size: 1.5em;
-        width: 300px;
-        height: 300px;
+        width:100%; height:100%;
         color: #fff;
       }
 
@@ -182,7 +183,7 @@
     }
   }
 }
-
+}
 /*---------------------rooms--------------------------------------*/
 
 .rooms article {
@@ -582,7 +583,7 @@
       background: #f8f3ec;
       text-align: center;
 
-    
+
 
       th {
         &:nth-of-type(1) {
@@ -657,15 +658,15 @@
   }
 
   .f {
-  
+
     border: 1px solid #000;
     width: 80%;
     margin:2% auto;
     padding:2%;
-   
+
 
     li {
-    
+
       >span {
         display:block;
         margin-bottom:2px;
@@ -737,28 +738,28 @@
     }
   }
 
-  
+
   .side {
     display: none;
   }
 
   .menu-trigger {
-   
+
     display: block;
-    &.active >a 
-    
+    &.active >a
+
     {
       span {
-       
+
       &:nth-of-type(1) {
         transform: rotate(45deg);
         bottom: 50%;
       }
-  
+
       &:nth-of-type(2) {
         display: none;
       }
-  
+
       &:nth-of-type(3) {
         transform: rotate(-45deg);
         bottom: 50%;
@@ -785,7 +786,7 @@
   }
 
   .a_btn > a img {
-    width: 5vw;
+    width: 7vw;
   }
 
   /*    -----------------------------header------------*/
@@ -813,13 +814,13 @@
       flex-direction: column;
       justify-content: center;
 
-      
+
       padding: 20% 0 40% 0;
 
       > div {
         width: 70%;
         padding-top:5%;
-     
+
         .logo {
           z-index: 200;
           position: fixed;
@@ -827,7 +828,7 @@
           top: 2%;
           width:20%; height:8%;
         }
-      
+
         .r_btn {
           z-index: 200;
           position: fixed;
@@ -836,11 +837,11 @@
           transform: translateX(50%);
           width:30%; height:8%;
         }
-      
+
         > a {
-         
+
           font-size: 1.5em;
-          
+
         }
         .t_list,.s_list{
           transform:translateY(0%);
@@ -860,21 +861,21 @@
             margin: 0 auto;
 
             a {
-            
+
               font-size:1.1em;
               padding: 1%;
             }
           }
         }
 
-       
+
       }
     }
-  
-  
+
+
   }
   /*   ---------------------------room-------------*/
- 
+
   .rooms {
     > h1 {
       position: absolute;
@@ -890,7 +891,7 @@
     }
   }
 
-  
+
 
   .rooms article {
     .love, .only {
@@ -900,15 +901,15 @@
     .love .room{
       margin-top:20%;
     }
-    
+
     > figure {
       margin:0 auto;
-     
+
       .room {
         height:50vh;
         ul{
           height:50vh;
-         
+
         }
       }
 
@@ -1008,7 +1009,7 @@
     > {
       h1 {
         font-size: 3em;
-      
+
       }
 
       p {
@@ -1067,12 +1068,51 @@
 
   /*   ---------------------------- travel&service&faci----------------------------------------*/
 
-  .travel {
-    width: 100vw;
-    height: 100vh;
-   
-    overflow: hidden;
-  }  
+  .tit_w{
+    padding-top:10%;
+    font-size:5em;
+  }
+  .t_m{
+    .travel {
+      width: 390px;
+      height: 500px;
+
+
+      article {
+        width:400px;
+        height:400px;
+       
+        top:30%;
+       
+
+
+        figure {
+          position: absolute;
+          top: 0;
+          left: 0;
+         
+          text-align:center;
+          display:inline-block;
+
+
+
+          figcaption {
+            width:100%; height:100%;
+            font-size: 1em;
+
+          }
+
+
+        }
+      }
+    }
+    .a_btn{
+      width:90%;
+      left:5%;
+      top:30%;
+      z-index:10;
+    }
+  }
 
   .s_info .s_n {
     font-size: 80%;
@@ -1083,7 +1123,7 @@
     > {
       h1 {
         left: -10%;
-        font-size: 3em;
+
       }
 
       ul {
@@ -1097,7 +1137,7 @@
       top: 50%;
 
       > a img {
-        width: 5vw;
+        width: 7vw;
       }
     }
   }
@@ -1118,14 +1158,14 @@
       }
     }
   }
- 
+
   .c_photo {
     width: 100%;
 
     .c_n > h1 {
       font-size: 150%;
     }
-    
+
     .f {
       width:90%;
       margin:0 auto;
@@ -1146,7 +1186,7 @@
       .f_t {
         line-height: 0.8;
         width: 100%;
-        margin-top: 20%;
+        margin-top: 10%;
         font-size: 0.5em;
 
         > p {
@@ -1161,5 +1201,5 @@
       }
     }
   }
-  
+
 }

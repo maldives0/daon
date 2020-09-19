@@ -3,29 +3,59 @@ window.addEventListener('DOMContentLoaded', function () {
     var figBox = document.querySelector('article');
     var figEle = figBox.querySelectorAll('figure');
 
-    var idx = 0;
-
-
-
+    var idx = 0,pos,move, resMsg;
 
     var len = figEle.length / 3;
+    var len2 = figEle.length;
+
+  //mq
+  var mq = window.matchMedia("screen and (max-width:480px)");
+
+  mq.addListener(res);
+
+  function res(e) {
+
+      if (e.matches) {
+          console.log('mobile')
+          resMsg = 'mobile';
+      } else {
+          console.log('pc')
+          resMsg = 'pc';
+
+      }
+
+  }
+  res(mq);
 
     //fig style
     figEle.forEach(function (a, i) {
 
-        var left = "left:" + 350 * i + "px;";
+      if(resMsg == 'pc'){
+          pos = "left:" + 350 * i + "px;";
+        }
+      else{
+         pos = "left:" + (350 * i) + "px;";
+      }
 
-        a.style = left;
+        a.style = pos;
 
     });
 
     //slide
 
     function aniFun() {
-        callBack();
+       
+        if(resMsg == 'pc'){
+            callBack();
+            move = "left:" + (-1050 * idx) + "px;";
+          }
+        else{
+            callBack2();
+            move = "left:" + (-350 * idx) + "px;";
+        }
 
-        pos = "left:" + (-1050 * idx) + "px;";
-        figBox.style = pos;
+
+        figBox.style = move;
 
 
     };
@@ -36,6 +66,16 @@ window.addEventListener('DOMContentLoaded', function () {
         }
         if (idx < 0) {
             idx = Math.floor(len);
+
+        }
+    };
+    function callBack2() {
+        if (idx >= len2) {
+            idx = 0;
+
+        }
+        if (idx < 0) {
+            idx = Math.floor(len2)-1;
 
         }
     };
@@ -64,34 +104,8 @@ window.addEventListener('DOMContentLoaded', function () {
     };
 
 
-});
-$(function () {
-    var mq = window.matchMedia("screen and (max-width:480px)");
-    var resMsg;
-     mq.addListener(res);
-    function res(e) {
-        if (e.matches) {
-           
-            resMsg = 'mobile';
-            grid();
-        } else {
-            resMsg = 'pc';
-        }
-        res(mq);
-    }
-function grid(){
-    var $grid = $('.grid').masonry({
-        itemSelector: '.g-item',
-        columnWidth: '.grid-sizer',
-        percentPosition: true,
-        gutter: '.gutter-sizer',
-        horizontalOrder: true
-    });
 
 
-    $grid.imagesLoaded().progress(function () {
-        $grid.masonry('layout');
-    });
-    //grid
-}
+
+//end
 });
