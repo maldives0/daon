@@ -2,7 +2,7 @@
 .tit_w {
   padding: 3%;
   font-size: 8em;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -11,7 +11,7 @@
 .tit_b {
   padding: 3%;
   font-size: 8em;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -25,7 +25,7 @@
 
 .is > p {
   white-space: pre-line;
-  font-family: 'Sunflower', sans-serif;
+  font-family: "Sunflower", sans-serif;
   line-height: 2;
   font-size: 20px;
   text-align: center;
@@ -109,7 +109,7 @@
   line-height: 2;
   font-size: 2em;
   background: #e6fafe;
-  font-family: 'Sunflower', sans-serif;
+  font-family: "Sunflower", sans-serif;
 }
 
 /*--------------------------travel------------------------------------*/
@@ -185,7 +185,7 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 1.5em;
   width: 100%;
   height: 100%;
@@ -290,7 +290,7 @@
   white-space: pre-line;
   font-size: 2.5em;
   line-height: 1.5;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   width: 80%;
   padding: 0 5%;
   color: rgba(0, 0, 0, 0.2);
@@ -298,8 +298,8 @@
 
 .rooms article > figure > figcaption strong {
   color: #434343;
-  font-family: 'Dancing Script', cursive;
-  font-size: .8em;
+  font-family: "Dancing Script", cursive;
+  font-size: 0.8em;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -331,7 +331,7 @@
   font-size: 20px;
   color: #000;
   margin: 3%;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   text-transform: uppercase;
 }
 
@@ -340,7 +340,7 @@
 }
 
 .roommap > div h1 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   text-transform: uppercase;
   font-size: 5em;
 }
@@ -351,7 +351,7 @@
   font-weight: 50;
   white-space: pre-line;
   line-height: 2.5;
-  font-family: 'Sunflower', sans-serif;
+  font-family: "Sunflower", sans-serif;
 }
 
 .roommap > p {
@@ -371,11 +371,13 @@
   position: relative;
 }
 
-.room_l, .room_o {
+.room_l,
+.room_o {
   height: 100%;
 }
 
-.room_l li, .room_o li {
+.room_l li,
+.room_o li {
   width: 100%;
   height: 100%;
 }
@@ -394,7 +396,7 @@
   height: 80vw;
   position: relative;
   margin: 5%;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .info > p {
@@ -409,7 +411,7 @@
 
 .info > h1 {
   font-size: 100px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   text-transform: uppercase;
 }
 
@@ -419,7 +421,7 @@
   font-weight: 50;
   white-space: pre-line;
   line-height: 2.5;
-  font-family: 'Sunflower', sans-serif;
+  font-family: "Sunflower", sans-serif;
 }
 
 .info ul {
@@ -463,7 +465,7 @@
 
 .service .title h1 {
   font-size: 8em;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   text-transform: uppercase;
   color: #fff;
   font-weight: none;
@@ -473,7 +475,7 @@
   font-size: 30px;
   font-weight: none;
   color: #fff;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .service > article {
@@ -485,7 +487,7 @@
 }
 
 .service > article .s {
-  height: 60%;
+  height: 30%;
 }
 
 .service > article .s li {
@@ -511,7 +513,7 @@
 .service > article .s li a h2 {
   margin: 0;
   padding: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -536,27 +538,225 @@
   font-size: 60px;
   line-height: 1.5;
   font-weight: normal;
-  font-family: 'Sunflower', sans-serif;
+  font-family: "Sunflower", sans-serif;
 }
 
 .service > article .s li a h2 strong {
   font-size: 50px;
   font-weight: normal;
-  font-family: 'Sunflower', sans-serif;
+  font-family: "Sunflower", sans-serif;
 }
 
 .service > article .s li:nth-of-type(1):hover h2 {
   background: none;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   opacity: 0;
 }
 
 .service > article .s li:nth-of-type(2):hover h2 {
   background: none;
   opacity: 0;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* ------------------------fac------------------- */
+.fac {
+  margin: 0;
+  background-size: 100%;
+  height: 100vh;
+}
+
+.fac .vdo {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fac .vdo video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.title {
+  width: 100%;
+  padding: 1% 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  white-space: pre-line;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title h1 {
+  font-size: 8em;
+  font-family: "Dancing Script", cursive;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-weight: none;
+}
+
+.title strong {
+  font-size: 30px;
+  font-weight: none;
+  color: #fff;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.fac .vdo article {
+  margin: 5% auto;
+  width: 80%;
+}
+
+.fac .vdo article figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.fac .vdo article figure p {
+  opacity: 1;
+  width: 300px;
+  height: 300px;
+}
+
+.fac .vdo article figure p img {
+  width: 100%;
+  height: 100%;
+}
+
+.fac .vdo article figure p:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.fac .vdo article figure p:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border: 2px solid #fff;
+  width: 90%;
+  height: 90%;
+}
+
+.fac .vdo article figure:hover p:before, .fac .vdo article figure:hover p:after {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.fac .vdo article figure:hover figcaption {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.fac .vdo article figure p img {
+  width: 100%;
+  height: 100%;
+}
+
+.fac .vdo article figure figcaption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  text-align: center;
+  white-space: pre-line;
+  color: #fff;
+  font-family: "Titillium Web", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 80vw;
+  height: 80vh;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup figure {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.popup figure p {
+  width: 40%;
+  height: 50%;
+  text-align: center;
+  margin-right: 3%;
+}
+
+.popup figure p img {
+  width: 100%;
+  height: 100%;
+}
+
+.popup figure figcaption {
+  width: 40%;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5;
+  white-space: pre-line;
+  margin-bottom: 5%;
+}
+
+.popup figure figcaption h2 {
+  text-align: center;
+  text-transform: uppercase;
+  white-space: pre-line;
+  font-size: 2em;
+  margin-bottom: 3%;
 }
 
 /*----------------c_n-----------------------------*/
@@ -572,12 +772,12 @@
   color: #fff;
   white-space: pre-line;
   font-size: 300%;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-weight: 100;
 }
 
 .c_notice .c_n > h1 strong {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 3em;
   font-weight: none;
 }
@@ -649,12 +849,12 @@
   color: #fff;
   white-space: pre-line;
   font-size: 3em;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-weight: 100;
 }
 
 .c_photo .c_n > h1 strong {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 3em;
   font-weight: none;
 }
@@ -713,7 +913,7 @@
   }
   .scroll p {
     color: #fff;
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
     font-size: 1.2em;
     text-transform: uppercase;
     position: relative;
@@ -796,8 +996,8 @@
     margin: 0;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -839,7 +1039,8 @@
   header nav > div > a {
     font-size: 1.5em;
   }
-  header nav > div .t_list, header nav > div .s_list {
+  header nav > div .t_list,
+  header nav > div .s_list {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
@@ -881,7 +1082,8 @@
     display: block;
     height: 100%;
   }
-  .rooms article .love, .rooms article .only {
+  .rooms article .love,
+  .rooms article .only {
     width: 100%;
     padding: 3%;
   }
@@ -1014,7 +1216,105 @@
     width: 400px;
     height: 400px;
   }
-  /*   ---------------------------- travel&service&faci----------------------------------------*/
+  .service .title {
+    background: rgba(0, 0, 0, 0);
+  }
+  .service .title h1 {
+    font-size: 3em;
+  }
+  .service .title strong {
+    display: none;
+  }
+  .service > article {
+    background-size: 100% 100%;
+  }
+  .service > article .s {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service > article .s li {
+    width: 70%;
+    margin: 3% 0 3% 0;
+  }
+  .service > article .s li a h2 {
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 25px;
+  }
+  /* ------------------------fac------------------- */
+  .fac {
+    height: 140vh;
+  }
+  .fac .vdo video {
+    background-position: bottom;
+    -webkit-transform: scale(4);
+            transform: scale(4);
+  }
+  .title {
+    padding: 3%;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .title h1 {
+    font-size: 3em;
+  }
+  .title strong {
+    display: none;
+  }
+  .fac .vdo article {
+    width: 99%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fac .vdo article figure {
+    margin: 2px 0;
+  }
+  .fac .vdo article figure p {
+    width: 250px;
+    height: 250px;
+  }
+  .fac .vdo article figure figcaption {
+    font-size: 1em;
+  }
+  .popup {
+    width: 95vw;
+    height: 95vh;
+  }
+  .popup figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popup figure p {
+    width: 70%;
+    height: 40%;
+    text-align: center;
+    margin-bottom: 6%;
+  }
+  .popup figure figcaption {
+    width: 90%;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  .popup figure figcaption h2 {
+    font-size: 1.2em;
+    margin-bottom: 5%;
+  }
+  /*   ---------------------------- travel----------------------------------------*/
   .tit_w {
     padding-top: 10%;
     font-size: 5em;
@@ -1070,13 +1370,17 @@
   .c_notice {
     width: 100%;
   }
+  .c_notice .c_n {
+    width: 120%;
+  }
   .c_notice .c_n > h1 {
     font-size: 150%;
   }
   .c_notice .c_t {
     width: 95%;
   }
-  .c_notice .c_t thead, .c_notice .c_t tbody {
+  .c_notice .c_t thead,
+  .c_notice .c_t tbody {
     font-size: 14px;
   }
   .c_photo {
