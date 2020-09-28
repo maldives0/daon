@@ -6,9 +6,9 @@ $(function () {
     $('footer').load('daon_header_footer.html footer .foot', footer);
 
  //loading
-//  $(window).load(function () {
-//     $('#loading').hide();
-// });
+ $(window).load(function () {
+    $('#loading').hide();
+});
 
 
 
