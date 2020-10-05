@@ -1,18 +1,22 @@
-
-    {
-    "facility":[
-        {"name":"야외수영장",
-        "tit":"OUTDOOR SWIMMING-POOL",
-         "desc":" 객실 앞 시원한 수영장이 있습니다. 수영복, 래쉬가드를 준비해오시면 즐거운 물놀이 시간을 즐기실 수 있습니다.",
-        "imgSrc":"img/main/f_1.jpg" },
-        {"name":"옥상정원",
-            "tit":"ROOF GARDEN",
-         "desc":" 펜션에서 가장 전망이 좋은 곳에 하늘이 보이는 옥상정원이 있습니다. 숲속 풍경을 내려다보며 휴식을 즐겨보세요.",
-        "imgSrc":"img/main/f_2.jpg"},
-        {"name":"바베큐",
-            "tit":"BARBECUE",
-         "desc":" 개별 현관 앞에 바베큐장이 마련되어 있습니다.다온에서 맛있는 음식과 함께 즐거운 추억을 만드시길 바랍니다.",
-        "imgSrc":"img/main/f_3.jpg" }
-
+{
+    "facility": [
+        {
+            "name": "야외수영장",
+            "tit": "OUTDOOR SWIMMING-POOL",
+            "desc": " 객실 앞 시원한 수영장이 있습니다. 수영복, 래쉬가드를 준비해오시면 즐거운 물놀이 시간을 즐기실 수 있습니다.",
+            "imgSrc": "img/main/f_1.jpg"
+        },
+        {
+            "name": "옥상정원",
+            "tit": "ROOF GARDEN",
+            "desc": " 펜션에서 가장 전망이 좋은 곳에 하늘이 보이는 옥상정원이 있습니다. 숲속 풍경을 내려다보며 휴식을 즐겨보세요.",
+            "imgSrc": "img/main/f_2.jpg"
+        },
+        {
+            "name": "바베큐",
+            "tit": "BARBECUE",
+            "desc": " 개별 현관 앞에 바베큐장이 마련되어 있습니다.다온에서 맛있는 음식과 함께 즐거운 추억을 만드시길 바랍니다.",
+            "imgSrc": "img/main/f_3.jpg"
+        }
     ]
 }

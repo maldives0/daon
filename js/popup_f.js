@@ -72,8 +72,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
             response.facility.forEach(function (el,idx) {
 
-
-
                 name = response.facility[num].name;
                 tit = response.facility[num].tit;
                 desc = response.facility[num].desc;
@@ -90,7 +88,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
             //pop end
         }
-        pop(num);
+       
 
 
 

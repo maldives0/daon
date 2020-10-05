@@ -14,10 +14,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
     var name, desc, imgSrc, article = '', popup = '', num;
 
-
-
-
-
     function dataFun() {
 
         response = JSON.parse(data.responseText);
@@ -27,7 +23,6 @@ window.addEventListener('DOMContentLoaded', function () {
             response.service.forEach(function (el) {
 
                 name = el.name;
-
                 tit = el.tit;
                 desc = el.desc;
                 imgSrc = el.imgSrc;
@@ -48,7 +43,6 @@ window.addEventListener('DOMContentLoaded', function () {
         dataRun();
 
    Array.from(facFig).forEach(function(el){
-
 
     el.addEventListener('click',popUp);
    })
@@ -91,7 +85,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
             //pop end
         }
-        pop(num);
+      
 
 
 
