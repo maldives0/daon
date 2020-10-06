@@ -1370,9 +1370,6 @@
   .c_notice {
     width: 100%;
   }
-  .c_notice .c_n {
-    width: 120%;
-  }
   .c_notice .c_n > h1 {
     font-size: 150%;
   }
