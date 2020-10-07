@@ -190,23 +190,44 @@
   width: 100%;
   height: 90vh;
 
-  .love {
-    height: 100%;
-    background: url(../img/sub/love.jpeg);
-  }
+  
 
   .only {
     height: 100%;
     background: url(../img/sub/only.jpg);
+    position:relative;
+  
+    > .s_btn {
+      position: absolute;
+      bottom: 25%;
+      right: 85%;
+      > a:nth-of-type(1) img {
+        transform: rotateX(-180deg);
+      }
+    }
   }
 
   .love {
+    height: 100%;
+    background: url(../img/sub/love.jpeg);
+    position:relative;
     > div {
       margin-top: 10%;
     }
+    .s_btn {
+      position: absolute;
+      left: 85%;
+      bottom: 52%;
 
-    > .s_btn > a:nth-of-type(1) img {
-      transform: rotateX(-180deg);
+      > a:nth-of-type(1) img {
+        transform: rotateX(-180deg);
+      }
+    }
+   
+    figcaption {
+    
+      text-align: right;
+      margin-bottom: 2%;
     }
   }
 
@@ -249,21 +270,6 @@
     }
   }
 
-  .only > .s_btn > a:nth-of-type(1) img {
-    transform: rotateX(-180deg);
-  }
-
-  .love > .s_btn {
-    position: absolute;
-    bottom: 2%;
-    left: 43%;
-  }
-
-  .only > .s_btn {
-    position: absolute;
-    bottom: -8%;
-    left: 55%;
-  }
 
   > figure > figcaption {
     white-space: pre-line;
@@ -286,10 +292,7 @@
     }
   }
 
-  .love figcaption {
-    text-align: right;
-    margin-bottom: 2%;
-  }
+  
 }
 
 .roommap {
@@ -1089,8 +1092,7 @@
     }
 
     .love .s_btn {
-      left: 85%;
-      bottom: 40%;
+     
       img {
         width: 70%;
         height: 70%;
@@ -1101,10 +1103,11 @@
       p {
         float: right;
       }
-
+      > figcaption{
+        height:60%;
+      }
       .s_btn {
-        left: 85%;
-        bottom: -40%;
+       
         img {
           width: 70%;
           height: 70%;

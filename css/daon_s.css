@@ -202,23 +202,47 @@
   height: 90vh;
 }
 
-.rooms article .love {
-  height: 100%;
-  background: url(../img/sub/love.jpeg);
-}
-
 .rooms article .only {
   height: 100%;
   background: url(../img/sub/only.jpg);
+  position: relative;
+}
+
+.rooms article .only > .s_btn {
+  position: absolute;
+  bottom: 25%;
+  right: 85%;
+}
+
+.rooms article .only > .s_btn > a:nth-of-type(1) img {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.rooms article .love {
+  height: 100%;
+  background: url(../img/sub/love.jpeg);
+  position: relative;
 }
 
 .rooms article .love > div {
   margin-top: 10%;
 }
 
-.rooms article .love > .s_btn > a:nth-of-type(1) img {
+.rooms article .love .s_btn {
+  position: absolute;
+  left: 85%;
+  bottom: 52%;
+}
+
+.rooms article .love .s_btn > a:nth-of-type(1) img {
   -webkit-transform: rotateX(-180deg);
           transform: rotateX(-180deg);
+}
+
+.rooms article .love figcaption {
+  text-align: right;
+  margin-bottom: 2%;
 }
 
 .rooms article > figure {
@@ -269,23 +293,6 @@
   margin-bottom: 8px;
 }
 
-.rooms article .only > .s_btn > a:nth-of-type(1) img {
-  -webkit-transform: rotateX(-180deg);
-          transform: rotateX(-180deg);
-}
-
-.rooms article .love > .s_btn {
-  position: absolute;
-  bottom: 2%;
-  left: 43%;
-}
-
-.rooms article .only > .s_btn {
-  position: absolute;
-  bottom: -8%;
-  left: 55%;
-}
-
 .rooms article > figure > figcaption {
   white-space: pre-line;
   font-size: 2.5em;
@@ -305,11 +312,6 @@
   text-align: center;
   width: 100%;
   display: inline-block;
-}
-
-.rooms article .love figcaption {
-  text-align: right;
-  margin-bottom: 2%;
 }
 
 .roommap {
@@ -1106,10 +1108,6 @@
     width: 50%;
     height: 50%;
   }
-  .rooms article .love .s_btn {
-    left: 85%;
-    bottom: 40%;
-  }
   .rooms article .love .s_btn img {
     width: 70%;
     height: 70%;
@@ -1117,9 +1115,8 @@
   .rooms article .only p {
     float: right;
   }
-  .rooms article .only .s_btn {
-    left: 85%;
-    bottom: -40%;
+  .rooms article .only > figcaption {
+    height: 60%;
   }
   .rooms article .only .s_btn img {
     width: 70%;
