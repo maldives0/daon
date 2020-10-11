@@ -575,15 +575,10 @@
   text-align: center;
   color: #fff;
   white-space: pre-line;
-  font-size: 300%;
-  font-family: "Titillium Web", sans-serif;
+  font-size: 8em;
+  text-transform: uppercase;
   font-weight: 100;
-}
-
-.c_notice .c_n > h1 strong {
   font-family: "Dancing Script", cursive;
-  font-size: 3em;
-  font-weight: none;
 }
 
 .c_notice .c_t {
@@ -652,15 +647,10 @@
   text-align: center;
   color: #fff;
   white-space: pre-line;
-  font-size: 3em;
-  font-family: "Titillium Web", sans-serif;
+  font-size: 8em;
+  text-transform: uppercase;
   font-weight: 100;
-}
-
-.c_photo .c_n > h1 strong {
   font-family: "Dancing Script", cursive;
-  font-size: 3em;
-  font-weight: none;
 }
 
 .c_photo > h1 {

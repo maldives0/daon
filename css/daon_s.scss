@@ -544,19 +544,16 @@
     background: url(../img/sub/pen.jpg) no-repeat;
     background-size: 100% 100%;
 
-    > h1 {
+    > h1{
       text-align: center;
       color: #fff;
       white-space: pre-line;
-      font-size: 300%;
-      font-family: "Titillium Web", sans-serif;
+      font-size: 8em;
+      text-transform:uppercase;
       font-weight: 100;
-
-      strong {
-        font-family: "Dancing Script", cursive;
-        font-size: 3em;
-        font-weight: none;
-      }
+      font-family: "Dancing Script", cursive;
+       
+      
     }
   }
 
@@ -631,15 +628,12 @@
       text-align: center;
       color: #fff;
       white-space: pre-line;
-      font-size: 3em;
-      font-family: "Titillium Web", sans-serif;
+      font-size: 8em;
+      text-transform:uppercase;
       font-weight: 100;
-
-      strong {
-        font-family: "Dancing Script", cursive;
-        font-size: 3em;
-        font-weight: none;
-      }
+      font-family: "Dancing Script", cursive;
+       
+      
     }
   }
 
