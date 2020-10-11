@@ -111,6 +111,190 @@ footer {
   transform:translate(-50%,-50%);
   z-index:1000;
 }
+/* ------------------------fac------------------- */
+
+.fac {
+  margin: 0;
+  background-size: 100%;
+  height: 100vh;
+
+  .vdo {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+    video {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      bottom: 0;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.title {
+  width: 100%;
+  padding: 1% 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  white-space: pre-line;
+  flex-direction: column;
+
+  h1 {
+    font-size: 8em;
+    font-family: "Dancing Script", cursive;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-weight: none;
+  }
+
+  strong {
+    font-size: 30px;
+    font-weight: none;
+    color: #fff;
+    font-family: "Titillium Web", sans-serif;
+  }
+}
+
+.fac .vdo article {
+  margin: 5% auto;
+  width: 80%;
+
+  figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+
+    p {
+      opacity: 1;
+      width: 300px;
+      height: 300px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 4%;
+        transform: translate(-50%);
+        border: 2px solid #fff;
+        width: 90%;
+        height: 90%;
+      }
+    }
+
+    &:hover {
+      p {
+        &:before,
+        &:after {
+          transition: 0.5s;
+          opacity: 0;
+        }
+      }
+
+      figcaption {
+        transition: 0.5s;
+        opacity: 0;
+      }
+    }
+
+    p img {
+      width: 100%;
+      height: 100%;
+    }
+
+    figcaption {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0%;
+      bottom: 0%;
+      text-align: center;
+      white-space: pre-line;
+      color: #fff;
+      font-family: "Titillium Web", sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 90vw;
+  height: 90vh;
+  background: rgba(255, 255, 255, 0.9);
+
+  &.active {
+    display: block;
+  }
+
+  figure {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    p {
+      width: 50%;
+      height: 60%;
+      text-align: center;
+      margin-right: 3%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    figcaption {
+      width: 40%;
+      text-align: center;
+      font-size: 1.5em;
+      line-height: 1.5;
+      white-space: pre-line;
+      margin-bottom: 5%;
+
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        white-space: pre-line;
+        font-size: 1.8em;
+        margin-bottom: 3%;
+      }
+    }
+  }
+}
+
 //----------------room----------------------
 .room {
   width: 100%;
