@@ -291,7 +291,7 @@ header nav .s_list a img {
 }
 
 .side li.active a {
-  text-shadow: 2px 2px 2px #d3e8e9;
+  text-shadow: 3px 2px 1px #ffff1c;
   color: #d3e8e9;
 }
 
