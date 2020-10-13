@@ -323,24 +323,6 @@
   margin: 5%;
 }
 
-.roommap > div .info_btn {
-  display: block;
-}
-
-.roommap > div .info_btn a {
-  border: 1px solid gray;
-  padding: 1% 2%;
-  font-size: 20px;
-  color: #000;
-  margin: 3%;
-  font-family: "Inconsolata", monospace;
-  text-transform: uppercase;
-}
-
-.roommap > div .info_btn a:hover {
-  background: #d3e8e9;
-}
-
 .roommap > div h1 {
   font-family: "Dancing Script", cursive;
   text-transform: uppercase;
@@ -584,7 +566,7 @@
 .c_notice .c_t {
   margin: 2% auto;
   width: 70%;
-  border: 1px solid #000;
+  background: #fcf9f9;
   border-collapse: collapse;
 }
 
@@ -603,8 +585,8 @@
 }
 
 .c_notice .c_t thead {
-  background: #f8f3ec;
   text-align: center;
+  border-bottom: 1px solid gray;
 }
 
 .c_notice .c_t thead th:nth-of-type(1) {
@@ -628,7 +610,7 @@
 }
 
 .c_notice .c_t tbody tr {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid gray;
 }
 
 .c_notice .c_t tbody tr:nth-of-type(1) td:nth-of-type(1) {
@@ -668,7 +650,6 @@
 }
 
 .c_photo .f {
-  border: 1px solid #000;
   width: 80%;
   margin: 2% auto;
   padding: 2%;
@@ -705,7 +686,7 @@
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  .scroll p {
+  .scroll > p {
     color: #fff;
     font-family: "Inconsolata", monospace;
     font-size: 1.2em;

@@ -554,10 +554,11 @@ header nav .s_list a img {
   font-size: 20px;
   width: 200px;
   color: #000;
+  border-radius: 40%;
 }
 
 .c_btn a:hover {
-  background: #d3e8e9;
+  background: #f0f7e4;
 }
 
 .c_btn a:nth-of-type(1) {
@@ -576,6 +577,7 @@ header nav .s_list a img {
   margin-right: 3%;
   font-family: "Inconsolata", monospace;
   text-transform: uppercase;
+  border-radius: 40%;
 }
 
 .info_btn a:nth-of-type(1) {
@@ -583,7 +585,7 @@ header nav .s_list a img {
 }
 
 .info_btn a:hover {
-  background: #e5e5e5;
+  background: #f0f7e4;
 }
 
 .indi {

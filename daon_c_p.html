@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="css/daon_s.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/load.js"></script> 
+    <script src="js/load.js"></script>
      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  
+
 
 </head>
 
 <body>
     <div>
-       
+
         <header></header>
 
                <a class="menu-trigger">
@@ -33,7 +33,7 @@
             </span>
         </div>
 
-        
+
 
 
 
@@ -42,7 +42,7 @@
           <div class="c_photo">
            <div class="c_n f_a">
                <h1>community</h1>
-               
+
            </div>
            <div class="c_btn f_a">
               <a href="daon_c_n.html">공지사항</a>
@@ -58,42 +58,42 @@
                     <a href="#">
                           <img src="img/sub/p_1.jpg" alt="">
                       </a>
-                       <p>다온야경</p> 
+                       <p>다온야경</p>
               </li>
-           
+
               <li class="g-item  f_p">
                    <span>no.2</span>
                     <a href="#">
                           <img src="img/sub/p_2.jpg" alt="">
                       </a>
-                       <p>다온에서 1박 2일</p> 
+                       <p>다온에서 1박 2일</p>
               </li>
-           
+
               <li class="g-item f_p">
                    <span>no.3</span>
                     <a href="#">
                           <img src="img/sub/v_4.jpg" alt="">
                       </a>
-                       <p>다온 수영장</p> 
+                       <p>다온 수영장</p>
               </li>
-           
+
               <li class="g-item g-width-2  f_p">
                    <span>no.4</span>
                     <a href="#">
                           <img src="img/sub/v_2.jpg" alt="">
                       </a>
-                       <p>송년회</p> 
+                       <p>송년회</p>
               </li>
-           
+
               <li class="g-item   f_p">
                    <span>no.5</span>
                     <a href="#">
                           <img src="img/sub/v_3.jpg" alt="">
                       </a>
-                       <p>가족과 함께</p> 
+                       <p>가족과 함께</p>
               </li>
-           
-                        
+
+
           </ul>
            </div>
         </main>
@@ -109,47 +109,47 @@
                 gutter: '.gutter-sizer',
                 horizontalOrder: true
             });
-    
-                     
+
+
             $grid.imagesLoaded().progress(function () {
                 $grid.masonry('layout');
             });
         });
-    
+
     </script>
     <style>
-       
+
         /* ----------percent----------- */
-       
+
         .grid .g-item {
-           
+
             margin-bottom: 10px;
         }
-    
+
         .grid .g-item img {
             width: 100%;
             height:100%;
         }
-    
+
         .grid .g-item,
         .grid .grid-sizer {
             width: 30%;
         }
-    
+
         .grid .gutter-sizer {
-            width: 3%;
+            width: 4.5%;
         }
         .grid .g-width-2 {
             width:60%;
         }
-       
+
         @media (max-width:480px) {
-    
+
             .grid .g-item,
             .grid .grid-sizer {
                 width: 48%;
             }
-    
+
             .grid .gutter-sizer {
                 width: 4%;
             }

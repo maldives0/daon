@@ -190,13 +190,13 @@
   width: 100%;
   height: 90vh;
 
-  
+
 
   .only {
     height: 100%;
     background: url(../img/sub/only.jpg);
     position:relative;
-  
+
     > .s_btn {
       position: absolute;
       bottom: 25%;
@@ -223,9 +223,9 @@
         transform: rotateX(-180deg);
       }
     }
-   
+
     figcaption {
-    
+
       text-align: right;
       margin-bottom: 2%;
     }
@@ -292,7 +292,7 @@
     }
   }
 
-  
+
 }
 
 .roommap {
@@ -303,23 +303,6 @@
     div {
       margin: 5%;
 
-      .info_btn {
-        display: block;
-
-        a {
-          border: 1px solid gray;
-          padding: 1% 2%;
-          font-size: 20px;
-          color: #000;
-          margin: 3%;
-          font-family: "Inconsolata", monospace;
-          text-transform: uppercase;
-
-          &:hover {
-            background: #d3e8e9;
-          }
-        }
-      }
 
       h1 {
         font-family: "Dancing Script", cursive;
@@ -552,15 +535,15 @@
       text-transform:uppercase;
       font-weight: 100;
       font-family: "Dancing Script", cursive;
-       
-      
+
+
     }
   }
 
   .c_t {
     margin: 2% auto;
     width: 70%;
-    border: 1px solid #000;
+    background: #fcf9f9;
     border-collapse: collapse;
 
     caption {
@@ -578,8 +561,9 @@
     }
 
     thead {
-      background: #f8f3ec;
+
       text-align: center;
+      border-bottom: 1px solid gray;
 
       th {
         &:nth-of-type(1) {
@@ -605,7 +589,7 @@
       text-align: center;
 
       tr {
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid gray;
 
         &:nth-of-type(1) td:nth-of-type(1) {
           background: #e5e5e5;
@@ -632,8 +616,8 @@
       text-transform:uppercase;
       font-weight: 100;
       font-family: "Dancing Script", cursive;
-       
-      
+
+
     }
   }
 
@@ -652,7 +636,7 @@
   }
 
   .f {
-    border: 1px solid #000;
+
     width: 80%;
     margin: 2% auto;
     padding: 2%;
@@ -689,7 +673,7 @@
     text-align: center;
     transform: translateX(-50%);
 
-    p {
+    > p {
       color: #fff;
       font-family: "Inconsolata", monospace;
       font-size: 1.2em;
@@ -903,7 +887,7 @@
     }
 
     .love .s_btn {
-     
+
       img {
         width: 70%;
         height: 70%;
@@ -918,7 +902,7 @@
         height:60%;
       }
       .s_btn {
-       
+
         img {
           width: 70%;
           height: 70%;
@@ -1227,7 +1211,7 @@
     width: 100%;
 
     .c_n {
-      
+
       > h1 {
         font-size: 150%;
       }
