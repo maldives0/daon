@@ -100,16 +100,28 @@
 
 .traffic .con .a_info > p {
   text-align: center;
-  vertical-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   white-space: pre-line;
   padding: 10%;
-  line-height: 2;
-  font-size: 2em;
-  background: #e6fafe;
+  background: radial-gradient(closest-corner at 50% 50%, #fff, #DDEFBB);
+  font-size: 1.7em;
   font-family: "Sunflower", sans-serif;
+}
+
+.traffic .con .a_info > p strong {
+  font-size: 1.7em;
+  display: inline-block;
+  margin-bottom: 5%;
+}
+
+.traffic .con .a_info > p span {
+  line-height: 1.8;
 }
 
 /*--------------------------travel------------------------------------*/
