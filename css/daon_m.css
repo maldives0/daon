@@ -64,6 +64,7 @@ svg {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
@@ -123,8 +124,8 @@ svg .line {
 }
 
 .service > article > div.fade {
-  -webkit-animation: fadeOut 15s forwards;
-          animation: fadeOut 15s forwards;
+  -webkit-animation: fadeOut 5s forwards;
+          animation: fadeOut 5s forwards;
 }
 
 .service > article > div h2 {
@@ -326,7 +327,7 @@ footer .foot .f_t > p img {
 }
 
 /*----------------------media480---------------------------*/
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   body {
     width: 100vw;
   }
@@ -473,7 +474,6 @@ footer .foot .f_t > p img {
   /*   ----------------------------main--------------*/
   main {
     width: 100vw;
-    height: 100vh;
   }
   main > div {
     position: relative;
@@ -520,9 +520,18 @@ footer .foot .f_t > p img {
     margin: 0 auto;
   }
   .service > article > div {
-    width: 100%;
-    margin-top: 10%;
-    position: static;
+    background: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    width: 50%;
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  .service > article > div.fade {
+    -webkit-animation: none;
+            animation: none;
   }
   .service > article > div h2 {
     padding: 0;
@@ -530,24 +539,25 @@ footer .foot .f_t > p img {
     font-size: 90%;
   }
   .service > article > div h2 strong {
-    font-size: 5em;
+    font-size: 3em;
   }
   .service > article .s {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    opacity: 1;
+  }
+  .service > article .s.fade {
+    -webkit-animation: none;
+            animation: none;
   }
   .service > article .s li {
-    margin-bottom: 5%;
+    margin-bottom: 0;
     width: 50%;
-    height: 30%;
-  }
-  .service > article .s li:nth-of-type(2) {
-    margin-left: 50%;
+    height: 40%;
   }
   .service > article .s li a h2 {
     font-size: 80%;
@@ -558,46 +568,71 @@ footer .foot .f_t > p img {
     font-weight: 100;
     font-family: 'Titillium Web', sans-serif;
   }
+  /* ------------------------fac------------------- */
   .facilities {
-    margin: 0;
-    height: auto;
-    background-size: 100%;
+    height: 100vh;
   }
   .facilities .vdo video {
-    width: 100%;
-    position: absolute;
-    z-index: 0;
-    left: 0;
-    bottom: 40%;
+    display: none;
   }
-  .facilities .vdo .title {
-    background: none;
-    display: block;
-    white-space: pre-line;
-    z-index: 1;
+  .title {
+    padding: 3%;
+    background: rgba(0, 0, 0, 0.5);
   }
-  .facilities .vdo .title h1 {
-    font-size: 90%;
+  .title h1 {
+    font-size: 3em;
   }
-  .facilities .vdo .title h1 strong {
-    font-size: 4em;
+  .title strong {
+    display: none;
   }
-  .facilities .vdo article {
-    margin: 0 auto;
+  .fac .vdo article {
+    width: 99%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .facilities .vdo article figure {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    margin: 2% auto;
-    overflow: hidden;
+  .fac .vdo article figure {
+    margin: 2px 0;
   }
-  .roommap {
-    height: auto;
+  .fac .vdo article figure p {
+    width: 200px;
+    height: 200px;
+  }
+  .fac .vdo article figure figcaption {
+    font-size: 1em;
+  }
+  .popup {
+    width: 95vw;
+    height: 95vh;
+  }
+  .popup figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popup figure p {
+    width: 70%;
+    height: 40%;
+    text-align: center;
+    margin-bottom: 6%;
+  }
+  .popup figure figcaption {
+    width: 90%;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  .popup figure figcaption h2 {
+    font-size: 1.2em;
+    margin-bottom: 5%;
   }
   .roommap img {
     width: 100%;

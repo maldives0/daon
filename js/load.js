@@ -5,12 +5,6 @@ $(function () {
     $('header').load('daon_header_footer.html .head', header);
     $('footer').load('daon_header_footer.html footer .foot');
 
-    //loading
-    // $(window).load(function () {
-    //     $('#loading').hide();
-    // });
-
-
     function header() {
 
 
@@ -57,9 +51,9 @@ $(function () {
             //nav
         }
         nav();
-        var mq = window.matchMedia("screen and (max-width:480px)");
+        var mq = window.matchMedia("screen and (max-width:576px)");
 
-        mq.addListener(res);
+        mq.addEventListener('change', res);
         function res(e) {
             if (e.matches) {
                 resMsg = 'mobile';

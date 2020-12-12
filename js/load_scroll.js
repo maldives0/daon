@@ -5,19 +5,11 @@ $(function () {
     $('header').load('daon_header_footer.html .head', header);
     $('footer').load('daon_header_footer.html footer .foot', footer);
 
- //loading
-//  $(window).load(function () {
-//     $('#loading').hide();
-// });
-
-
-
-
     //header
     function header() {
 
 
-        var resMsg;
+        let resMsg;
 
         function nav() {
 
@@ -60,15 +52,16 @@ $(function () {
             //nav
         }
         nav();
-        var mq = window.matchMedia("screen and (max-width:480px)");
+        const mq = window.matchMedia("screen and (max-width:576px)");
 
-        mq.addListener(res);
+        mq.addEventListener('change', res);
         function res(e) {
             if (e.matches) {
                 resMsg = 'mobile';
 
             } else {
                 resMsg = 'pc';
+
             }
 
         }
@@ -79,22 +72,20 @@ $(function () {
 
         //scroll
 
-        var main = document.querySelector('main');
-        var mDiv = document.querySelectorAll('main .main');
-        var len = mDiv.length;
-        var pos = 0;
-        var pArr = [];
-        var last = document.querySelector('.roommap');
-        var lTop = last.offsetTop;
+        const main = document.querySelector('main');
+        const mDiv = document.querySelectorAll('main .main');
+        const len = mDiv.length;
 
-        var sEle = document.querySelector('.service');
+        let pArr = [];
+        const last = document.querySelector('.roommap');
+        const lTop = last.offsetTop;
 
-        var sDiv = sEle.querySelector('article div');
-        var sUl = sEle.querySelector('article .s');
-        var sTop = sEle.offsetTop;
-
-        var sList = document.querySelectorAll('.side li');
-
+        const sList = document.querySelectorAll('.side li');
+        const sEle = document.querySelector('.service');
+        const sTop = sEle.offsetTop;
+        const serviceDiv = sEle.querySelector('article div');
+        const serviceUl = sEle.querySelector('article .s');
+        let pos = 0;
         mDiv.forEach(function (el, idx) {
             pArr.push(el.offsetTop);
 
@@ -104,16 +95,15 @@ $(function () {
                 window.scrollTo(0, 0);
 
                 if (e.wheelDelta < 0) {
+
                     try {
-
                         pos = this.nextElementSibling.offsetTop;
-
                         sList[idx].classList.remove('active');
                         sList[idx].nextElementSibling.classList.add('active');
                     } catch {
-
-                        if (idx == len - 1) {
-                            pos = mDiv[len - 1].offsetTop;
+                        alert('마지막 페이지입니다');
+                        if (idx >= len - 1) {
+                            pos = this.offsetTop;
                         }
                     }
 
@@ -131,14 +121,11 @@ $(function () {
                 }
 
 
-
                 //service fade
 
-
-
                 if (sTop == pos) {
-                    sDiv.classList.add('fade');
-                    sUl.classList.add('fade');
+                    serviceDiv.classList.add('fade');
+                    serviceUl.classList.add('fade');
                 }
 
                 if (lTop == pos) {
@@ -173,16 +160,16 @@ $(function () {
 
             });
             this.classList.add('active');
-            var thisParent = a.currentTarget.parentElement;
+            const thisParent = a.currentTarget.parentElement;
 
-            var thisChildren = thisParent.children;
+            const thisChildren = thisParent.children;
 
-            var i = Array.from(thisChildren).indexOf(a.currentTarget);
+            let i = Array.from(thisChildren).indexOf(a.currentTarget);
 
 
             if (sTop == pArr[i]) {
-                sDiv.classList.add('fade');
-                sUl.classList.add('fade');
+                serviceDiv.classList.add('fade');
+                serviceUl.classList.add('fade');
             }
             if (lTop == pArr[i]) {
                 $('footer .foot').addClass('active');
