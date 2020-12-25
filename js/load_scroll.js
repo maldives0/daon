@@ -95,7 +95,6 @@ $(function () {
                 window.scrollTo(0, 0);
 
                 if (e.wheelDelta < 0) {
-
                     try {
                         pos = this.nextElementSibling.offsetTop;
                         sList[idx].classList.remove('active');
@@ -142,9 +141,6 @@ $(function () {
                 main.style.transform = "translateY(-" + pos + "px)";
             };
         });
-
-
-
 
 
         //sidebar click

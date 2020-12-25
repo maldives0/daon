@@ -12,8 +12,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
             });
 
-
-
 });
 //scroll
 window.addEventListener('DOMContentLoaded', function () {
@@ -60,8 +58,6 @@ window.addEventListener('DOMContentLoaded', function () {
       //indi create a
       var indiUl = roomDiv.querySelector('.indi');
 
-
-
       for (var i = 0; i < lenR; i++) {
 
             indiUl.innerHTML += "<a data-num='" + i + "'></a>";
@@ -69,10 +65,6 @@ window.addEventListener('DOMContentLoaded', function () {
       var indiA = indiUl.querySelectorAll('a');
 
       indiA[0].classList.add('active');
-    
-
-
-
 
       //scroll
       mDiv.forEach(function (el, idx) {
@@ -85,12 +77,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
                   if (e.wheelDelta < 0) {
                         try {
-
                               pos = this.nextElementSibling.offsetTop;
-
                               sList[idx].classList.remove('active');
                               sList[idx].nextElementSibling.classList.add('active');
-                        } catch{
+                        } catch {
 
                               if (idx == len - 1) {
                                     pos = mDiv[len - 1].offsetTop;
@@ -103,7 +93,7 @@ window.addEventListener('DOMContentLoaded', function () {
                               pos = this.previousElementSibling.offsetTop;
                               sList[idx].classList.remove('active');
                               sList[idx].previousElementSibling.classList.add('active');
-                        } catch{
+                        } catch {
                               if (idx == 0) {
                                     pos = mDiv[0].offsetTop;
                               }
@@ -124,7 +114,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
                         blen = true;
 
-                  } else{
+                  } else {
 
                         blen = false;
                   }
@@ -132,40 +122,40 @@ window.addEventListener('DOMContentLoaded', function () {
 
                         //btn
                         $('.a_btn a').on('click', aBtn);
-            
+
                         function aBtn() {
-            
+
                               if ($(this).index() == 0) {
-            
+
                                     fade('prev');
-            
+
                               } else {
-            
+
                                     fade('next');
-            
+
                               }
-            
+
                         };
-            
+
                         //fade
-            
+
                         function fade(p) {
-            
-            
+
+
                               $('.r_list li').eq(num).fadeOut(2000);
-            
+
                               (p == 'prev') ? num-- : num++;
                               update();
                               $('.r_list li').eq(num).fadeIn(2000);
-            
+
                               white(num);
                         };
-            
+
                         function update() {
-            
+
                               if (num >= lenR) num = 0;
                               if (num == -1) num = lenR - 1;
-            
+
                         };
                         //loop
                         function clearLoop() {
@@ -182,49 +172,45 @@ window.addEventListener('DOMContentLoaded', function () {
                                     mouseleave: interLoop
                               }
                         );
-            
-            
-            
-            
+
+
+
+
                         function white(num) {
                               for (var i = 0; i < lenR; i++) {
                                     indiA[i].classList.remove('active');
                               };
                               indiA[num].classList.add('active');
-            
+
                         }
                         indiA.forEach(function indi(a) {
 
                               a.addEventListener('click', cIndi);
                         });
-                  
-            
+
+
                         function cIndi() {
                               for (var i = 0; i < lenR; i++) {
                                     indiA[i].classList.remove('active');
                               };
                               this.classList.add('active');
                               var idx = this.dataset.num;
-            
+
                               $('.r_list li').fadeOut(2000);
-            
+
                               $('.r_list li').eq(idx).fadeIn(2000);
-            
+
                               num = Number(idx);
                               setTimeout(function () {
                                     fade();
                               }, 2000);
                         };//end
-            
+
                   };
-            
+
             };
 
       });
-
-
-
-
 
       //sidebar click
       sList[0].classList.add('active');
@@ -253,49 +239,49 @@ window.addEventListener('DOMContentLoaded', function () {
 
             if (rTop == pArr[i]) {
                   blen = true;
-            } else{
+            } else {
                   blen = false;
-                 
+
             }
-           
+
             if (blen) {
 
                   //btn
                   $('.a_btn a').on('click', aBtn);
-      
+
                   function aBtn() {
-      
+
                         if ($(this).index() == 0) {
-      
+
                               fade('prev');
-      
+
                         } else {
-      
+
                               fade('next');
-      
+
                         }
-      
+
                   };
-      
+
                   //fade
-      
+
                   function fade(p) {
-      
-      
+
+
                         $('.r_list li').eq(num).fadeOut(2000);
-      
+
                         (p == 'prev') ? num-- : num++;
                         update();
                         $('.r_list li').eq(num).fadeIn(2000);
-      
+
                         white(num);
                   };
-      
+
                   function update() {
-      
+
                         if (num >= lenR) num = 0;
                         if (num == -1) num = lenR - 1;
-      
+
                   };
                   //loop
                   function clearLoop() {
@@ -312,52 +298,52 @@ window.addEventListener('DOMContentLoaded', function () {
                               mouseleave: interLoop
                         }
                   );
-      
-      
-      
-      
+
+
+
+
                   function white(num) {
                         for (var i = 0; i < lenR; i++) {
                               indiA[i].classList.remove('active');
                         };
                         indiA[num].classList.add('active');
-      
+
                   }
                   indiA.forEach(function indi(a) {
 
                         a.addEventListener('click', cIndi);
                   });
-            
-      
+
+
                   function cIndi() {
                         for (var i = 0; i < lenR; i++) {
                               indiA[i].classList.remove('active');
                         };
                         this.classList.add('active');
                         var idx = this.dataset.num;
-      
+
                         $('.r_list li').fadeOut(2000);
-      
+
                         $('.r_list li').eq(idx).fadeIn(2000);
-      
+
                         num = Number(idx);
                         setTimeout(function () {
                               fade();
                         }, 2000);
                   };//end
-      
+
             };
-      
+
 
 
       };
 
-     
 
 
-     
 
-    
+
+
+
 
 
 

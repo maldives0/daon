@@ -34,40 +34,36 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
             });
-            facArt.innerHTML=article;
+            facArt.innerHTML = article;
             //foreach end
 
 
-    //daterun
+            //daterun
         }
         dataRun();
 
-   Array.from(facFig).forEach(function(el){
+        Array.from(facFig).forEach(function (el) {
 
-    el.addEventListener('click',popUp);
-   })
-
-
-    function popUp(e) {
-
-        var thisParent = e.currentTarget.parentElement;
-        var thisChildren = thisParent.children;
-        num = Array.from(thisChildren).indexOf(e.currentTarget);
-
-        popDiv.classList.add('active');
-
-        pop(num);
-        //popup end
-    }
+            el.addEventListener('click', popUp);
+        })
 
 
+        function popUp(e) {
+
+            var thisParent = e.currentTarget.parentElement;
+            var thisChildren = thisParent.children;
+            num = Array.from(thisChildren).indexOf(e.currentTarget);
+
+            popDiv.classList.add('active');
+
+            pop(num);
+            //popup end
+        }
 
 
         function pop(num) {
 
-            response.service.forEach(function (el,idx) {
-
-
+            response.service.forEach(function (el, idx) {
 
                 name = response.service[num].name;
                 tit = response.service[num].tit;
@@ -76,8 +72,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
                 popup = "<figure class='f_a'>";
                 popup += "<p><img src='" + imgSrc + "'></p>";
-                popup += "<figcaption><h2>" + name +"("+tit+")</h2>" ;
-                popup +=  desc + "</figcaption> </figure>";
+                popup += "<figcaption><h2>" + name + "(" + tit + ")</h2>";
+                popup += desc + "</figcaption> </figure>";
 
                 //foreach end
             });
@@ -85,10 +81,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
             //pop end
         }
-      
-
-
-
 
         //dataFun end
     }
@@ -97,7 +89,6 @@ window.addEventListener('DOMContentLoaded', function () {
     popDiv.addEventListener('click',
         function () {
             popDiv.classList.remove('active');
-
             //end
         });
 
