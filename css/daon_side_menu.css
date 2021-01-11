@@ -2,7 +2,7 @@
 .tit_w {
   padding: 3%;
   font-size: 8em;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -11,7 +11,7 @@
 .tit_b {
   padding: 3%;
   font-size: 8em;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -25,7 +25,7 @@
 
 .is > p {
   white-space: pre-line;
-  font-family: "Sunflower", sans-serif;
+  font-family: 'Sunflower', sans-serif;
   line-height: 2;
   font-size: 20px;
   text-align: center;
@@ -109,9 +109,9 @@
   height: 100%;
   white-space: pre-line;
   padding: 10%;
-  background: radial-gradient(closest-corner at 50% 50%, #fff, #DDEFBB);
+  background: radial-gradient(closest-corner at 50% 50%, #fff, #ddefbb);
   font-size: 1.7em;
-  font-family: "Sunflower", sans-serif;
+  font-family: 'Sunflower', sans-serif;
 }
 
 .traffic .con .a_info > p strong {
@@ -125,7 +125,7 @@
 }
 
 /*--------------------------travel------------------------------------*/
-.t_m {
+.travel_layout {
   width: 100%;
   height: 100vh;
   background: url("../img/sub/beach.jpg") no-repeat;
@@ -134,12 +134,12 @@
   text-align: center;
 }
 
-.t_m .travel {
+.travel_layout .travel {
   width: 1050px;
   height: 350px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 49%;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   text-align: left;
@@ -147,7 +147,7 @@
   overflow: hidden;
 }
 
-.t_m .travel article {
+.travel_layout .travel article {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -155,7 +155,7 @@
   left: 0;
 }
 
-.t_m .travel article figure {
+.travel_layout .travel article figure {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -165,7 +165,7 @@
   display: inline-block;
 }
 
-.t_m .travel article figure a {
+.travel_layout .travel article figure a {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -176,12 +176,12 @@
   height: 300px;
 }
 
-.t_m .travel article figure a img {
+.travel_layout .travel article figure a img {
   width: 100%;
   height: 100%;
 }
 
-.t_m .travel article figure figcaption {
+.travel_layout .travel article figure figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,14 +197,14 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 1.5em;
   width: 100%;
   height: 100%;
   color: #fff;
 }
 
-.t_m .travel article figure:hover figcaption {
+.travel_layout .travel article figure:hover figcaption {
   display: none;
 }
 
@@ -216,7 +216,7 @@
 
 .rooms article .only {
   height: 100%;
-  background: url(../img/sub/only.jpg);
+  background: url("../img/sub/only.jpg");
   position: relative;
 }
 
@@ -233,7 +233,7 @@
 
 .rooms article .love {
   height: 100%;
-  background: url(../img/sub/love.jpeg);
+  background: url("../img/sub/love.jpeg");
   position: relative;
 }
 
@@ -309,7 +309,7 @@
   white-space: pre-line;
   font-size: 2.5em;
   line-height: 1.5;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   width: 80%;
   padding: 0 5%;
   color: rgba(0, 0, 0, 0.2);
@@ -317,7 +317,7 @@
 
 .rooms article > figure > figcaption strong {
   color: #434343;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 0.8em;
   font-weight: bold;
   text-transform: uppercase;
@@ -336,7 +336,7 @@
 }
 
 .roommap > div h1 {
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
   font-size: 5em;
 }
@@ -347,7 +347,7 @@
   font-weight: 50;
   white-space: pre-line;
   line-height: 2.5;
-  font-family: "Sunflower", sans-serif;
+  font-family: 'Sunflower', sans-serif;
 }
 
 .roommap > p {
@@ -379,20 +379,20 @@
 }
 
 .room_l li:nth-of-type(1) {
-  background: url(../img/sub/l_1.jpg) center 0px no-repeat;
+  background: url("../img/sub/l_1.jpg") center 0px no-repeat;
   background-size: 100%;
 }
 
 .room_o li:nth-of-type(1) {
-  background: url(../img/sub/r_1.jpg) center 0px no-repeat;
+  background: url("../img/sub/r_1.jpg") center 0px no-repeat;
   background-size: 100%;
 }
 
 .info {
-  height: 80vw;
+  height: 50vw;
   position: relative;
   margin: 5%;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .info > p {
@@ -401,13 +401,13 @@
   height: 50%;
   -webkit-box-shadow: inset 20px 0px 100px 100px #fff;
           box-shadow: inset 20px 0px 100px 100px #fff;
-  background: url(../img/sub/rose.jpg) no-repeat;
+  background: url("../img/sub/rose.jpg") no-repeat;
   background-size: 100%;
 }
 
 .info > h1 {
   font-size: 100px;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
 }
 
@@ -417,31 +417,12 @@
   font-weight: 50;
   white-space: pre-line;
   line-height: 2.5;
-  font-family: "Sunflower", sans-serif;
-}
-
-.info ul {
-  float: right;
-  margin: 3%;
-  width: 30%;
-  background: #fff;
-}
-
-.info ul > h4 {
-  font-size: 1.2em;
-  padding-bottom: 10px !important;
-  border-bottom: 1px solid gray;
-}
-
-.info > ul li {
-  line-height: 1.8;
-  list-style: square;
+  font-family: 'Sunflower', sans-serif;
 }
 
 /*-------------------------service-------------------------------*/
 .service {
   width: 100%;
-  height: 100vh;
   overflow: hidden;
   position: relative;
 }
@@ -461,7 +442,7 @@
 
 .service .title h1 {
   font-size: 8em;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
   color: #fff;
   font-weight: none;
@@ -471,14 +452,14 @@
   font-size: 30px;
   font-weight: none;
   color: #fff;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .service > article {
   width: 100%;
   height: 100%;
   padding: 5%;
-  background: url(../img/main/water.jpg) center no-repeat;
+  background: url("../img/main/water.jpg") center no-repeat;
   background-size: 100%;
 }
 
@@ -534,13 +515,13 @@
   font-size: 60px;
   line-height: 1.5;
   font-weight: normal;
-  font-family: "Sunflower", sans-serif;
+  font-family: 'Sunflower', sans-serif;
 }
 
 .service > article .s li a h2 strong {
   font-size: 50px;
   font-weight: normal;
-  font-family: "Sunflower", sans-serif;
+  font-family: 'Sunflower', sans-serif;
 }
 
 .service > article .s li:nth-of-type(1):hover h2 {
@@ -557,32 +538,32 @@
   transition: 0.5s;
 }
 
-/*----------------c_n-----------------------------*/
-.c_notice .c_n {
+/*----------------community_notice----------------------------*/
+.community_notice_layout .community_notice {
   width: 100%;
   height: 50vh;
-  background: url(../img/sub/pen.jpg) no-repeat;
+  background: url("../img/sub/pen.jpg") no-repeat;
   background-size: 100% 100%;
 }
 
-.c_notice .c_n > h1 {
+.community_notice_layout .community_notice > h1 {
   text-align: center;
   color: #fff;
   white-space: pre-line;
   font-size: 8em;
   text-transform: uppercase;
   font-weight: 100;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
-.c_notice .c_t {
+.community_notice_layout .community_table {
   margin: 2% auto;
   width: 70%;
   background: #fcf9f9;
   border-collapse: collapse;
 }
 
-.c_notice .c_t caption {
+.community_notice_layout .community_table caption {
   width: 100%;
   font-size: 100%;
   white-space: pre-line;
@@ -592,62 +573,62 @@
   text-transform: uppercase;
 }
 
-.c_notice .c_t caption > strong {
+.community_notice_layout .community_table caption > strong {
   font-size: 2em;
 }
 
-.c_notice .c_t thead {
+.community_notice_layout .community_table thead {
   text-align: center;
   border-bottom: 1px solid gray;
 }
 
-.c_notice .c_t thead th:nth-of-type(1) {
+.community_notice_layout .community_table thead th:nth-of-type(1) {
   width: 10%;
 }
 
-.c_notice .c_t thead th:nth-of-type(2) {
+.community_notice_layout .community_table thead th:nth-of-type(2) {
   width: 50%;
 }
 
-.c_notice .c_t thead th:nth-of-type(3), .c_notice .c_t thead th:nth-of-type(4) {
+.community_notice_layout .community_table thead th:nth-of-type(3), .community_notice_layout .community_table thead th:nth-of-type(4) {
   width: 15%;
 }
 
-.c_notice .c_t thead th:nth-of-type(5) {
+.community_notice_layout .community_table thead th:nth-of-type(5) {
   width: 10%;
 }
 
-.c_notice .c_t tbody {
+.community_notice_layout .community_table tbody {
   text-align: center;
 }
 
-.c_notice .c_t tbody tr {
+.community_notice_layout .community_table tbody tr {
   border-bottom: 1px solid gray;
 }
 
-.c_notice .c_t tbody tr:nth-of-type(1) td:nth-of-type(1) {
+.community_notice_layout .community_table tbody tr:nth-of-type(1) td:nth-of-type(1) {
   background: #e5e5e5;
 }
 
-/*----------------c_p-----------------------------*/
-.c_photo .c_n {
+/*----------------community_photo-----------------------------*/
+.community_photo .community_notice {
   width: 100%;
   height: 50vh;
-  background: url(../img/sub/pen.jpg) no-repeat;
+  background: url("../img/sub/pen.jpg") no-repeat;
   background-size: 100% 100%;
 }
 
-.c_photo .c_n > h1 {
+.community_photo .community_notice > h1 {
   text-align: center;
   color: #fff;
   white-space: pre-line;
   font-size: 8em;
   text-transform: uppercase;
   font-weight: 100;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
-.c_photo > h1 {
+.community_photo > h1 {
   line-height: 2;
   width: 100%;
   font-size: 100%;
@@ -657,22 +638,22 @@
   text-transform: uppercase;
 }
 
-.c_photo > h1 strong {
+.community_photo > h1 strong {
   font-size: 2em;
 }
 
-.c_photo .f {
+.community_photo .photo_ul {
   width: 80%;
   margin: 2% auto;
   padding: 2%;
 }
 
-.c_photo .f li > span {
+.community_photo .photo_ul li > span {
   display: block;
   margin-bottom: 2px;
 }
 
-.c_photo .f li > p {
+.community_photo .photo_ul li > p {
   margin-top: 2px;
   width: 100%;
   display: -webkit-box;
@@ -700,7 +681,7 @@
   }
   .scroll > p {
     color: #fff;
-    font-family: "Inconsolata", monospace;
+    font-family: 'Inconsolata', monospace;
     font-size: 1.2em;
     text-transform: uppercase;
     position: relative;
@@ -731,7 +712,7 @@
   .sns .link a:nth-of-type(4) {
     background-position: -130px 0;
   }
-  .side {
+  .sidebar {
     display: none;
   }
   .menu-trigger {
@@ -750,7 +731,7 @@
             transform: rotate(-45deg);
     bottom: 50%;
   }
-  .c_btn a {
+  .community_btn a {
     padding: 3%;
     font-size: 1em;
     width: 30%;
@@ -764,7 +745,7 @@
     width: 8px;
     height: 8px;
   }
-  .a_btn > a img {
+  .arrow_btn > a img {
     width: 7vw;
   }
   /*    -----------------------------header------------*/
@@ -930,22 +911,20 @@
     margin: 5% auto;
     font-size: 0.5em;
   }
+  .info > {
+    height: 30vh;
+  }
   .info > h1 {
     font-size: 2.5em;
   }
   .info > h4 {
     font-size: 0.5em;
   }
-  .r_info {
-    height: 30vh;
-  }
   .info > p {
     display: none;
   }
-  .info > ul {
-    margin-top: 15%;
-    width: 60%;
-    font-size: 0.5em;
+  .r_info {
+    height: 30vh;
   }
   /*---------------about---------------------------*/
   .is {
@@ -1101,28 +1080,28 @@
     padding-top: 10%;
     font-size: 5em;
   }
-  .t_m .travel {
+  .travel_layout .travel {
     width: 390px;
     height: 500px;
   }
-  .t_m .travel article {
+  .travel_layout .travel article {
     width: 400px;
     height: 400px;
     top: 30%;
   }
-  .t_m .travel article figure {
+  .travel_layout .travel article figure {
     position: absolute;
     top: 0;
     left: 0;
     text-align: center;
     display: inline-block;
   }
-  .t_m .travel article figure figcaption {
+  .travel_layout .travel article figure figcaption {
     width: 100%;
     height: 100%;
     font-size: 1em;
   }
-  .t_m .a_btn {
+  .travel_layout .arrow_btn {
     width: 90%;
     left: 5%;
     top: 30%;
@@ -1141,34 +1120,34 @@
     width: 80%;
     margin-top: 0%;
   }
-  .s_info .s_n .a_btn {
+  .s_info .s_n .arrow_btn {
     width: 70%;
     top: 50%;
   }
-  .s_info .s_n .a_btn > a img {
+  .s_info .s_n .arrow_btn > a img {
     width: 7vw;
   }
   /*----------------------------------------------community------------------------------------*/
-  .c_notice {
+  .community_notice_layout {
     width: 100%;
   }
-  .c_notice .c_n > h1 {
+  .community_notice_layout .community_notice > h1 {
     font-size: 150%;
   }
-  .c_notice .c_t {
+  .community_notice_layout .community_table {
     width: 95%;
   }
-  .c_notice .c_t thead,
-  .c_notice .c_t tbody {
+  .community_notice_layout .community_table thead,
+  .community_notice_layout .community_table tbody {
     font-size: 14px;
   }
-  .c_photo {
+  .community_photo {
     width: 100%;
   }
-  .c_photo .c_n > h1 {
+  .community_photo .community_notice > h1 {
     font-size: 150%;
   }
-  .c_photo .f {
+  .community_photo .photo_ul {
     width: 90%;
     margin: 0 auto;
     padding: 0;
@@ -1178,22 +1157,22 @@
     width: 100vw;
     height: 10vh;
   }
-  footer .foot {
+  footer .footer_layout {
     text-align: center;
     width: 100%;
     margin: 0 auto;
   }
-  footer .foot .f_t {
+  footer .footer_layout .footer_text_layout {
     line-height: 0.8;
     width: 100%;
     margin-top: 10%;
     font-size: 0.5em;
   }
-  footer .foot .f_t > p:nth-of-type(1) {
+  footer .footer_layout .footer_text_layout > p:nth-of-type(1) {
     margin-top: 2%;
   }
-  footer .foot .f_t > p:nth-of-type(2) {
+  footer .footer_layout .footer_text_layout > p:nth-of-type(2) {
     display: none;
   }
 }
-/*# sourceMappingURL=daon_s.css.map */
+/*# sourceMappingURL=daon_side_menu.css.map */

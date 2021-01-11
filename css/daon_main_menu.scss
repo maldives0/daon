@@ -26,7 +26,7 @@ body {
 
   p {
     color: #fff;
-    font-family: "Inconsolata", monospace;
+    font-family: 'Inconsolata', monospace;
     font-size: 1.5em;
     text-transform: uppercase;
     position: relative;
@@ -63,7 +63,7 @@ svg {
   position: absolute;
   top: 50%;
   left: 50%;
-  width:100%;
+  width: 100%;
   transform: translate(-50%);
 
   .st path {
@@ -85,8 +85,6 @@ svg {
     stroke-dashoffset: 0px;
   }
 }
-
-
 
 .service {
   width: 100%;
@@ -135,7 +133,7 @@ svg {
       }
     }
 
-    .s {
+    .service_list {
       height: 100%;
       display: flex;
       justify-items: flex-end;
@@ -191,14 +189,15 @@ svg {
 
         &:nth-of-type(1):hover h2 {
           background: none;
-          transition: .5s;
+          transition: 0.5s;
           opacity: 0;
         }
 
-        &:nth-of-type(2):hover h2, &:nth-of-type(3):hover h2 {
+        &:nth-of-type(2):hover h2,
+        &:nth-of-type(3):hover h2 {
           background: none;
           opacity: 0;
-          transition: .5s;
+          transition: 0.5s;
         }
       }
     }
@@ -210,7 +209,8 @@ svg {
     opacity: 1;
   }
 
-  50%,100% {
+  50%,
+  100% {
     opacity: 0;
   }
 }
@@ -220,19 +220,18 @@ svg {
     opacity: 0;
   }
 
-  50%,100% {
+  50%,
+  100% {
     opacity: 1;
   }
 }
-
-//
 
 .roommap {
   margin-top: 10%;
   position: relative;
   height: 100vh;
   background: url(../img/main/roommap.jpg) center no-repeat;
-  background-size: 100%;
+  background-size: 90%;
   z-index: 0;
 }
 
@@ -240,10 +239,10 @@ footer {
   position: relative;
   top: 0;
   left: 0;
-
-  .foot {
+  height: 100vh;
+  .footer_layout {
     z-index: 0;
-    height: 20vh;
+    height: 10vh;
     position: absolute;
     left: 50%;
     bottom: 10%;
@@ -256,11 +255,11 @@ footer {
       z-index: 11;
     }
 
-    .f_t {
+    .footer_text_layout {
       text-align: center;
-      white-space: pre-line;
+      white-space: none;
       font-size: 0.5em;
-      font-family: "Titillium Web", sans-serif;
+      font-family: 'Titillium Web', sans-serif;
       line-height: 2;
       padding: 2% 0;
 
@@ -334,20 +333,18 @@ footer {
     }
   }
 
-
-  .side {
+  .sidebar {
     display: none;
   }
 
   .menu-trigger {
-
     display: block;
-    >a{
+    > a {
       span {
-        background:#fff;
-         }
+        background: #fff;
+      }
+    }
   }
-}
 
   /*    -----------------------------header------------*/
 
@@ -369,24 +366,24 @@ footer {
       background: #fff;
       margin: 0;
       transform: translateX(100%);
-      transition: .5s;
+      transition: 0.5s;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
 
       padding: 20% 0 40% 0;
 
       > div {
         width: 70%;
-        padding-top:5%;
+        padding-top: 5%;
 
         .logo {
           z-index: 200;
           position: fixed;
           left: 2%;
           top: 2%;
-          width:20%; height:8%;
+          width: 20%;
+          height: 8%;
         }
 
         .r_btn {
@@ -395,25 +392,25 @@ footer {
           right: 50%;
           top: 80%;
           transform: translateX(50%);
-          width:30%; height:8%;
+          width: 30%;
+          height: 8%;
         }
 
         > a {
-
           font-size: 1.5em;
-
         }
-        .t_list,.s_list{
-          transform:translateY(0%);
+        .t_list,
+        .s_list {
+          transform: translateY(0%);
         }
         ul {
           background: ivory;
           width: 80%;
           position: static;
-         bottom:0;
+          bottom: 0;
           display: none;
-          transform:translateY(0%);
-          padding:4%;
+          transform: translateY(0%);
+          padding: 4%;
           li {
             display: flex;
             justify-content: center;
@@ -421,24 +418,19 @@ footer {
             margin: 0 auto;
 
             a {
-
-              font-size:1.1em;
+              font-size: 1.1em;
               padding: 1%;
             }
           }
         }
-
-
       }
     }
-
-
   }
   /*   ----------------------------main--------------*/
 
   main {
     width: 100vw;
-   
+
     > div {
       position: relative;
 
@@ -464,146 +456,146 @@ footer {
     }
   }
 
-  .a_btn > a img {
+  .arrow_btn > a img {
     width: 5vw;
   }
 
- // ---------------------------service--------------------------------------
- .service {
-  width: 100vw;
-  padding-bottom: 5%;
-  height: auto;
+  // ---------------------------service--------------------------------------
+  .service {
+    width: 100vw;
+    padding-bottom: 5%;
+    height: auto;
 
-  > article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    float: none;
-    margin: 0 auto;
-
-    > div {
-      background: rgba(0, 0, 0, 0.5);    
-      top: 50%;
-            left: 50%;
-            padding:0;
-            width:50%;
-            transform :none;
-            opacity:1;
-            &.fade{
-              animation: none;
-                   } 
-      h2 {
-        padding: 0;
-        line-height: 1.5;
-        font-size: 90%;
-
-        strong {
-          font-size: 3em;
-        }
-      }
-    }
-
-    .s {
+    > article {
       display: flex;
-      flex-wrap: wrap;
-     width:100%; 
-     opacity:1;    
-     &.fade{
-      animation: none;
-           } 
-      li {
-        margin-bottom: 0;
-        width: 50%;
-        height: 40%;    
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      float: none;
+      margin: 0 auto;
 
-        a h2 {
-          font-size: 80%;
+      > div {
+        background: rgba(0, 0, 0, 0.5);
+        top: 50%;
+        left: 50%;
+        padding: 0;
+        width: 50%;
+        transform: none;
+        opacity: 1;
+        &.fade {
+          animation: none;
+        }
+        h2 {
+          padding: 0;
           line-height: 1.5;
+          font-size: 90%;
 
           strong {
-            font-size: 2em;
-            font-weight: 100;
-            font-family: 'Titillium Web', sans-serif;
+            font-size: 3em;
+          }
+        }
+      }
+
+      .service_list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        opacity: 1;
+        &.fade {
+          animation: none;
+        }
+        li {
+          margin-bottom: 0;
+          width: 50%;
+          height: 40%;
+
+          a h2 {
+            font-size: 80%;
+            line-height: 1.5;
+
+            strong {
+              font-size: 2em;
+              font-weight: 100;
+              font-family: 'Titillium Web', sans-serif;
+            }
           }
         }
       }
     }
   }
-}
-// -----------------------fac-----------------------------
-/* ------------------------fac------------------- */
+  // -----------------------fac-----------------------------
+  /* ------------------------fac------------------- */
 
-.facilities {
-  height: 100vh;
-  .vdo {
-    video {
-     display:none;
-    }
-  }
-}
-
-.title {
-  padding: 3%;
-  background: rgba(0, 0, 0, 0.5);
-
-  h1 {
-    font-size: 3em;
-  }
-
-  strong {
-    display: none;
-  }
-}
-
-.fac .vdo article {
-  width: 99%;
-  display: flex;
-  flex-direction: column;
-  figure {
-    margin: 2px 0;
-
-    p {
-      width: 200px;
-      height: 200px;
-    }
-
-    figcaption {
-      font-size: 1em;
-    }
-  }
-}
-
-.popup {
-  width: 95vw;
-  height: 95vh;
-
-  figure {
-    display: flex;
-    flex-direction: column;
-    p {
-      width: 70%;
-      height: 40%;
-      text-align: center;
-      margin-bottom: 6%;
-    }
-
-    figcaption {
-      width: 90%;
-      text-align: center;
-      font-size: 1.2em;
-      line-height: 1.5;
-
-      h2 {
-        font-size: 1.2em;
-        margin-bottom: 5%;
+  .facilities {
+    height: 100vh;
+    .vdo {
+      video {
+        display: none;
       }
     }
   }
-}
+
+  .title {
+    padding: 3%;
+    background: rgba(0, 0, 0, 0.5);
+
+    h1 {
+      font-size: 3em;
+    }
+
+    strong {
+      display: none;
+    }
+  }
+
+  .facility .vdo article {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    figure {
+      margin: 2px 0;
+
+      p {
+        width: 200px;
+        height: 200px;
+      }
+
+      figcaption {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .popup {
+    width: 95vw;
+    height: 95vh;
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      p {
+        width: 70%;
+        height: 40%;
+        text-align: center;
+        margin-bottom: 6%;
+      }
+
+      figcaption {
+        width: 90%;
+        text-align: center;
+        font-size: 1.2em;
+        line-height: 1.5;
+
+        h2 {
+          font-size: 1.2em;
+          margin-bottom: 5%;
+        }
+      }
+    }
+  }
 
   .roommap {
-      img {
+    img {
       width: 100%;
     }
   }
@@ -614,11 +606,11 @@ footer {
     width: 100vw;
     height: 50vh;
 
-    .foot {
+    .footer_layout {
       width: 100%;
       margin: 0 auto;
 
-      .f_t {
+      .footer_text_layout {
         width: 100%;
         margin: 5% auto;
         font-size: 0.2em;

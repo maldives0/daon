@@ -97,7 +97,7 @@ footer {
   left: 0;
   position: fixed;
   display: block;
-  opacity: .8;
+  opacity: 0.8;
   background-color: #fff;
   z-index: 999;
   text-align: center;
@@ -113,13 +113,13 @@ footer {
 }
 
 /* ------------------------fac------------------- */
-.fac {
+.facility {
   margin: 0;
   background-size: 100%;
   height: 100vh;
 }
 
-.fac .vdo {
+.facility .vdo {
   margin: 0;
   padding: 0;
   position: relative;
@@ -132,7 +132,7 @@ footer {
           flex-direction: column;
 }
 
-.fac .vdo video {
+.facility .vdo video {
   display: block;
   width: 100%;
   height: 100%;
@@ -158,7 +158,7 @@ footer {
 
 .title h1 {
   font-size: 8em;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -169,33 +169,33 @@ footer {
   font-size: 30px;
   font-weight: none;
   color: #fff;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-.fac .vdo article {
+.facility .vdo article {
   margin: 5% auto;
   width: 80%;
 }
 
-.fac .vdo article figure {
+.facility .vdo article figure {
   position: relative;
   margin: 0;
   overflow: hidden;
 }
 
-.fac .vdo article figure p {
+.facility .vdo article figure p {
   opacity: 1;
   width: 300px;
   height: 300px;
 }
 
-.fac .vdo article figure p img {
+.facility .vdo article figure p img {
   width: 100%;
   height: 100%;
 }
 
-.fac .vdo article figure p:before {
-  content: "";
+.facility .vdo article figure p:before {
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
@@ -204,8 +204,8 @@ footer {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.fac .vdo article figure p:after {
-  content: "";
+.facility .vdo article figure p:after {
+  content: '';
   display: block;
   position: absolute;
   left: 50%;
@@ -217,24 +217,24 @@ footer {
   height: 90%;
 }
 
-.fac .vdo article figure:hover p:before, .fac .vdo article figure:hover p:after {
+.facility .vdo article figure:hover p:before, .facility .vdo article figure:hover p:after {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0;
 }
 
-.fac .vdo article figure:hover figcaption {
+.facility .vdo article figure:hover figcaption {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0;
 }
 
-.fac .vdo article figure p img {
+.facility .vdo article figure p img {
   width: 100%;
   height: 100%;
 }
 
-.fac .vdo article figure figcaption {
+.facility .vdo article figure figcaption {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -243,7 +243,7 @@ footer {
   text-align: center;
   white-space: pre-line;
   color: #fff;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,7 +359,7 @@ header nav > div > a {
   width: 100%;
   height: 100%;
   color: #000;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: bold;
 }
 
@@ -382,8 +382,8 @@ header nav > div ul li {
 
 header nav > div ul li a {
   color: #000;
-  font-family: "Titillium Web", sans-serif;
-  font-size: .7em;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 0.7em;
   padding: 5% 10%;
   width: 100%;
 }
@@ -417,7 +417,7 @@ header nav .s_list a {
   width: 100%;
   height: 100%;
   color: #000;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 12px;
   padding: 2% 10%;
   width: 100%;
@@ -468,7 +468,7 @@ header nav .s_list a img {
   bottom: 0;
 }
 
-.side {
+.sidebar {
   display: block;
   width: 2%;
   height: auto;
@@ -484,17 +484,17 @@ header nav .s_list a img {
   text-align: center;
 }
 
-.side li {
+.sidebar li {
   width: 100%;
   position: relative;
 }
 
-.side li.active a {
+.sidebar li.active a {
   text-shadow: 3px 2px 1px #ffff1c;
   color: #d3e8e9;
 }
 
-.side li a {
+.sidebar li a {
   width: 100%;
   text-align: center;
   margin: 0 auto;
@@ -503,7 +503,7 @@ header nav .s_list a img {
   text-transform: uppercase;
   font-size: 1.2em;
   font-weight: bold;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
 .sns {
@@ -543,14 +543,14 @@ header nav .s_list a img {
 }
 
 /* --------------------------btn------------------------------*/
-.c_btn {
+.community_btn {
   margin: 2% auto;
   text-align: center;
 }
 
-.c_btn a {
+.community_btn a {
   border: 1px solid gray;
-  font-family: "Sunflower", sans-serif;
+  font-family: 'Sunflower', sans-serif;
   padding: 1% 2%;
   font-size: 20px;
   width: 200px;
@@ -558,11 +558,11 @@ header nav .s_list a img {
   border-radius: 40%;
 }
 
-.c_btn a:hover {
+.community_btn a:hover {
   background: #f0f7e4;
 }
 
-.c_btn a:nth-of-type(1) {
+.community_btn a:nth-of-type(1) {
   margin-right: 5%;
 }
 
@@ -576,7 +576,7 @@ header nav .s_list a img {
   font-size: 20px;
   color: #000;
   margin-right: 3%;
-  font-family: "Inconsolata", monospace;
+  font-family: 'Inconsolata', monospace;
   text-transform: uppercase;
   border-radius: 40%;
 }
@@ -616,62 +616,55 @@ header nav .s_list a img {
   background: #fff;
 }
 
-.a_btn {
+.arrow_btn {
   z-index: 0;
-  width: 80%;
+  width: 98%;
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 1%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
-.a_btn a {
+.arrow_btn a {
   width: 60px;
   height: 90px;
   opacity: 0.8;
 }
 
-.a_btn a:nth-of-type(1) {
+.arrow_btn a:nth-of-type(1) {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.a_btn a img {
+.arrow_btn a img {
   width: 100%;
   height: 100%;
 }
 
-.a_btn a:hover {
+.arrow_btn a:hover {
   opacity: 1;
 }
 
 /*footer--------------------------------*/
-footer {
-  width: 100vw;
-  height: 100vh;
-}
-
-footer .foot {
+footer .footer_layout {
   margin: 2%;
   height: 100%;
 }
 
-footer .foot .f_t {
+footer .footer_layout .footer_text_layout {
   text-align: center;
-  white-space: pre-line;
   font-size: 0.5em;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   line-height: 2;
-  padding: 2% 0;
 }
 
-footer .foot .f_t > p {
+footer .footer_layout .footer_text_layout > p {
   text-align: center;
   margin: 0;
 }
 
-footer .foot .f_t > p img {
+footer .footer_layout .footer_text_layout > p img {
   width: 90px;
   height: 10px;
 }

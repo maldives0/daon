@@ -26,7 +26,7 @@ body {
 
 .scroll p {
   color: #fff;
-  font-family: "Inconsolata", monospace;
+  font-family: 'Inconsolata', monospace;
   font-size: 1.5em;
   text-transform: uppercase;
   position: relative;
@@ -156,7 +156,7 @@ svg .line {
   font-size: 5em;
 }
 
-.service > article .s {
+.service > article .service_list {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,30 +165,30 @@ svg .line {
   opacity: 0;
 }
 
-.service > article .s.fade {
+.service > article .service_list.fade {
   -webkit-animation: fadeIn 5s forwards;
           animation: fadeIn 5s forwards;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 
-.service > article .s li {
+.service > article .service_list li {
   width: 33%;
   height: 100%;
   position: relative;
 }
 
-.service > article .s li img {
+.service > article .service_list li img {
   width: 100%;
   height: 100%;
 }
 
-.service > article .s li a {
+.service > article .service_list li a {
   width: 100%;
   height: 100%;
 }
 
-.service > article .s li a h2 {
+.service > article .service_list li a h2 {
   margin: 0;
   padding: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -219,31 +219,33 @@ svg .line {
   font-family: 'Sunflower', sans-serif;
 }
 
-.service > article .s li a h2 strong {
+.service > article .service_list li a h2 strong {
   font-size: 50px;
   font-weight: normal;
   font-family: 'Sunflower', sans-serif;
 }
 
-.service > article .s li:nth-of-type(1):hover h2 {
+.service > article .service_list li:nth-of-type(1):hover h2 {
   background: none;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   opacity: 0;
 }
 
-.service > article .s li:nth-of-type(2):hover h2, .service > article .s li:nth-of-type(3):hover h2 {
+.service > article .service_list li:nth-of-type(2):hover h2,
+.service > article .service_list li:nth-of-type(3):hover h2 {
   background: none;
   opacity: 0;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 1;
   }
-  50%, 100% {
+  50%,
+  100% {
     opacity: 0;
   }
 }
@@ -252,7 +254,8 @@ svg .line {
   0% {
     opacity: 1;
   }
-  50%, 100% {
+  50%,
+  100% {
     opacity: 0;
   }
 }
@@ -261,7 +264,8 @@ svg .line {
   0% {
     opacity: 0;
   }
-  50%, 100% {
+  50%,
+  100% {
     opacity: 1;
   }
 }
@@ -270,7 +274,8 @@ svg .line {
   0% {
     opacity: 0;
   }
-  50%, 100% {
+  50%,
+  100% {
     opacity: 1;
   }
 }
@@ -280,7 +285,7 @@ svg .line {
   position: relative;
   height: 100vh;
   background: url(../img/main/roommap.jpg) center no-repeat;
-  background-size: 100%;
+  background-size: 90%;
   z-index: 0;
 }
 
@@ -288,11 +293,12 @@ footer {
   position: relative;
   top: 0;
   left: 0;
+  height: 100vh;
 }
 
-footer .foot {
+footer .footer_layout {
   z-index: 0;
-  height: 20vh;
+  height: 10vh;
   position: absolute;
   left: 50%;
   bottom: 10%;
@@ -302,26 +308,26 @@ footer .foot {
   display: none;
 }
 
-footer .foot.active {
+footer .footer_layout.active {
   display: block;
   z-index: 11;
 }
 
-footer .foot .f_t {
+footer .footer_layout .footer_text_layout {
   text-align: center;
-  white-space: pre-line;
+  white-space: none;
   font-size: 0.5em;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   line-height: 2;
   padding: 2% 0;
 }
 
-footer .foot .f_t > p {
+footer .footer_layout .footer_text_layout > p {
   text-align: center;
   margin: 0;
 }
 
-footer .foot .f_t > p img {
+footer .footer_layout .footer_text_layout > p img {
   width: 90px;
   height: 10px;
 }
@@ -374,7 +380,7 @@ footer .foot .f_t > p img {
   .sns .link a:nth-of-type(4) {
     background-position: -130px 0;
   }
-  .side {
+  .sidebar {
     display: none;
   }
   .menu-trigger {
@@ -399,8 +405,8 @@ footer .foot .f_t > p img {
     margin: 0;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -442,7 +448,8 @@ footer .foot .f_t > p img {
   header nav > div > a {
     font-size: 1.5em;
   }
-  header nav > div .t_list, header nav > div .s_list {
+  header nav > div .t_list,
+  header nav > div .s_list {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
@@ -495,7 +502,7 @@ footer .foot .f_t > p img {
             transform: translate(-50%);
     font-family: 'Dancing Script', cursive;
   }
-  .a_btn > a img {
+  .arrow_btn > a img {
     width: 5vw;
   }
   .service {
@@ -541,7 +548,7 @@ footer .foot .f_t > p img {
   .service > article > div h2 strong {
     font-size: 3em;
   }
-  .service > article .s {
+  .service > article .service_list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -550,20 +557,20 @@ footer .foot .f_t > p img {
     width: 100%;
     opacity: 1;
   }
-  .service > article .s.fade {
+  .service > article .service_list.fade {
     -webkit-animation: none;
             animation: none;
   }
-  .service > article .s li {
+  .service > article .service_list li {
     margin-bottom: 0;
     width: 50%;
     height: 40%;
   }
-  .service > article .s li a h2 {
+  .service > article .service_list li a h2 {
     font-size: 80%;
     line-height: 1.5;
   }
-  .service > article .s li a h2 strong {
+  .service > article .service_list li a h2 strong {
     font-size: 2em;
     font-weight: 100;
     font-family: 'Titillium Web', sans-serif;
@@ -585,7 +592,7 @@ footer .foot .f_t > p img {
   .title strong {
     display: none;
   }
-  .fac .vdo article {
+  .facility .vdo article {
     width: 99%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -595,14 +602,14 @@ footer .foot .f_t > p img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .fac .vdo article figure {
+  .facility .vdo article figure {
     margin: 2px 0;
   }
-  .fac .vdo article figure p {
+  .facility .vdo article figure p {
     width: 200px;
     height: 200px;
   }
-  .fac .vdo article figure figcaption {
+  .facility .vdo article figure figcaption {
     font-size: 1em;
   }
   .popup {
@@ -642,15 +649,15 @@ footer .foot .f_t > p img {
     width: 100vw;
     height: 50vh;
   }
-  footer .foot {
+  footer .footer_layout {
     width: 100%;
     margin: 0 auto;
   }
-  footer .foot .f_t {
+  footer .footer_layout .footer_text_layout {
     width: 100%;
     margin: 5% auto;
     font-size: 0.2em;
     bottom: 0;
   }
 }
-/*# sourceMappingURL=daon_m.css.map */
+/*# sourceMappingURL=daon_main_menu.css.map */

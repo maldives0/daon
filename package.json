@@ -1,0 +1,33 @@
+{
+  "name": "daon",
+  "version": "1.0.0",
+  "description": "'웹페이지만 봐도 여행을 떠나고 싶다!'를 컨셉으로 한 팬션 홈페이지 리뉴얼 프로젝트입니다. 전경을 화면 가득 보여주는 것을 중점적으로 리뉴얼한 반응형 웹페이지입니다.",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "eslint **/*",
+    "dev": "webpack serve --env development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maldives0/daon.git"
+  },
+  "author": "juyoung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maldives0/daon/issues"
+  },
+  "homepage": "https://github.com/maldives0/daon#readme",
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "prettier": "2.2.1"
+  }
+}

@@ -1,52 +1,45 @@
-@import url("common.css");
+@import url('common.css');
 
 .tit_w {
   padding: 3%;
   font-size: 8em;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
 }
-
 .tit_b {
   padding: 3%;
   font-size: 8em;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
-
 .is {
   text-align: center;
   background: #fff;
   padding: 3%;
-
   > p {
     white-space: pre-line;
-    font-family: "Sunflower", sans-serif;
+    font-family: 'Sunflower', sans-serif;
     line-height: 2;
     font-size: 20px;
     text-align: center;
     margin-top: 1%;
   }
 }
-
 .view {
   width: 100vw;
-
   .about {
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
-
     .v_list {
       width: 100%;
       height: 100%;
       position: relative;
-
       li {
         width: 100%;
         height: 100%;
@@ -59,13 +52,11 @@
 }
 
 /*-----------------------------traffic---------------------------------*/
-
 .traffic {
   padding: 0;
   margin: 0 auto;
   width: 80%;
   height: 100%;
-
   > img {
     position: absolute;
     left: 10%;
@@ -73,43 +64,38 @@
     z-index: 2;
     width: 20%;
   }
-
   .con {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
     .map {
       margin: 10%;
     }
-
     .a_info {
       border: 1px solid #e6fafe;
       border-radius: 100%;
       overflow: hidden;
       width: 500px;
       height: 500px;
-
       > p {
         text-align: center;
-        flex-direction:column;
+        flex-direction: column;
         overflow: hidden;
         width: 100%;
         height: 100%;
         white-space: pre-line;
         padding: 10%;
-        background:radial-gradient(closest-corner at 50% 50%,#fff,#DDEFBB);
+        background: radial-gradient(closest-corner at 50% 50%, #fff, #ddefbb);
         font-size: 1.7em;
-        font-family: "Sunflower", sans-serif;
-        strong{
+        font-family: 'Sunflower', sans-serif;
+        strong {
           font-size: 1.7em;
-          display:inline-block;
-          margin-bottom:5%;
+          display: inline-block;
+          margin-bottom: 5%;
         }
-        span{
+        span {
           line-height: 1.8;
-          
         }
       }
     }
@@ -117,33 +103,29 @@
 }
 
 /*--------------------------travel------------------------------------*/
-
-.t_m {
+.travel_layout {
   width: 100%;
   height: 100vh;
-  background: url("../img/sub/beach.jpg") no-repeat;
+  background: url('../img/sub/beach.jpg') no-repeat;
   background-size: 100% 100%;
   position: relative;
   text-align: center;
-
   .travel {
     width: 1050px;
     height: 350px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 49%;
     transform: translateX(-50%) translateY(-50%);
     text-align: left;
     z-index: 5;
     overflow: hidden;
-
     article {
       width: 100%;
       height: 100%;
       position: absolute;
       top: 0;
       left: 0;
-
       figure {
         width: 100%;
         height: 100%;
@@ -152,7 +134,6 @@
         left: 0;
         text-align: center;
         display: inline-block;
-
         a {
           position: absolute;
           top: 0%;
@@ -162,13 +143,11 @@
           overflow: hidden;
           width: 300px;
           height: 300px;
-
           img {
             width: 100%;
             height: 100%;
           }
         }
-
         figcaption {
           display: flex;
           justify-content: center;
@@ -178,13 +157,12 @@
           left: 50%;
           transform: translateX(-50%) translateY(-50%);
           background: rgba(0, 0, 0, 0.5);
-          font-family: "Titillium Web", sans-serif;
+          font-family: 'Titillium Web', sans-serif;
           font-size: 1.5em;
           width: 100%;
           height: 100%;
           color: #fff;
         }
-
         &:hover figcaption {
           display: none;
         }
@@ -193,18 +171,13 @@
   }
 }
 /*---------------------rooms--------------------------------------*/
-
 .rooms article {
   width: 100%;
   height: 90vh;
-
-
-
   .only {
     height: 100%;
-    background: url("../img/sub/only.jpg");
-    position:relative;
-
+    background: url('../img/sub/only.jpg');
+    position: relative;
     > .s_btn {
       position: absolute;
       bottom: 25%;
@@ -214,11 +187,10 @@
       }
     }
   }
-
   .love {
     height: 100%;
-    background: url("../img/sub/love.jpeg");
-    position:relative;
+    background: url('../img/sub/love.jpeg');
+    position: relative;
     > div {
       margin-top: 10%;
     }
@@ -226,19 +198,15 @@
       position: absolute;
       left: 85%;
       bottom: 52%;
-
       > a:nth-of-type(1) img {
         transform: rotateX(-180deg);
       }
     }
-
     figcaption {
-
       text-align: right;
       margin-bottom: 2%;
     }
   }
-
   > figure {
     display: flex;
     flex-direction: column;
@@ -246,20 +214,17 @@
     align-items: center;
     width: 50%;
     margin: 5% auto;
-
     .room {
       position: relative;
       width: 70%;
       height: 40%;
       overflow: hidden;
-
       ul {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-
         li {
           position: absolute;
           top: 0;
@@ -269,7 +234,6 @@
         }
       }
     }
-
     > .s_btn > a img {
       width: 30px;
       height: 30px;
@@ -277,20 +241,17 @@
       margin-bottom: 8px;
     }
   }
-
-
   > figure > figcaption {
     white-space: pre-line;
     font-size: 2.5em;
     line-height: 1.5;
-    font-family: "Dancing Script", cursive;
+    font-family: 'Dancing Script', cursive;
     width: 80%;
     padding: 0 5%;
     color: rgba(0, 0, 0, 0.2);
-
     strong {
       color: #434343;
-      font-family: "Dancing Script", cursive;
+      font-family: 'Dancing Script', cursive;
       font-size: 0.8em;
       font-weight: bold;
       text-transform: uppercase;
@@ -299,39 +260,30 @@
       display: inline-block;
     }
   }
-
-
 }
-
 .roommap {
   width: 100vw;
   margin: 0 auto;
-
   > {
     div {
       margin: 5%;
-
-
       h1 {
-        font-family: "Dancing Script", cursive;
+        font-family: 'Dancing Script', cursive;
         text-transform: uppercase;
         font-size: 5em;
       }
-
       h4 {
         margin: 5% auto;
         font-size: 20px;
         font-weight: 50;
         white-space: pre-line;
         line-height: 2.5;
-        font-family: "Sunflower", sans-serif;
+        font-family: 'Sunflower', sans-serif;
       }
     }
-
     p {
       width: 80%;
       margin: 0 auto;
-
       img {
         width: 100%;
       }
@@ -347,69 +299,56 @@
   overflow: hidden;
   position: relative;
 }
-
 .room_l,
 .room_o {
   height: 100%;
-
   li {
     width: 100%;
     height: 100%;
   }
 }
-
 .room_l li:nth-of-type(1) {
-  background: url("../img/sub/l_1.jpg") center 0px no-repeat;
+  background: url('../img/sub/l_1.jpg') center 0px no-repeat;
   background-size: 100%;
 }
-
 .room_o li:nth-of-type(1) {
-  background: url("../img/sub/r_1.jpg") center 0px no-repeat;
+  background: url('../img/sub/r_1.jpg') center 0px no-repeat;
   background-size: 100%;
 }
-
 .info {
   height: 50vw;
   position: relative;
   margin: 5%;
-  font-family: "Titillium Web", sans-serif;
-
+  font-family: 'Titillium Web', sans-serif;
   > {
     p {
       margin-top: 5%;
       width: 40%;
       height: 50%;
       box-shadow: inset 20px 0px 100px 100px #fff;
-      background: url("../img/sub/rose.jpg") no-repeat;
+      background: url('../img/sub/rose.jpg') no-repeat;
       background-size: 100%;
     }
-
     h1 {
       font-size: 100px;
-      font-family: "Dancing Script", cursive;
+      font-family: 'Dancing Script', cursive;
       text-transform: uppercase;
     }
-
     h4 {
       margin: 6% 0;
       font-size: 20px;
       font-weight: 50;
       white-space: pre-line;
       line-height: 2.5;
-      font-family: "Sunflower", sans-serif;
+      font-family: 'Sunflower', sans-serif;
     }
   }
-
-  
-
+}
 /*-------------------------service-------------------------------*/
-
 .service {
   width: 100%;
-  height: 100vh;
   overflow: hidden;
   position: relative;
-
   .title {
     width: 100%;
     padding: 1% 0;
@@ -418,50 +357,42 @@
     white-space: pre-line;
     flex-direction: column;
     text-align: center;
-
     h1 {
       font-size: 8em;
-      font-family: "Dancing Script", cursive;
+      font-family: 'Dancing Script', cursive;
       text-transform: uppercase;
       color: #fff;
       font-weight: none;
     }
-
     strong {
       font-size: 30px;
       font-weight: none;
       color: #fff;
-      font-family: "Titillium Web", sans-serif;
+      font-family: 'Titillium Web', sans-serif;
     }
   }
-
   > article {
     width: 100%;
     height: 100%;
     padding: 5%;
-    background: url("../img/main/water.jpg") center no-repeat;
+    background: url('../img/main/water.jpg') center no-repeat;
     background-size: 100%;
-
     .s {
       height: 30%;
-
       li {
         width: 40%;
         position: relative;
         border-radius: 100%;
         overflow: hidden;
-
         a {
           width: 100%;
           height: 100%;
           display: block;
-
           img {
             width: 100%;
             height: 100%;
             transform: scale(1.2);
           }
-
           h2 {
             margin: 0;
             padding: 0;
@@ -481,22 +412,19 @@
             font-size: 60px;
             line-height: 1.5;
             font-weight: normal;
-            font-family: "Sunflower", sans-serif;
-
+            font-family: 'Sunflower', sans-serif;
             strong {
               font-size: 50px;
               font-weight: normal;
-              font-family: "Sunflower", sans-serif;
+              font-family: 'Sunflower', sans-serif;
             }
           }
         }
-
         &:nth-of-type(1):hover h2 {
           background: none;
           transition: 0.5s;
           opacity: 0;
         }
-
         &:nth-of-type(2):hover h2 {
           background: none;
           opacity: 0;
@@ -507,36 +435,28 @@
   }
 }
 
-
-
-/*----------------c_n-----------------------------*/
-
-.c_notice {
-  .c_n {
+/*----------------community_notice----------------------------*/
+.community_notice_layout {
+  .community_notice {
     width: 100%;
     height: 50vh;
-    background: url("../img/sub/pen.jpg") no-repeat;
+    background: url('../img/sub/pen.jpg') no-repeat;
     background-size: 100% 100%;
-
-    > h1{
+    > h1 {
       text-align: center;
       color: #fff;
       white-space: pre-line;
       font-size: 8em;
-      text-transform:uppercase;
+      text-transform: uppercase;
       font-weight: 100;
-      font-family: "Dancing Script", cursive;
-
-
+      font-family: 'Dancing Script', cursive;
     }
   }
-
-  .c_t {
+  .community_table {
     margin: 2% auto;
     width: 70%;
     background: #fcf9f9;
     border-collapse: collapse;
-
     caption {
       width: 100%;
       font-size: 100%;
@@ -545,43 +465,33 @@
       margin-bottom: 2%;
       line-height: 2;
       text-transform: uppercase;
-
       > strong {
         font-size: 2em;
       }
     }
-
     thead {
-
       text-align: center;
       border-bottom: 1px solid gray;
-
       th {
         &:nth-of-type(1) {
           width: 10%;
         }
-
         &:nth-of-type(2) {
           width: 50%;
         }
-
         &:nth-of-type(3),
         &:nth-of-type(4) {
           width: 15%;
         }
-
         &:nth-of-type(5) {
           width: 10%;
         }
       }
     }
-
     tbody {
       text-align: center;
-
       tr {
         border-bottom: 1px solid gray;
-
         &:nth-of-type(1) td:nth-of-type(1) {
           background: #e5e5e5;
         }
@@ -590,28 +500,24 @@
   }
 }
 
-/*----------------c_p-----------------------------*/
+/*----------------community_photo-----------------------------*/
 
-.c_photo {
-  .c_n {
+.community_photo {
+  .community_notice {
     width: 100%;
     height: 50vh;
-    background: url("../img/sub/pen.jpg") no-repeat;
+    background: url('../img/sub/pen.jpg') no-repeat;
     background-size: 100% 100%;
-
     > h1 {
       text-align: center;
       color: #fff;
       white-space: pre-line;
       font-size: 8em;
-      text-transform:uppercase;
+      text-transform: uppercase;
       font-weight: 100;
-      font-family: "Dancing Script", cursive;
-
-
+      font-family: 'Dancing Script', cursive;
     }
   }
-
   > h1 {
     line-height: 2;
     width: 100%;
@@ -620,18 +526,14 @@
     text-align: center;
     margin-bottom: 2%;
     text-transform: uppercase;
-
     strong {
       font-size: 2em;
     }
   }
-
-  .f {
-
+  .photo_ul {
     width: 80%;
     margin: 2% auto;
     padding: 2%;
-
     li {
       > span {
         display: block;
@@ -653,9 +555,7 @@
   body {
     width: 100vw;
   }
-
   /*    ----------btn-----------------------------*/
-
   .scroll {
     position: fixed;
     z-index: 100;
@@ -663,51 +563,42 @@
     bottom: 5%;
     text-align: center;
     transform: translateX(-50%);
-
     > p {
       color: #fff;
-      font-family: "Inconsolata", monospace;
+      font-family: 'Inconsolata', monospace;
       font-size: 1.2em;
       text-transform: uppercase;
       position: relative;
       text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     }
-
     img {
       width: 5vw;
       filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
     }
   }
-
   .sns .link a {
     width: 25px;
     height: 25px;
-    background: url("../img/main/bt_sns_b.png") no-repeat;
+    background: url('../img/main/bt_sns_b.png') no-repeat;
     background-size: 150px;
     display: inline-block;
     margin: 3px;
-
     &:nth-of-type(1) {
       background-position: 8px 0;
     }
-
     &:nth-of-type(2) {
       background-position: -39px 0;
     }
-
     &:nth-of-type(3) {
       background-position: -83px 0;
     }
-
     &:nth-of-type(4) {
       background-position: -130px 0;
     }
   }
-
-  .side {
+  .sidebar {
     display: none;
   }
-
   .menu-trigger {
     display: block;
     &.active > a {
@@ -716,11 +607,9 @@
           transform: rotate(45deg);
           bottom: 50%;
         }
-
         &:nth-of-type(2) {
           display: none;
         }
-
         &:nth-of-type(3) {
           transform: rotate(-45deg);
           bottom: 50%;
@@ -728,25 +617,21 @@
       }
     }
   }
-
-  .c_btn a {
+  .community_btn a {
     padding: 3%;
     font-size: 1em;
     width: 30%;
   }
-
   .info_btn a {
     padding: 3%;
     font-size: 1em;
   }
-
   .indi > li {
     margin-right: 5px;
     width: 8px;
     height: 8px;
   }
-
-  .a_btn > a img {
+  .arrow_btn > a img {
     width: 7vw;
   }
 
@@ -754,12 +639,10 @@
 
   header {
     background: 0;
-
     nav {
       &.active {
         transform: translateX(0%);
       }
-
       position: fixed;
       top: 0;
       right: 0;
@@ -774,13 +657,10 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-
       padding: 20% 0 40% 0;
-
       > div {
         width: 70%;
         padding-top: 5%;
-
         .logo {
           z-index: 200;
           position: fixed;
@@ -789,7 +669,6 @@
           width: 20%;
           height: 8%;
         }
-
         .r_btn {
           z-index: 200;
           position: fixed;
@@ -799,7 +678,6 @@
           width: 30%;
           height: 8%;
         }
-
         > a {
           font-size: 1.5em;
         }
@@ -820,7 +698,6 @@
             justify-content: center;
             align-content: center;
             margin: 0 auto;
-
             a {
               font-size: 1.1em;
               padding: 1%;
@@ -831,7 +708,6 @@
     }
   }
   /*   ---------------------------room-------------*/
-
   .rooms {
     > h1 {
       position: absolute;
@@ -840,13 +716,11 @@
       transform: translateX(-50%);
       font-size: 3em;
     }
-
     article {
       display: block;
       height: 100%;
     }
   }
-
   .rooms article {
     .love,
     .only {
@@ -856,63 +730,51 @@
     .love .room {
       margin-top: 20%;
     }
-
     > figure {
       margin: 0 auto;
-
       .room {
         height: 50vh;
         ul {
           height: 50vh;
         }
       }
-
       > div {
         margin: 0% auto;
-
         .s_btn > a img {
           width: 50%;
           height: 50%;
         }
       }
     }
-
     .love .s_btn {
-
       img {
         width: 70%;
         height: 70%;
       }
     }
-
     .only {
       p {
         float: right;
       }
-      > figcaption{
-        height:60%;
+      > figcaption {
+        height: 60%;
       }
       .s_btn {
-
         img {
           width: 70%;
           height: 70%;
         }
       }
     }
-
     > figure > figcaption {
       font-size: 1.2em;
       line-height: none;
     }
   }
-
   .roommap > div {
     margin: 10%;
-
     .info_btn {
       display: block;
-
       a {
         width: 30%;
         padding: 2% 3%;
@@ -920,23 +782,19 @@
         font-size: 80%;
       }
     }
-
     h1 {
       font-size: 3em;
     }
-
     h4 {
       margin: 5% auto;
       font-size: 0.5em;
     }
   }
-
   .info > {
-    height:30vh;
+    height: 30vh;
     h1 {
       font-size: 2.5em;
     }
-
     h4 {
       font-size: 0.5em;
     }
@@ -944,23 +802,16 @@
       display: none;
     }
   }
-
   .r_info {
     height: 30vh;
   }
-
-  
-
   /*---------------about---------------------------*/
-
   .is {
     margin-top: 5%;
-
     > {
       h1 {
         font-size: 3em;
       }
-
       p {
         text-align: center;
         font-size: 0.1em;
@@ -968,24 +819,20 @@
       }
     }
   }
-
   .view .about {
     height: 60vh;
     overflow: hidden;
   }
-
   .traffic {
     padding: 0;
     margin: 0 auto;
     width: 80%;
     height: 100%;
-
     > {
       h1 {
         margin: 10% 0 auto;
         font-size: 3em;
       }
-
       img {
         position: absolute;
         left: -35%;
@@ -994,18 +841,14 @@
         z-index: 2;
       }
     }
-
     .con {
       flex-direction: column;
-
       .map {
         margin: 10%;
       }
-
       .a_info {
         width: 400px;
         height: 400px;
-
         > p {
           font-size: 1.5em;
           width: 400px;
@@ -1018,27 +861,21 @@
   .service {
     .title {
       background: rgba(0, 0, 0, 0);
-
       h1 {
         font-size: 3em;
       }
-
       strong {
         display: none;
       }
     }
-
     > article {
       background-size: 100% 100%;
-
       .s {
         height: auto;
         display: flex;
         flex-direction: column;
-
         li {
           width: 70%;
-
           margin: 3% 0 3% 0;
           a {
             h2 {
@@ -1062,42 +899,34 @@
       }
     }
   }
-
   .title {
     padding: 3%;
     background: rgba(255, 255, 255, 0.2);
-
     h1 {
       font-size: 3em;
     }
-
     strong {
       display: none;
     }
   }
-
   .fac .vdo article {
     width: 99%;
     display: flex;
     flex-direction: column;
     figure {
       margin: 2px 0;
-
       p {
         width: 250px;
         height: 250px;
       }
-
       figcaption {
         font-size: 1em;
       }
     }
   }
-
   .popup {
     width: 95vw;
     height: 95vh;
-
     figure {
       display: flex;
       flex-direction: column;
@@ -1107,13 +936,11 @@
         text-align: center;
         margin-bottom: 6%;
       }
-
       figcaption {
         width: 90%;
         text-align: center;
         font-size: 1.2em;
         line-height: 1.5;
-
         h2 {
           font-size: 1.2em;
           margin-bottom: 5%;
@@ -1128,25 +955,20 @@
     padding-top: 10%;
     font-size: 5em;
   }
-  .t_m {
+  .travel_layout {
     .travel {
       width: 390px;
       height: 500px;
-
       article {
         width: 400px;
         height: 400px;
-
         top: 30%;
-
         figure {
           position: absolute;
           top: 0;
           left: 0;
-
           text-align: center;
           display: inline-block;
-
           figcaption {
             width: 100%;
             height: 100%;
@@ -1155,54 +977,44 @@
         }
       }
     }
-    .a_btn {
+    .arrow_btn {
       width: 90%;
       left: 5%;
       top: 30%;
       z-index: 10;
     }
   }
-
   .s_info .s_n {
     font-size: 80%;
     width: 100%;
     height: 30%;
     margin-left: 20%;
-
     > {
       h1 {
         left: -10%;
       }
-
       ul {
         width: 80%;
         margin-top: 0%;
       }
     }
-
-    .a_btn {
+    .arrow_btn {
       width: 70%;
       top: 50%;
-
       > a img {
         width: 7vw;
       }
     }
   }
-
   /*----------------------------------------------community------------------------------------*/
-
-  .c_notice {
+  .community_notice_layout {
     width: 100%;
-
-    .c_n {
-
+    .community_notice {
       > h1 {
         font-size: 150%;
       }
     }
-
-    .c_t {
+    .community_table {
       width: 95%;
       thead,
       tbody {
@@ -1210,42 +1022,34 @@
       }
     }
   }
-
-  .c_photo {
+  .community_photo {
     width: 100%;
-
-    .c_n > h1 {
+    .community_notice > h1 {
       font-size: 150%;
     }
-
-    .f {
+    .photo_ul {
       width: 90%;
       margin: 0 auto;
       padding: 0;
     }
   }
-
   /*    ----------footer---------------*/
-
   footer {
     width: 100vw;
     height: 10vh;
-    .foot {
+    .footer_layout {
       text-align: center;
       width: 100%;
       margin: 0 auto;
-
-      .f_t {
+      .footer_text_layout {
         line-height: 0.8;
         width: 100%;
         margin-top: 10%;
         font-size: 0.5em;
-
         > p {
           &:nth-of-type(1) {
             margin-top: 2%;
           }
-
           &:nth-of-type(2) {
             display: none;
           }

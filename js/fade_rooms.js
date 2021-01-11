@@ -1,163 +1,105 @@
-
-
-//Q1. rooms div에 왔을 때 fade효과 발생
 window.addEventListener('DOMContentLoaded', function () {
+  var rooms = document.querySelector('.rooms');
+  var roomDiv = rooms.querySelector('.room');
+  var ulEle = roomDiv.querySelector('.r_list');
 
-    var rooms = document.querySelector('.rooms');
-    var roomDiv = rooms.querySelector('.room');
-    var ulEle = roomDiv.querySelector('.r_list');
+  var liEle;
 
-    var liEle;
+  //li tag create
+  for (var i = 0; i < 9; i++) {
+    ulEle.innerHTML += "<li class='p" + i + "'></li>";
+    liEle = ulEle.querySelectorAll('li');
+  }
+  var len = liEle.length;
 
+  //li style
+  liEle.forEach(function (a, i) {
+    var back =
+      "background:url('img/sub/r_" +
+      (i + 1) +
+      ".jpg') center /100% 100% no-repeat;";
 
-    //li tag create
-    for (var i = 0; i < 9; i++) {
-        ulEle.innerHTML += "<li class='p" + i + "'></li>";
-        liEle = ulEle.querySelectorAll('li');
+    a.style = back;
+  });
 
-    };
-    var len = liEle.length;
+  var loop;
+  var num = 0;
+  $('.r_list li').not(':first').hide();
+  //loop
+  function clearLoop() {
+    clearInterval(loop);
+  }
+  function interLoop() {
+    loop = setInterval(fade, 2000);
+  }
+  interLoop();
+  //mouse acting
+  $('.r_list li, .arrow_btn, .indi').on({
+    mouseenter: clearLoop,
+    mouseleave: interLoop,
+  });
 
-    //li style
-    liEle.forEach(function (a, i) {
-        var back = "background:url('img/sub/r_" + (i + 1) + ".jpg') center /100% 100% no-repeat;";
+  //btn
 
-        a.style = back;
+  $('.arrow_btn a').on('click', aBtn);
 
-    });
+  function aBtn() {
+    if ($(this).index() == 0) {
+      fade('prev');
+      return;
+    } else {
+      fade('next');
+      return;
+    }
+  }
+  //indi
+  var indiUl = roomDiv.querySelector('.indi');
 
+  for (var i = 0; i < len; i++) {
+    indiUl.innerHTML += "<a data-num='" + i + "'></a>";
+  }
+  var indiA = indiUl.querySelectorAll('a');
 
+  indiA[0].classList.add('active');
+  indiA.forEach(function indi(a) {
+    a.addEventListener('click', cIndi);
+  });
 
+  function white(num) {
+    for (var i = 0; i < len; i++) {
+      indiA[i].classList.remove('active');
+    }
+    indiA[num].classList.add('active');
+  }
 
-    var loop;
-    var num = 0;
-    $('.r_list li').not(':first').hide();
-    //loop
-    function clearLoop() {
-        clearInterval(loop);
-    };
-    function interLoop() {
-        loop = setInterval(fade, 2000);
-    };
-    interLoop();
-    //mouse acting
-    $('.r_list li, .a_btn, .indi').on(
-        {
-            mouseenter: clearLoop,
-            mouseleave: interLoop
-        }
-    );
+  function cIndi() {
+    for (var i = 0; i < len; i++) {
+      indiA[i].classList.remove('active');
+    }
+    this.classList.add('active');
 
-    //btn
+    var idx = this.dataset.num;
+    $('.r_list li').fadeOut();
 
-    $('.a_btn a').on('click', aBtn);
+    $('.r_list li').eq(idx).fadeIn();
+    num = Number(idx);
+    return;
+  }
 
-    function aBtn() {
+  //fade
 
-        if ($(this).index() == 0) {
+  function fade(p) {
+    $('.r_list li').eq(num).fadeOut();
 
-            fade('prev');
-           return;
-        } else {
+    p == 'prev' ? num-- : num++;
+    update();
+    $('.r_list li').eq(num).fadeIn();
 
-            fade('next');
-           return;
+    white(num);
+  }
 
-        }
-
-    };
- //indi
- var indiUl = roomDiv.querySelector('.indi');
-
-
-
- for (var i = 0; i < len; i++) {
-
-     indiUl.innerHTML += "<a data-num='" + i + "'></a>";
- };
- var indiA = indiUl.querySelectorAll('a');
-
- indiA[0].classList.add('active');
- indiA.forEach(function indi(a) {
-
-     a.addEventListener('click', cIndi);
- });
-
- function white(num) {
-     for (var i = 0; i < len; i++) {
-         indiA[i].classList.remove('active');
-     };
-     indiA[num].classList.add('active'); 
- }
-
-
-
-
- function cIndi() {
-    
-     for (var i = 0; i < len; i++) {
-         indiA[i].classList.remove('active');
-     };
-     this.classList.add('active');
- 
-     var idx = this.dataset.num;
-     $('.r_list li').fadeOut();
-
-     $('.r_list li').eq(idx).fadeIn();
-     num = Number(idx);
-     return;
-    
-   
-    
- };
-
-    //fade
-
-    function fade(p) {
-
-
-        $('.r_list li').eq(num).fadeOut();
-
-        (p == 'prev') ? num-- : num++;
-        update();
-        $('.r_list li').eq(num).fadeIn();
-
-        white(num);
-    };
-
-    function update() {
-
-        if (num >= len) num = 0;
-        if (num == -1) num = len - 1;
-
-    };
-
-
-
-   
-
-
-
-
+  function update() {
+    if (num >= len) num = 0;
+    if (num == -1) num = len - 1;
+  }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
