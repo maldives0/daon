@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', function () {
   //li style
   liEle.forEach(function (a, i) {
     var back =
-      "background:url('img/sub/v_" +
+      "background:url('../img/sub/v_" +
       (i + 1) +
       ".jpg') center /100% 100% no-repeat;";
 
