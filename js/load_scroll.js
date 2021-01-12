@@ -1,7 +1,7 @@
 $(function () {
   //start
-  $('header').load('daon_header_footer.html .head', header);
-  $('footer').load('daon_header_footer.html footer .foot', footer);
+  $('header').load('header_footer.html .head', header);
+  $('footer').load('header_footer.html footer .foot', footer);
 
   //header
   function header() {
