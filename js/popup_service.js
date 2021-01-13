@@ -1,17 +1,16 @@
 window.addEventListener('DOMContentLoaded', function () {
-  //start
-  var data = new XMLHttpRequest();
-  var response;
-  var popDiv = document.querySelector('.popup');
-  var facArt = document.querySelector('.facility article');
-  var facFig = facArt.getElementsByTagName('figure');
+  const data = new XMLHttpRequest();
+  let response;
+  const popDiv = document.querySelector('.popup');
+  const facArt = document.querySelector('.facility article');
+  const facFig = facArt.getElementsByTagName('figure');
 
   data.open('Get', 'data_service.json', true);
   data.send(null);
 
   data.addEventListener('load', dataFun);
 
-  var name,
+  let name,
     desc,
     imgSrc,
     article = '',
@@ -34,9 +33,6 @@ window.addEventListener('DOMContentLoaded', function () {
         article += '</figcaption> </figure>';
       });
       facArt.innerHTML = article;
-      //foreach end
-
-      //daterun
     }
     dataRun();
 
@@ -45,18 +41,17 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 
     function popUp(e) {
-      var thisParent = e.currentTarget.parentElement;
-      var thisChildren = thisParent.children;
+      let thisParent = e.currentTarget.parentElement;
+      let thisChildren = thisParent.children;
       num = Array.from(thisChildren).indexOf(e.currentTarget);
 
       popDiv.classList.add('active');
 
       pop(num);
-      //popup end
     }
 
     function pop(num) {
-      response.service.forEach(function (el, idx) {
+      response.service.forEach(function () {
         name = response.service[num].name;
         tit = response.service[num].tit;
         desc = response.service[num].desc;
@@ -66,21 +61,12 @@ window.addEventListener('DOMContentLoaded', function () {
         popup += "<p><img src='" + imgSrc + "'></p>";
         popup += '<figcaption><h2>' + name + '(' + tit + ')</h2>';
         popup += desc + '</figcaption> </figure>';
-
-        //foreach end
       });
       popDiv.innerHTML = popup;
-
-      //pop end
     }
-
-    //dataFun end
   }
 
   popDiv.addEventListener('click', function () {
     popDiv.classList.remove('active');
-    //end
   });
-
-  //end
 });

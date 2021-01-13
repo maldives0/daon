@@ -50,12 +50,12 @@ main {
   z-index: 10;
 }
 
-main > div {
+main > section {
   height: 100vh;
   position: relative;
 }
 
-main > div > img {
+main > section > img {
   width: 100%;
   height: 100%;
 }
@@ -298,38 +298,21 @@ footer {
 
 footer .footer_layout {
   z-index: 0;
-  height: 10vh;
+  width: 60%;
+  height: auto;
   position: absolute;
   left: 50%;
-  bottom: 10%;
+  bottom: 5%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  margin: 2%;
+  padding: 2%;
+  background-color: rgba(255, 255, 255, 0.5);
   display: none;
 }
 
 footer .footer_layout.active {
   display: block;
   z-index: 11;
-}
-
-footer .footer_layout .footer_text_layout {
-  text-align: center;
-  white-space: none;
-  font-size: 0.5em;
-  font-family: 'Titillium Web', sans-serif;
-  line-height: 2;
-  padding: 2% 0;
-}
-
-footer .footer_layout .footer_text_layout > p {
-  text-align: center;
-  margin: 0;
-}
-
-footer .footer_layout .footer_text_layout > p img {
-  width: 90px;
-  height: 10px;
 }
 
 /*----------------------media480---------------------------*/
@@ -381,13 +364,19 @@ footer .footer_layout .footer_text_layout > p img {
     background-position: -130px 0;
   }
   .sidebar {
-    display: none;
+    width: 5%;
+  }
+  .sidebar > li a {
+    font-size: 14px;
   }
   .menu-trigger {
     display: block;
   }
   .menu-trigger > a span {
-    background: #fff;
+    background: gold;
+  }
+  .menu-trigger.active > a span {
+    background: #000;
   }
   /*    -----------------------------header------------*/
   header {
@@ -482,14 +471,14 @@ footer .footer_layout .footer_text_layout > p img {
   main {
     width: 100vw;
   }
-  main > div {
+  main > section {
     position: relative;
   }
-  main > div > img {
+  main > section > img {
     width: 100%;
     height: 100%;
   }
-  main > div > h1 {
+  main > section > h1 {
     width: 100%;
     color: #fff;
     text-align: center;
@@ -526,27 +515,10 @@ footer .footer_layout .footer_text_layout > p img {
     float: none;
     margin: 0 auto;
   }
-  .service > article > div {
-    background: rgba(0, 0, 0, 0.5);
-    top: 50%;
-    left: 50%;
-    padding: 0;
-    width: 50%;
-    -webkit-transform: none;
-            transform: none;
-    opacity: 1;
-  }
   .service > article > div.fade {
     -webkit-animation: none;
             animation: none;
-  }
-  .service > article > div h2 {
-    padding: 0;
-    line-height: 1.5;
-    font-size: 90%;
-  }
-  .service > article > div h2 strong {
-    font-size: 3em;
+    display: none;
   }
   .service > article .service_list {
     display: -webkit-box;
@@ -564,7 +536,7 @@ footer .footer_layout .footer_text_layout > p img {
   .service > article .service_list li {
     margin-bottom: 0;
     width: 50%;
-    height: 40%;
+    height: 400px;
   }
   .service > article .service_list li a h2 {
     font-size: 80%;
@@ -584,7 +556,7 @@ footer .footer_layout .footer_text_layout > p img {
   }
   .title {
     padding: 3%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
   }
   .title h1 {
     font-size: 3em;
@@ -647,7 +619,7 @@ footer .footer_layout .footer_text_layout > p img {
   /*    ----------footer---------------*/
   footer {
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
   }
   footer .footer_layout {
     width: 100%;
@@ -658,6 +630,9 @@ footer .footer_layout .footer_text_layout > p img {
     margin: 5% auto;
     font-size: 0.2em;
     bottom: 0;
+  }
+  footer .footer_layout .footer_text_layout > p:nth-of-type(2) {
+    display: none;
   }
 }
 /*# sourceMappingURL=daon_main_menu.css.map */

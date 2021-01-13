@@ -48,7 +48,7 @@ main {
   transition: 1s;
   z-index: 10;
 
-  > div {
+  > section {
     height: 100vh;
     position: relative;
 
@@ -242,36 +242,19 @@ footer {
   height: 100vh;
   .footer_layout {
     z-index: 0;
-    height: 10vh;
+    width: 60%;
+    height: auto;
     position: absolute;
     left: 50%;
-    bottom: 10%;
+    bottom: 5%;
     transform: translateX(-50%);
-    margin: 2%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.5);
     display: none;
 
     &.active {
       display: block;
       z-index: 11;
-    }
-
-    .footer_text_layout {
-      text-align: center;
-      white-space: none;
-      font-size: 0.5em;
-      font-family: 'Titillium Web', sans-serif;
-      line-height: 2;
-      padding: 2% 0;
-
-      > p {
-        text-align: center;
-        margin: 0;
-
-        img {
-          width: 90px;
-          height: 10px;
-        }
-      }
     }
   }
 }
@@ -334,14 +317,20 @@ footer {
   }
 
   .sidebar {
-    display: none;
+    width: 5%;
+    > li a {
+      font-size: 14px;
+    }
   }
 
   .menu-trigger {
     display: block;
-    > a {
-      span {
-        background: #fff;
+    > a span {
+      background: gold;
+    }
+    &.active {
+      > a span {
+        background: #000;
       }
     }
   }
@@ -431,7 +420,7 @@ footer {
   main {
     width: 100vw;
 
-    > div {
+    > section {
       position: relative;
 
       > {
@@ -475,24 +464,9 @@ footer {
       margin: 0 auto;
 
       > div {
-        background: rgba(0, 0, 0, 0.5);
-        top: 50%;
-        left: 50%;
-        padding: 0;
-        width: 50%;
-        transform: none;
-        opacity: 1;
         &.fade {
           animation: none;
-        }
-        h2 {
-          padding: 0;
-          line-height: 1.5;
-          font-size: 90%;
-
-          strong {
-            font-size: 3em;
-          }
+          display: none;
         }
       }
 
@@ -507,7 +481,7 @@ footer {
         li {
           margin-bottom: 0;
           width: 50%;
-          height: 40%;
+          height: 400px;
 
           a h2 {
             font-size: 80%;
@@ -537,7 +511,7 @@ footer {
 
   .title {
     padding: 3%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
 
     h1 {
       font-size: 3em;
@@ -604,17 +578,18 @@ footer {
 
   footer {
     width: 100vw;
-    height: 50vh;
-
+    height: 100vh;
     .footer_layout {
       width: 100%;
       margin: 0 auto;
-
       .footer_text_layout {
         width: 100%;
         margin: 5% auto;
         font-size: 0.2em;
         bottom: 0;
+        > p:nth-of-type(2) {
+          display: none;
+        }
       }
     }
   }

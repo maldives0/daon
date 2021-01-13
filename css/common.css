@@ -554,7 +554,7 @@ header nav .s_list a img {
   font-size: 20px;
   width: 200px;
   color: #000;
-  border-radius: 40%;
+  border-radius: 5%;
 }
 
 .community_btn a:hover {
@@ -577,7 +577,7 @@ header nav .s_list a img {
   margin-right: 3%;
   font-family: 'Inconsolata', monospace;
   text-transform: uppercase;
-  border-radius: 40%;
+  border-radius: 5%;
 }
 
 .info_btn a:nth-of-type(1) {

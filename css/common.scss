@@ -478,7 +478,7 @@ header {
     font-size: 20px;
     width: 200px;
     color: #000;
-    border-radius: 40%;
+    border-radius: 5%;
     &:hover {
       background: #f0f7e4;
     }
@@ -502,7 +502,7 @@ header {
     margin-right: 3%;
     font-family: 'Inconsolata', monospace;
     text-transform: uppercase;
-    border-radius: 40%;
+    border-radius: 5%;
   }
   display: block;
 }
