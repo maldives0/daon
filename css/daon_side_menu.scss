@@ -1,7 +1,6 @@
 @import url('common.css');
 
 .title_white {
-  padding: 3%;
   font-size: 8em;
   font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
@@ -58,25 +57,25 @@
   height: 100%;
   > img {
     position: absolute;
-    left: 10%;
-    bottom: 0%;
+    left: 0;
+    bottom: 3%;
     z-index: 2;
     width: 20%;
   }
-  .con {
+  .traffic_content_layout {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     .map {
-      margin: 10%;
+      margin: 2%;
     }
     .a_info {
       border: 1px solid #e6fafe;
       border-radius: 100%;
       overflow: hidden;
-      width: 500px;
-      height: 500px;
+      width: 400px;
+      height: 400px;
       > p {
         text-align: center;
         flex-direction: column;
@@ -833,29 +832,14 @@
         font-size: 3em;
       }
       img {
-        position: absolute;
-        left: -35%;
-        bottom: -30%;
-        width: 60%;
-        z-index: 2;
+        display:none;
       }
     }
-    .con {
-      flex-direction: column;
-      .map {
-        margin: 10%;
-      }
-      .a_info {
-        width: 400px;
-        height: 400px;
-        > p {
-          font-size: 1.5em;
-          width: 400px;
-          height: 400px;
-        }
-      }
+    .traffic_content_layout {
+       flex-direction: column;  
+            }
     }
-  }
+  
   // ---------------------------service--------------------------------------
   .service {
     .title {

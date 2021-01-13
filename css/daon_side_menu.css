@@ -1,6 +1,5 @@
 @import url("common.css");
 .title_white {
-  padding: 3%;
   font-size: 8em;
   font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
@@ -63,13 +62,13 @@
 
 .traffic > img {
   position: absolute;
-  left: 10%;
-  bottom: 0%;
+  left: 0;
+  bottom: 3%;
   z-index: 2;
   width: 20%;
 }
 
-.traffic .con {
+.traffic .traffic_content_layout {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,19 +81,19 @@
           align-items: center;
 }
 
-.traffic .con .map {
-  margin: 10%;
+.traffic .traffic_content_layout .map {
+  margin: 2%;
 }
 
-.traffic .con .a_info {
+.traffic .traffic_content_layout .a_info {
   border: 1px solid #e6fafe;
   border-radius: 100%;
   overflow: hidden;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
 }
 
-.traffic .con .a_info > p {
+.traffic .traffic_content_layout .a_info > p {
   text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -110,13 +109,13 @@
   font-family: 'Sunflower', sans-serif;
 }
 
-.traffic .con .a_info > p strong {
+.traffic .traffic_content_layout .a_info > p strong {
   font-size: 1.7em;
   display: inline-block;
   margin-bottom: 5%;
 }
 
-.traffic .con .a_info > p span {
+.traffic .traffic_content_layout .a_info > p span {
   line-height: 1.8;
 }
 
@@ -949,29 +948,13 @@
     font-size: 3em;
   }
   .traffic > img {
-    position: absolute;
-    left: -35%;
-    bottom: -30%;
-    width: 60%;
-    z-index: 2;
+    display: none;
   }
-  .traffic .con {
+  .traffic .traffic_content_layout {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .traffic .con .map {
-    margin: 10%;
-  }
-  .traffic .con .a_info {
-    width: 400px;
-    height: 400px;
-  }
-  .traffic .con .a_info > p {
-    font-size: 1.5em;
-    width: 400px;
-    height: 400px;
   }
   .service .title {
     background: rgba(0, 0, 0, 0);
