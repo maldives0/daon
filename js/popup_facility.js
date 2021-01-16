@@ -7,7 +7,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
   data.open('Get', 'data_facility.json', true);
   data.send(null);
-
   data.addEventListener('load', dataFun);
 
   let name,
@@ -15,19 +14,17 @@ window.addEventListener('DOMContentLoaded', function () {
     imgSrc,
     article = '',
     popup = '',
-    num;
+    num,
+    tit;
 
   function dataFun() {
     response = JSON.parse(data.responseText);
-
     function dataRun() {
       response.facility.forEach(function (el) {
         name = el.name;
-
         tit = el.tit;
         desc = el.desc;
         imgSrc = el.imgSrc;
-
         article += "<figure class='f_a'>";
         article += "<p><img src='" + imgSrc + "'></p>";
         article += '<figcaption><h2>' + name + '</h2>' + tit;
@@ -36,7 +33,6 @@ window.addEventListener('DOMContentLoaded', function () {
       facArt.innerHTML = article;
     }
     dataRun();
-
     Array.from(facFig).forEach(function (el) {
       el.addEventListener('click', popUp);
     });
@@ -45,11 +41,8 @@ window.addEventListener('DOMContentLoaded', function () {
       let thisParent = e.currentTarget.parentElement;
       let thisChildren = thisParent.children;
       num = Array.from(thisChildren).indexOf(e.currentTarget);
-
       popDiv.classList.add('active');
-
       pop(num);
-      //popup end
     }
 
     function pop(num) {
@@ -58,7 +51,6 @@ window.addEventListener('DOMContentLoaded', function () {
         tit = response.facility[num].tit;
         desc = response.facility[num].desc;
         imgSrc = response.facility[num].imgSrc;
-
         popup = "<figure class='f_a'>";
         popup += "<p><img src='" + imgSrc + "'></p>";
         popup += '<figcaption><h2>' + name + '<br>(' + tit + ')</h2>';
@@ -67,7 +59,6 @@ window.addEventListener('DOMContentLoaded', function () {
       popDiv.innerHTML = popup;
     }
   }
-
   popDiv.addEventListener('click', function () {
     popDiv.classList.remove('active');
   });
