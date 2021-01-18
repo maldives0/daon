@@ -1,15 +1,16 @@
 @import url("common.css");
 .title_white {
-  font-size: 8em;
+  font-size: 7em;
   font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
+  padding-top: 6%;
 }
 
 .title_black {
-  padding: 3%;
-  font-size: 8em;
+  padding-top: 3%;
+  font-size: 7em;
   font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
@@ -328,6 +329,20 @@
 
 .roommap > div {
   margin: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
 .roommap > div h1 {
@@ -337,11 +352,10 @@
 }
 
 .roommap > div h4 {
-  margin: 5% auto;
+  margin: 2% auto;
   font-size: 20px;
   font-weight: 50;
   white-space: pre-line;
-  line-height: 2.5;
   font-family: 'Sunflower', sans-serif;
 }
 
@@ -386,13 +400,29 @@
 .info {
   height: 50vw;
   position: relative;
-  margin: 5%;
+  margin: 10% 0 5% 2%;
   font-family: 'Titillium Web', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
-.info > p {
-  margin-top: 5%;
-  width: 40%;
+.info p {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
   height: 50%;
   -webkit-box-shadow: inset 20px 0px 100px 100px #fff;
           box-shadow: inset 20px 0px 100px 100px #fff;
@@ -400,19 +430,25 @@
   background-size: 100%;
 }
 
-.info > h1 {
+.info h1 {
   font-size: 100px;
   font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
+  z-index: 10;
 }
 
-.info > h4 {
-  margin: 6% 0;
+.info h4 {
+  margin: 3% 0;
   font-size: 20px;
   font-weight: 50;
-  white-space: pre-line;
-  line-height: 2.5;
+  line-height: 1.5em;
   font-family: 'Sunflower', sans-serif;
+}
+
+.info_btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
 /*-------------------------service-------------------------------*/
@@ -546,7 +582,7 @@
   text-align: center;
   color: #fff;
   white-space: pre-line;
-  font-size: 8em;
+  font-size: 7em;
   text-transform: uppercase;
   font-weight: 100;
   font-family: 'Dancing Script', cursive;
@@ -738,7 +774,10 @@
     font-size: 1em;
     width: 30%;
   }
-  .info_btn a {
+  .info_btn {
+    width: 100%;
+  }
+  .info_btn > a {
     padding: 3%;
     font-size: 1em;
   }
@@ -897,10 +936,7 @@
   .roommap > div {
     margin: 10%;
   }
-  .roommap > div .info_btn {
-    display: block;
-  }
-  .roommap > div .info_btn a {
+  .roommap > div .info_btn > a {
     width: 30%;
     padding: 2% 3%;
     margin: 1%;
